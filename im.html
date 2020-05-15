@@ -1,65 +1,99 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+
     <title>Infinite Motion</title>
+
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
     <style type="text/css">
         .img-links a:hover > img {
             -webkit-filter: invert(1);
             filter: invert(1);
         }
-        .logo {
-            max-height: 12rem;
-        }
     </style>
+
 </head>
-<body class="bg-black container mx-auto">
-    <header class="flex flex-row justify-center text-lg text-white">
+
+<body class="bg-black mx-auto">
+
+    <header class="flex flex-row justify-center text-4xl text-gray-200">
+
         <a class="m-8 hover:text-red-600" href="home">Home</a>
+
         <a class="m-8 hover:text-red-600" href="lektroid">Lektroid</a>
+
         <a class="m-8 hover:text-red-600" href="infinitemotion">Infinite Motion</a>
+
     </header>
-    <main class="container">
-        <a class="flex justify-center mb-8" href="https://infinitemotion.bandcamp.com">
-            <img class="logo" alt="Infinite Motion Bandcamp" src="IM_images/im2.jpg">
-        </a>
-        <h2 class="px-2 my-2 bg-gray-900 text-3xl font-bold">Releases</h2>
-        <div class="flex flex-row flex-wrap justify-center img-links">
-            <a class="flex-initial" href="https://infinitemotion.bandcamp.com/track/interface">
-                <img class="m-4 max-w-sm" src="IM_images/interface.jpg">
+
+    <main>
+
+        <div class="flex justify-center mb-8">
+
+            <a class="flex-initial max-w-md" href="https://infinitemotion.bandcamp.com">
+                <img class="w-auto" alt="Infinite Motion Bandcamp" src="IM_images/im2.jpg">
             </a>
-            <a class="flex-initial" href="https://infinitemotion.bandcamp.com/track/furious-dog">
-                <img class="m-4 max-w-sm" src="IM_images/fdog.jpg">
-            </a>
-            <a class="flex-initial" href="https://infinitemotion.bandcamp.com/track/the-light">
-                <img class="m-4 max-w-sm" src="IM_images/light.jpg">
-            </a>
+
         </div>
-        <h2 class="px-2 my-2 bg-gray-900 text-3xl font-bold">Mixes</h2>
+
+        <h2 class="mx-8 my-2 text-gray-200 text-5xl font-bold">Releases</h2>
+
         <div class="flex flex-row flex-wrap justify-center img-links">
-            <a class="flex-initial" href="https://www.mixcloud.com/infinitemotion/lek-23-psymix-volume-001-2020/">
-                <img class="m-4 max-w-sm" src="IM_images/psymix001.png">
+
+            <a class="flex-initial m-8 max-w-4xl lg:mx-8 lg:max-w-md" href="https://infinitemotion.bandcamp.com/track/interface">
+                <img class="w-auto" src="IM_images/interface.jpg">
             </a>
-            <a class="flex-initial" href="https://www.mixcloud.com/infinitemotion/lek-23-psymix-volume-002-2020/">
-                <img class="m-4 max-w-sm" src="IM_images/psymix002.jpg">
+
+            <a class="flex-initial m-8 max-w-4xl lg:mx-8 lg:max-w-md" href="https://infinitemotion.bandcamp.com/track/furious-dog">
+                <img class="w-auto" src="IM_images/fdog.jpg">
             </a>
-            <a class="flex-initial" href="https://www.mixcloud.com/infinitemotion/lek-23-psymix-volume-003-2020/">
-                <img class="m-4 max-w-sm" src="IM_images/psymix003.jpg">
+
+            <a class="flex-initial m-8 max-w-4xl lg:mx-8 lg:max-w-md" href="https://infinitemotion.bandcamp.com/track/the-light">
+                <img class="w-auto" src="IM_images/light.jpg">
             </a>
-            <a class="flex-initial" href="https://www.mixcloud.com/infinitemotion/lek-23-psymix-004-2020/">
-                <img class="m-4 max-w-sm" src="IM_images/psymix004.jpg">
-            </a>
-            <a class="flex-initial" href="https://www.mixcloud.com/infinitemotion/infinite-motion-psymix-volume-005-2020/">
-                <img class="m-4 max-w-sm" src="IM_images/psymix005.jpg">
-            </a>
+
         </div>
+
+        <h2 class="mx-8 my-2 text-gray-200 text-5xl font-bold">Mixes</h2>
+
+        <div class="flex flex-row flex-wrap justify-center img-links">
+
+            <a class="flex-initial m-4 max-w-xl" href="https://www.mixcloud.com/infinitemotion/lek-23-psymix-volume-001-2020/">
+                <img src="IM_images/psymix001.png">
+            </a>
+
+            <a class="flex-initial m-4 max-w-xl" href="https://www.mixcloud.com/infinitemotion/lek-23-psymix-volume-002-2020/">
+                <img src="IM_images/psymix002.jpg">
+            </a>
+
+            <a class="flex-initial m-4 max-w-xl" href="https://www.mixcloud.com/infinitemotion/lek-23-psymix-volume-003-2020/">
+                <img src="IM_images/psymix003.jpg">
+            </a>
+
+            <a class="flex-initial m-4 max-w-xl" href="https://www.mixcloud.com/infinitemotion/lek-23-psymix-004-2020/">
+                <img src="IM_images/psymix004.jpg">
+            </a>
+
+            <a class="flex-initial m-4 max-w-xl" href="https://www.mixcloud.com/infinitemotion/infinite-motion-psymix-volume-005-2020/">
+                <img src="IM_images/psymix005.jpg">
+            </a>
+
+        </div>
+
     </main>
-    <footer>
-        <header class="flex flex-row justify-center text-lg text-white">
-            <a class="m-8 hover:text-red-600" href="home">Home</a>
-            <a class="m-8 hover:text-red-600" href="lektroid">Lektroid</a>
-            <a class="m-8 hover:text-red-600" href="infinitemotion">Infinite Motion</a>
-    </header>
+
+    <footer class="flex flex-row justify-center text-4xl text-gray-200">
+
+        <a class="m-8 hover:text-red-600" href="home">Home</a>
+
+        <a class="m-8 hover:text-red-600" href="lektroid">Lektroid</a>
+
+        <a class="m-8 hover:text-red-600" href="infinitemotion">Infinite Motion</a>
+
     </footer>
+
 </body>
+
 </html>
