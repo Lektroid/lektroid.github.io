@@ -15,60 +15,8 @@
             -webkit-filter: invert(1);
             filter: invert(1);
         }
-    </style>
-
-</head>
-
-<body class="bg-black mx-auto text-gray-200">
-
-    <header class="m-4 flex flex-row flex-wrap justify-center text-sm md:text-lg">
-
-        <a class="mx-4 my-2 hover:text-red-600" href="/">LEK Productions</a>
-
-        <a class="mx-4 my-2 hover:text-red-600" href="#synths">Synthesizers</a>
-
-        <a class="mx-4 my-2 hover:text-red-600" href="#DIY">DIY</a>
-
-        <a class="mx-4 my-2 hover:text-red-600" href="#studio">Studio</a>
-
-        <a class="mx-4 my-2 hover:text-red-600" href="mailto:info@lekproductions.co.uk?subject=Studio Contact">Contact</a>
-
-    </header>
-
-    <main>
-
-        <div class="flex justify-center">
-
-            <a class="flex-initial px-4 max-w-xs md:max-w-md">
-                <img class="w-auto" alt="Studio Images" src="Studio_images/S_logo.jpg">
-            </a>
-
-        </div>
-
-        <div class="mx-auto max-w-2xl mt-6 px-4">
-            Richard's musical tools have been an ever-evolving accumulation over the decades. Starting out with 8- and 16-bit computers and a couple of synthesizers in the '80s. Over the decades Richard has slowly amassed an admirable collection of synthesizers, effects and studio production tools; many of which are now considered vintage classics. 
-            <br><br>
-            Richard has also had a keen interest in audio electronics and has built many interesting and unique analogue machines. Starting out in the early days modifying electronic toys, building analogue filters for his first keyboards and simple drone generators built on stripboard and etched PCB's. His latest hand-built projects include fully featured 5U and Eurorack modular systems, as well as semi-modular synthesizers, not to mention his array of analogue effects. This collection has been a steady progression built up to the studio we see today used to create some of his finest works.
- 
-        </div> 
-        
-
-        function myFunction(imgs) {
-  // Get the expanded image
-  var expandImg = document.getElementById("expandedImg");
-  // Get the image text
-  var imgText = document.getElementById("imgtext");
-  // Use the same src in the expanded image as the image being clicked on from the grid
-  expandImg.src = imgs.src;
-  // Use the value of the alt attribute of the clickable image as text inside the expanded image
-  imgText.innerHTML = imgs.alt;
-  // Show the container element (hidden with CSS)
-  expandImg.parentElement.style.display = "block";
-} 
-
-
-
-         /* The grid: Four equal columns that floats next to each other */
+    
+                     /* The grid: Four equal columns that floats next to each other */
 .column {
   float: left;
   width: 25%;
@@ -116,6 +64,65 @@
   font-size: 35px;
   cursor: pointer;
 } 
+
+    </style>
+
+<javascript>
+           function myFunction(imgs) {
+  // Get the expanded image
+  var expandImg = document.getElementById("expandedImg");
+  // Get the image text
+  var imgText = document.getElementById("imgtext");
+  // Use the same src in the expanded image as the image being clicked on from the grid
+  expandImg.src = imgs.src;
+  // Use the value of the alt attribute of the clickable image as text inside the expanded image
+  imgText.innerHTML = imgs.alt;
+  // Show the container element (hidden with CSS)
+  expandImg.parentElement.style.display = "block";
+} 
+</javascript>
+
+</head>
+
+<body class="bg-black mx-auto text-gray-200">
+
+    <header class="m-4 flex flex-row flex-wrap justify-center text-sm md:text-lg">
+
+        <a class="mx-4 my-2 hover:text-red-600" href="/">LEK Productions</a>
+
+        <a class="mx-4 my-2 hover:text-red-600" href="#synths">Synthesizers</a>
+
+        <a class="mx-4 my-2 hover:text-red-600" href="#DIY">DIY</a>
+
+        <a class="mx-4 my-2 hover:text-red-600" href="#studio">Studio</a>
+
+        <a class="mx-4 my-2 hover:text-red-600" href="mailto:info@lekproductions.co.uk?subject=Studio Contact">Contact</a>
+
+    </header>
+
+    <main>
+
+        <div class="flex justify-center">
+
+            <a class="flex-initial px-4 max-w-xs md:max-w-md">
+                <img class="w-auto" alt="Studio Images" src="Studio_images/S_logo.jpg">
+            </a>
+
+        </div>
+
+        <div class="mx-auto max-w-2xl mt-6 px-4">
+            Richard's musical tools have been an ever-evolving accumulation over the decades. Starting out with 8- and 16-bit computers and a couple of synthesizers in the '80s. Over the decades Richard has slowly amassed an admirable collection of synthesizers, effects and studio production tools; many of which are now considered vintage classics. 
+            <br><br>
+            Richard has also had a keen interest in audio electronics and has built many interesting and unique analogue machines. Starting out in the early days modifying electronic toys, building analogue filters for his first keyboards and simple drone generators built on stripboard and etched PCB's. His latest hand-built projects include fully featured 5U and Eurorack modular systems, as well as semi-modular synthesizers, not to mention his array of analogue effects. This collection has been a steady progression built up to the studio we see today used to create some of his finest works.
+ 
+        </div> 
+        
+
+ 
+
+
+
+
 
 
     <h2 id="synths" class="mx-4 md:mx-8 my-2 font-bold text-4xl md:text-5xl">Synthesizers</h2>
