@@ -20,7 +20,7 @@ body {
   font-family: Arial;
 }
 
-/* The grid: Four equal columns that floats next to each other */
+/* The grid: Equal columns that floats next to each other */
 .column {
   float: left;
   width: 25%;
@@ -76,15 +76,15 @@ body {
 
     <header class="m-4 flex flex-row flex-wrap justify-center text-sm md:text-lg">
 
-        <a class="mx-4 my-2 hover:text-red-600" href="/">LEK Productions</a>
+        <a class="mx-4 my-2 hover:text-red-600" href="#studio">Studio</a>
 
         <a class="mx-4 my-2 hover:text-red-600" href="#synths">Synthesizers</a>
 
         <a class="mx-4 my-2 hover:text-red-600" href="#DIY">DIY</a>
 
-        <a class="mx-4 my-2 hover:text-red-600" href="#studio">Studio</a>
+        <a class="mx-4 my-2 hover:text-red-600" href="#kitlist">Kitlist</a>
 
-        <a class="mx-4 my-2 hover:text-red-600" href="mailto:info@lekproductions.co.uk?subject=Studio Contact">Contact</a>
+        <a class="mx-4 my-2 hover:text-red-600" href="/">Home</a>
 
     </header>
 
@@ -104,6 +104,32 @@ body {
             Richard has also had a keen interest in audio electronics and has built many interesting and unique analogue machines. Starting out in the early days modifying electronic toys, building analogue filters for his first keyboards and simple drone generators built on stripboard and etched PCB's. His latest hand-built projects include fully featured 5U and Eurorack modular systems, as well as semi-modular synthesizers, not to mention his array of analogue effects. This collection has been a steady progression built up to the studio we see today used to create some of his finest works.
  
         </div> 
+
+    <h2 id="studio" class="mx-4 md:mx-8 my-2 font-bold text-4xl md:text-5xl">Studio</h2>
+        
+        <div class="flex flex-row flex-wrap justify-center img-links">
+            <div class="column">
+                <img src="Studio_images/studio3.jpg" alt="Studio 1" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="Studio_images/studio2.jpg" alt="Studio 2" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="Studio_images/studio1.jpg" alt="Studio 3" style="width:100%" onclick="myFunction(this);">
+            </div>
+        </div>
+
+        <div class="flex flex-row flex-wrap justify-center img-links">
+        <!-- The expanding image container -->
+            <div class="container">
+        <!-- Close the image -->
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <!-- Expanded image -->
+            <img id="expandedImg" style="width:100%">
+        <!-- Image text -->
+            <div id="imgtext"></div>
+        </div>
+        </div>
 
     <h2 id="synths" class="mx-4 md:mx-8 my-2 font-bold text-4xl md:text-5xl">Synthesizers</h2>
 
@@ -156,33 +182,7 @@ body {
             <img id="expandedImg" style="width:100%">
         <!-- Image text -->
             <div id="imgtext"></div>
-        </div>
-        </div>
-        
-    <h2 id="studio" class="mx-4 md:mx-8 my-2 font-bold text-4xl md:text-5xl">Studio</h2>
-        
-        <div class="flex flex-row flex-wrap justify-center img-links">
-            <div class="column">
-                <img src="Studio_images/studio1.jpg" alt="Studio 1" style="width:100%" onclick="myFunction(this);">
             </div>
-            <div class="column">
-                <img src="Studio_images/studio2.jpg" alt="Studio 2" style="width:100%" onclick="myFunction(this);">
-            </div>
-            <div class="column">
-                <img src="Studio_images/studio3.jpg" alt="Studio 3" style="width:100%" onclick="myFunction(this);">
-            </div>
-        </div>
-
-        <div class="flex flex-row flex-wrap justify-center img-links">
-        <!-- The expanding image container -->
-            <div class="container">
-        <!-- Close the image -->
-            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-        <!-- Expanded image -->
-            <img id="expandedImg" style="width:100%">
-        <!-- Image text -->
-            <div id="imgtext"></div>
-        </div>
         </div>
         
         <script>
@@ -195,6 +195,188 @@ body {
     }
         </script>
    
+<h2 id="kitlist" class="mx-4 md:mx-8 my-2 font-bold text-4xl md:text-5xl">Kitlist</h2>
+
+<div style=padding:10px>
+<b>Mono Synths:</b>
+<div style=padding:20px>
+Arp Odyssey<br>
+Behringer TD3 Modded Out<br>
+Cyclone TT 303 Mk1<br>
+Korg MS 10 mk1<br>
+Korg MS 20 mk1<br>
+Korg MS 20 mini (modified)<br>
+Korg Prophecy (x2)<br>
+Moog Rogue<br>
+Moog Theremin Plus<br>
+Novation Super Bassstation<br>
+Roland SH 3a<br>
+Roland SH 09<br>
+Roland SH 101<br>
+</div>
+
+<b>Poly Synths:</b>
+<div style=padding:20px>
+Behringer Deep Mind 12<br>
+Casio CZ1<br>
+Korg Triton<br>
+Korg Z1<br>
+Roland JD 800<br>
+Roland JP 8000<br>
+Roland Juno 1<br>
+Roland Juno 6<br>
+Roland Juno 106<br>
+Roland Jupiter 6<br>
+Roland JX 10<br>
+Roland RS 09<br>
+Roland SH 201<br>
+Yamaha DX9 (Aphex soundset)<br>
+</div>
+
+<b>Module / Rack Synths:</b>
+<div style=padding:20px>
+Casio VZ 10m<br>
+Korg Volca FM<br>
+Nord G2 Modular<br>
+Nord Micro Modular<br>
+Roland D 110<br>
+Roland System 1m<br>
+Roland JV 1080<br>
+Roland XV 5050<br>
+Waldorf Micro Q<br>
+Waldorf Pulse 2<br>
+Yamaha TG 500<br>
+Yamaha TX 802<br>
+</div>
+
+<b>Micro Synths:</b>
+<div style=padding:20px>
+Arturia MicroBrute<br>
+Behringer Cat<br>
+Behringer Model D<br>
+Behringer Pro 1<br>
+Behringer Wasp<br>
+Dubreq Stylophone Gen X-1<br>
+Korg Monotron<br>
+Korg Monotron Delay<br>
+Korg Monotron Duo<br>
+Roland D 05<br>
+Roland SH 1a<br>
+Roland VP 03<br>
+</div>
+
+<b>Modular / Home builds:</b>
+<div style=padding:20px>
+Behringer 2600<br>
+Jasper (Wasp clone) (x5)<br>
+Large Eurorack system (x2)<br>
+Large 5U system<br>
+MFOS Soundlab Ultimate (suitcase synth)<br>
+MFOS Vocoder<br>
+Richard Sys 100 (clone of Roland System 100)<br>
+Richard Sys 700 (clone of Roland System 700)<br>
+</div>
+
+<b>Drum Machines / modules:</b>
+<div style=padding:20px>
+9090 (TR-909 clone)<br>
+Behringer RD 8 (Modded)<br>
+Cyclone TT 78<br>
+Cyclone TT 606<br>
+Novation Drumstation<br>
+</div>
+
+<b>Acoustic Guitars:</b>
+<div style=padding:20px>
+Ashton UKE500SPM<br>
+Fender California Coast Uke<br>
+Freshman FA1DN(S)<br>
+Ibanez PF1512-NT (12 String)<br>
+</div>
+
+<b>Electric Guitars:</b>
+<div style=padding:20px>
+Fender Stratocaster (75th Anniversary American Pro ii Dark Night)<br>
+Fender Squier Telecaster (40th Anniversary edition Gold/Black)<br>
+Ibanez GSA60 WNF (Walnut flat)<br>
+Ibanez RG421G LBM (Laser Blue Matte)<br>
+</div>
+
+<b>Effects / Home builds:</b>
+<div style=padding:20px>
+Boss BF 2 Flanger<br>
+Boss CE 5 Chorus Ensemble<br>
+Boss DS 1 Distortion<br>
+Boss PH 2 Phaser<br>
+Boss RDD 10 Delay<br>
+Boss RPS 10 Pitch Shifter<br>
+Boss SE 70<br>
+Electro Harmonix Small Stone Mk1 (x2)<br>
+Haible Frequency Shifter<br>
+Haible Krautrock Phaser<br>
+Haible SOST Phaser<br>
+Haible Tau Phaser<br>
+Haible Triple Chorus (x2)<br>
+Haible Vocoder<br>
+JHS Digital Delay<br>
+JHS Spring Reverb<br>
+MXR Distortion +<br>
+Oakley SRE 330<br>
+RAT Distortion<br>
+Roland SRV 3030<br>
+Tantek Tanrak<br>
+Zoom 1201<br>
+</div>
+
+<b>Utility / Outboard:</b>
+<div style=padding:20px>
+Alesis 3630<br>
+ART Dual Levelar<br>
+ART Tube EQ<br>
+Arturia Beatstep Pro<br>
+ARX 6-Gate<br>
+Behringer Ultrapatch Pro<br>
+DBX 231s<br>
+E-Magic Unitor 8 (x3)<br>
+Line 6 Pod XT Pro<br>
+MOTU MIDI Express 128<br>
+Kenton Pro 2 (x2)<br>
+Kenton Spindoctor<br>
+Korg SQ1<br>
+Philip Rees MCV<br>
+RME Fireface 800<br>
+Sony A6 DAT<br>
+</div>
+ 
+<b>Mixing / Monitoring:</b>
+<div style=padding:20px>
+AKG K 240<br>
+Alesis Multimix 6 FX<br>
+Beyerdynamic DT 150<br>
+Beyerdynamic DT 990 Pro<br>
+Fluid Audio F8S<br>
+Genelec 8040A<br>
+Mackie 1202 VLZ Pro<br>
+Mackie 24-8-24e<br>
+Mackie LM 3204<br>
+Presonus Eris 5<br>
+Presonus HP 4 (Mk1 + Mk2)<br>
+Rode NT1 (Mk1)<br>
+Sennheiser HD 25<br>
+Tannoy System 800<br>
+</div>
+
+<b>Computing:</b>
+<div style=padding:20px>
+Atari 520 ST-FM<br>
+Commodore 64 (stereo SID)<br>
+Commodore Amiga 1200 – 68030 / 128MB RAM / 128GB SSD<br>
+Atari 4060 ST-E custom / 4MB<br>
+Mac Pro 8-core (x2)<br>
+Mac Pro 12 Core 128GB RAM<br>
+Macbook Pro M1
+</div>
+</div>
 </main>
  </body>
 <footer class="flex flex-row justify-center text-sm md:text-lg">
