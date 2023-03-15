@@ -15,6 +15,20 @@
             -webkit-filter: invert(1);
             filter: invert(1);
         }
+
+        .iframe-container{
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; 
+  height: 0;
+}
+.iframe-container iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
     </style>
 
 </head>
@@ -41,17 +55,15 @@
 
         <div class="mx-auto max-w-2xl mt-6 px-4">
             I am currently in my third year of my degree, and for my music technology project, I have decided to produce an EP of 4 tracks. This should illustrate not only my own experience of music production, but also all that I have gained from the teachings in the university.
-            <br><br>
-            I have decided to base my EP on the Electro genre, since it is very versatile and not limited to tempo, or 4-beat rhythms, so I am able to be more expressive without these limitations.
         </div> 
 
         <h2 id="albums" class="mx-4 md:mx-8 my-2 font-bold text-3xl md:text-4xl text-red-600">Promotional video</h2>
 
         <div class="flex flex-row flex-wrap justify-center img-links">
 
-            <div class="flex-initial mx-4 mb-8 max-w-xs lg:mx-8 lg:max-w-md">
+            
                 
-                <div class="flex flex-col items-center my-4">
+                <div class="iframe-container">
                     <iframe width="1120" height="630" src="https://www.youtube-nocookie.com/embed/bn2e7m6sQCw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div> 
                 <div class="my-4">
