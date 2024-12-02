@@ -8,26 +8,7 @@
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 
     <style type="text/css">
-        .img-links a:hover > img {
-            -webkit-filter: invert(1);
-            filter: invert(1);
-        }
-
-        .iframe-container {
-            position: relative;
-            width: 100%;
-            padding-bottom: 56.25%;
-            height: 0;
-        }
-
-        .iframe-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-
+        /* Additional custom styles for form */
         input[type=text], select, textarea {
             width: 100%;
             padding: 12px;
@@ -57,41 +38,60 @@
             background-color: #222222; /* Dark gray background for the form container */
             padding: 20px;
             color: white; /* Text color inside form */
+            width: 100%;
+            max-width: 600px; /* Max width to keep it from growing too large */
+            margin: 0 auto; /* Centers the form */
         }
 
         label {
-            color: white; /* Label color */
+            color: white;
             font-weight: bold;
         }
 
         input[type="text"], textarea, select {
-            color: black; /* Text inside inputs */
+            color: black;
+        }
+
+        /* Center the form on the page */
+        body {
+            background-color: #111111;
+            font-family: Arial, sans-serif;
+            color: #e0e0e0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Success and error message styles */
+        #form-message {
+            display: none;
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        .success {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .error {
+            background-color: #f44336;
+            color: white;
         }
     </style>
 </head>
 
-<body class="bg-black mx-auto text-gray-200">
+<body>
 
-    <header class="m-4 flex flex-row flex-wrap justify-center text-sm md:text-lg">
-        <a class="mx-4 my-2 hover:text-red-600" href="/">LEK Productions</a>
-    </header>
-
-    <main>
-        <div class="flex justify-center">
-            <a class="flex-initial px-4 max-w-xs md:max-w-md">
-                <img class="w-auto" alt="LEK Productions" src="LEK.jpg">
-            </a>
-        </div>
-
-        <div class="flex justify-center">
-            <a class="flex-initial px-4 max-w-xs md:max-w-md">
-                <img class="w-auto" alt="Mastering" src="Index_Images/masteringR.jpg">
-            </a>
-        </div>
-
+    <main class="flex justify-center items-center">
         <div class="container">
-            <!-- Form to collect user data -->
-            <form method="POST" action="https://formspree.io/f/mvgodagd">
+
+            <!-- Contact form -->
+            <form id="contact-form" method="POST" action="https://formspree.io/f/mvgodagd">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="firstname" placeholder="Your name.." required>
 
@@ -109,21 +109,53 @@
                 <label for="subject">Subject</label>
                 <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>
 
-                <!-- Submit button -->
                 <input type="submit" value="Send Email" />
             </form>
+
+            <!-- Message display box -->
+            <div id="form-message"></div>
 
         </div>
     </main>
 
-    <footer class="flex flex-row justify-center text-sm md:text-lg">
-        <div class="my-8 flex flex-col flex-wrap items-center">
-            <div class="flex-initial mx-4 mb-2 max-w-xs lg:mx-8 lg:max-w-md">
-                <a href="/"><img class="w-48" src="logo.jpg"></a>
-            </div>
-            <a class="m-2 hover:text-red-600" href="mailto:lektroid@gmail.com?subject=Mastering enquiry">Contact</a>
-        </div>
-    </footer>
+    <!-- JavaScript for form handling and error/success messages -->
+    <script>
+        // Handle form submission with JavaScript
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            var form = event.target;
+            var messageBox = document.getElementById("form-message");
+
+            // Reset message box
+            messageBox.style.display = 'none';
+            messageBox.innerHTML = '';
+
+            // Use Formspree's API to handle the form submission via AJAX
+            var formData = new FormData(form);
+
+            fetch(form.action, {
+                method: "POST",
+                body: formData
+            })
+            .then(response => {
+                if (response.ok) {
+                    messageBox.style.display = 'block';
+                    messageBox.className = 'success';
+                    messageBox.innerHTML = "<p>Thank you! Your message has been sent.</p>";
+                    form.reset(); // Reset the form after successful submission
+                } else {
+                    throw new Error("Form submission failed.");
+                }
+            })
+            .catch(error => {
+                messageBox.style.display = 'block';
+                messageBox.className = 'error';
+                messageBox.innerHTML = "<p>Sorry, something went wrong. Please try again.</p>";
+            });
+        });
+    </script>
 
 </body>
+
 </html>
