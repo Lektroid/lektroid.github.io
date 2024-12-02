@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta name="author" content="Richard Elliott">
     <title>Contact</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-
     <style type="text/css">
         input[type="text"], input[type="email"], select, textarea {
             width: 100%;
@@ -84,7 +82,8 @@
 
     <main class="flex justify-center items-center">
         <div class="container">
-            <form id="contact-form" action="https://api.emailjs.com/api/v1.0/email/send-form" method="POST">
+            <!-- Contact Form -->
+            <form id="contact-form" method="POST">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="firstname" placeholder="Your name.." required>
 
@@ -105,36 +104,41 @@
                 <input type="submit" value="Send Email" />
             </form>
 
+            <!-- Message display box -->
             <div id="form-message"></div>
         </div>
     </main>
 
+    <!-- EmailJS SDK -->
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    
     <script>
-        emailjs.init("your_user_id");  // Your EmailJS User ID
+        // Initialize EmailJS with your public key
+        emailjs.init("2KcBgyELdNEKhQDrt");  // Your Public Key (User ID)
 
         // Listen for form submission
         document.getElementById("contact-form").addEventListener("submit", function(event) {
-            event.preventDefault();
+            event.preventDefault();  // Prevent default form submission
 
             var form = event.target;
             var messageBox = document.getElementById("form-message");
 
-            // Send the form using EmailJS
-            emailjs.sendForm("your_service_id", "your_template_id", form)
+            // Send the form data to EmailJS (use your Service ID and Template ID)
+            emailjs.sendForm("service_6oewenj", "lekproductionsuk@gmail.com", form)
                 .then(function(response) {
                     messageBox.style.display = 'block';
                     messageBox.className = 'success';
                     messageBox.innerHTML = "<p>Thank you! Your message has been sent.</p>";
-                    form.reset();
+                    form.reset();  // Reset the form fields after submission
                 })
                 .catch(function(error) {
                     messageBox.style.display = 'block';
                     messageBox.className = 'error';
                     messageBox.innerHTML = "<p>Sorry, something went wrong. Please try again.</p>";
+                    console.log("Error details: ", error);  // Log error details for debugging
                 });
         });
     </script>
-</body>
 
+</body>
 </html>
