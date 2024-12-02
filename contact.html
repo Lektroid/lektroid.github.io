@@ -120,16 +120,32 @@
 
     <!-- JavaScript for form handling and error/success messages -->
     <script>
+        // Function to validate email format
+        function validateEmail(email) {
+            const re = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            return re.test(String(email).toLowerCase());
+        }
+
         // Handle form submission with JavaScript
         document.getElementById("contact-form").addEventListener("submit", function(event) {
             event.preventDefault(); // Prevent the default form submission
 
             var form = event.target;
             var messageBox = document.getElementById("form-message");
+            var email = form.email.value;
+            var isValidEmail = validateEmail(email);
 
             // Reset message box
             messageBox.style.display = 'none';
             messageBox.innerHTML = '';
+
+            // Validate email
+            if (!isValidEmail) {
+                messageBox.style.display = 'block';
+                messageBox.className = 'error';
+                messageBox.innerHTML = "<p>Oops! The email address is invalid. Please enter a valid email address.</p>";
+                return; // Stop form submission if email is invalid
+            }
 
             // Use Formspree's API to handle the form submission via AJAX
             var formData = new FormData(form);
