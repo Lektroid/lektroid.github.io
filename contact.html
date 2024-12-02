@@ -8,7 +8,6 @@
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 
     <style type="text/css">
-        /* Custom styles for form */
         input[type="text"], input[type="email"], select, textarea {
             width: 100%;
             padding: 12px;
@@ -18,8 +17,8 @@
             margin-top: 6px;
             margin-bottom: 16px;
             resize: vertical;
-            color: #333; /* Light text color for visibility */
-            background-color: #fff; /* Light background to contrast with dark text */
+            color: #333;
+            background-color: #fff;
         }
 
         input[type=submit] {
@@ -37,12 +36,12 @@
 
         .container {
             border-radius: 5px;
-            background-color: #222222; /* Dark gray background for the form container */
+            background-color: #222222;
             padding: 20px;
-            color: white; /* Text color inside form */
+            color: white;
             width: 100%;
-            max-width: 600px; /* Max width to keep it from growing too large */
-            margin: 0 auto; /* Centers the form */
+            max-width: 600px;
+            margin: 0 auto;
         }
 
         label {
@@ -50,7 +49,6 @@
             font-weight: bold;
         }
 
-        /* Center the form on the page */
         body {
             background-color: #111111;
             font-family: Arial, sans-serif;
@@ -62,7 +60,6 @@
             margin: 0;
         }
 
-        /* Success and error message styles */
         #form-message {
             display: none;
             margin-top: 20px;
@@ -87,8 +84,7 @@
 
     <main class="flex justify-center items-center">
         <div class="container">
-            <!-- Contact Form -->
-            <form id="contact-form">
+            <form id="contact-form" action="https://api.emailjs.com/api/v1.0/email/send-form" method="POST">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="firstname" placeholder="Your name.." required>
 
@@ -109,52 +105,36 @@
                 <input type="submit" value="Send Email" />
             </form>
 
-            <!-- Success/Error Message Box -->
             <div id="form-message"></div>
         </div>
     </main>
 
-    <!-- EmailJS SDK -->
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-
     <script>
-        // Initialize EmailJS with your user ID
-        emailjs.init("your_user_id"); // Replace with your actual User ID from EmailJS
+        emailjs.init("your_user_id");  // Your EmailJS User ID
 
-        // Handle the form submission
+        // Listen for form submission
         document.getElementById("contact-form").addEventListener("submit", function(event) {
-            event.preventDefault(); // Prevent default form submission
+            event.preventDefault();
 
             var form = event.target;
             var messageBox = document.getElementById("form-message");
 
-            // Use FormData to gather form data
-            var formData = new FormData(form);
-
-            // Convert FormData to a plain object for EmailJS
-            var formDataObj = {};
-            formData.forEach(function(value, key) {
-                formDataObj[key] = value;
-            });
-
-            // Send the email using EmailJS
-            emailjs.send("service_6oewenj", "your_template_id", formDataObj)
+            // Send the form using EmailJS
+            emailjs.sendForm("your_service_id", "your_template_id", form)
                 .then(function(response) {
-                    // Display success message
                     messageBox.style.display = 'block';
                     messageBox.className = 'success';
                     messageBox.innerHTML = "<p>Thank you! Your message has been sent.</p>";
-                    form.reset(); // Reset the form after successful submission
+                    form.reset();
                 })
                 .catch(function(error) {
-                    // Display error message
                     messageBox.style.display = 'block';
                     messageBox.className = 'error';
                     messageBox.innerHTML = "<p>Sorry, something went wrong. Please try again.</p>";
                 });
         });
     </script>
-
 </body>
 
 </html>
