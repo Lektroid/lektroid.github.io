@@ -116,28 +116,32 @@
         // Initialize EmailJS with your public key
         emailjs.init("2KcBgyELdNEKhQDrt");  // Your Public Key (User ID)
 
-        // Listen for form submission
         document.getElementById("contact-form").addEventListener("submit", function(event) {
             event.preventDefault();  // Prevent default form submission
 
             var form = event.target;
             var messageBox = document.getElementById("form-message");
 
-            // Send the form data to EmailJS (use your Service ID and Template ID)
+            // Log to confirm the form submission
+            console.log("Form submitted, sending to EmailJS...");
+
+            // Send the form data to EmailJS (use your correct Service ID and Template ID)
             emailjs.sendForm("service_6oewenj", "lekproductionsuk@gmail.com", form)
                 .then(function(response) {
                     messageBox.style.display = 'block';
                     messageBox.className = 'success';
                     messageBox.innerHTML = "<p>Thank you! Your message has been sent.</p>";
                     form.reset();  // Reset the form fields after submission
+                    console.log("EmailJS Success: ", response);  // Log success details
                 })
                 .catch(function(error) {
                     messageBox.style.display = 'block';
                     messageBox.className = 'error';
                     messageBox.innerHTML = "<p>Sorry, something went wrong. Please try again.</p>";
-                    console.log("Error details: ", error);  // Log error details for debugging
+                    console.error("Error details: ", error);  // Log detailed error
                 });
         });
+
     </script>
 
 </body>
