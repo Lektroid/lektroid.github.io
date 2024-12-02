@@ -127,7 +127,7 @@
             console.log("Form submitted, sending to EmailJS...");
 
             // Send the form data to EmailJS (use your correct Service ID and Template ID)
-            emailjs.sendForm("service_6oewenj", form)
+            emailjs.sendForm("service_6oewenj", "template_pwa8q1g", form)
                 .then(function(response) {
                     messageBox.style.display = 'block';
                     messageBox.className = 'success';
