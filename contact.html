@@ -8,8 +8,8 @@
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 
     <style type="text/css">
-        /* Additional custom styles for form */
-        input[type=text], select, textarea {
+        /* Custom styles for form */
+        input[type="text"], input[type="email"], select, textarea {
             width: 100%;
             padding: 12px;
             border: 1px solid #ccc;
@@ -18,6 +18,8 @@
             margin-top: 6px;
             margin-bottom: 16px;
             resize: vertical;
+            color: #333; /* Light text color for visibility */
+            background-color: #fff; /* Light background to contrast with dark text */
         }
 
         input[type=submit] {
@@ -46,10 +48,6 @@
         label {
             color: white;
             font-weight: bold;
-        }
-
-        input[type="text"], textarea, select {
-            color: black;
         }
 
         /* Center the form on the page */
