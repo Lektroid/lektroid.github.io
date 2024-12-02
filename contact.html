@@ -83,7 +83,7 @@
     <main class="flex justify-center items-center">
         <div class="container">
             <!-- Contact Form -->
-            <form id="contact-form" method="POST">
+            <form id="contact-form">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="firstname" placeholder="Your name.." required>
 
@@ -116,8 +116,9 @@
         // Initialize EmailJS with your public key
         emailjs.init("2KcBgyELdNEKhQDrt");  // Your Public Key (User ID)
 
+        // Form submission handler
         document.getElementById("contact-form").addEventListener("submit", function(event) {
-            event.preventDefault();  // Prevent default form submission
+            event.preventDefault();  // Prevent the form from submitting the normal way
 
             var form = event.target;
             var messageBox = document.getElementById("form-message");
@@ -126,7 +127,7 @@
             console.log("Form submitted, sending to EmailJS...");
 
             // Send the form data to EmailJS (use your correct Service ID and Template ID)
-            emailjs.sendForm("service_6oewenj", "lekproductionsuk@gmail.com", form)
+            emailjs.sendForm("service_6oewenj", form)
                 .then(function(response) {
                     messageBox.style.display = 'block';
                     messageBox.className = 'success';
@@ -141,7 +142,6 @@
                     console.error("Error details: ", error);  // Log detailed error
                 });
         });
-
     </script>
 
 </body>
