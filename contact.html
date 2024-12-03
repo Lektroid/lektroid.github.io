@@ -52,10 +52,20 @@
             font-family: Arial, sans-serif;
             color: #e0e0e0;
             display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        header {
+            display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            margin: 0;
+            padding: 20px;
+            background-color: #222222;
+            width: 100%;
         }
 
         #form-message {
@@ -75,12 +85,43 @@
             background-color: #f44336;
             color: white;
         }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .image-container img {
+            max-width: 300px;
+            border-radius: 8px;
+        }
     </style>
 </head>
 
-<body>
+<body class="bg-black mx-auto text-gray-200">
 
-    <main class="flex justify-center items-center">
+    <!-- Header Section -->
+    <header class="m-4 flex flex-row flex-wrap justify-center text-sm md:text-lg">
+        <a class="mx-4 my-2 hover:text-red-600" href="/">LEK Productions</a>
+        <a class="mx-4 my-2 hover:text-red-600" href="mailto:lektroid@gmail.com?subject=Lektroid booking">Contact & Bookings</a>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="flex justify-center items-center flex-col">
+        
+        <!-- Image Section -->
+        <div class="image-container">
+            <a class="flex-initial px-4 max-w-xs md:max-w-md">
+                <img class="w-auto" alt="LEK Productions" src="LEK.jpg">
+            </a>
+            <a class="flex-initial px-4 max-w-xs md:max-w-md">
+                <img class="w-auto" alt="Mastering" src="Index_Images/masteringR.jpg">
+            </a>
+        </div>
+
+        <!-- Contact Form Section -->
         <div class="container">
             <!-- Contact Form -->
             <form id="contact-form">
