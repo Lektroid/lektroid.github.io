@@ -9,19 +9,19 @@
         input[type="text"], input[type="email"], select, textarea {
             width: 100%;
             padding: 12px;
-            border: 1px solid #ccc;
+            border: 1px solid #555;
             border-radius: 4px;
             box-sizing: border-box;
             margin-top: 6px;
             margin-bottom: 16px;
             resize: vertical;
-            background-color: #f0f0f0; /* Pale grey background */
-            color: #333; /* Darker text color for readability */
+            background-color: #333333; /* Pale grey background */
+            color: #cccccc; /* dropdown text colour */
         }
 
         input[type=submit] {
-            background-color: #555555;
-            color: white;
+            background-color: #aaaaaa;
+            color: #000000;
             padding: 12px 20px;
             border: none;
             border-radius: 4px;
@@ -29,12 +29,24 @@
         }
 
         input[type=submit]:hover {
-            background-color: #333333;
+            background-color: #dddddd;
         }
+
+/* Placeholder text color */
+input::placeholder, textarea::placeholder {
+    color: #cccccc;  /* Match the text color */
+}
+
+/* Styling for focused input fields */
+input:focus, select:focus, textarea:focus {
+    outline: none;  /* Remove the default outline (blue highlight) */
+    border-color: #cccccc;  /* Pale grey border color on focus */
+}
+
 
         .container {
             border-radius: 5px;
-            background-color: #222222;
+            background-color: #000000; /* border colour */
             padding: 20px;
             color: white;
             width: 100%;
@@ -43,14 +55,14 @@
         }
 
         label {
-            color: white;
+            color: #dddddd; /* header text */
             font-weight: bold;
         }
 
         body {
-            background-color: #111111;
+            background-color: #222222;
             font-family: Arial, sans-serif;
-            color: #e0e0e0;
+            color: #777777;
             display: flex;
             justify-content: flex-start;
             align-items: center;
@@ -63,8 +75,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 20px;
-            background-color: #222222;
+            padding: 10px;
+            background-color: #000000;
             width: 100%;
         }
 
@@ -102,24 +114,27 @@
 
 <body class="bg-black mx-auto text-gray-200">
 
-    <!-- Header Section -->
-    <header class="m-4 flex flex-row flex-wrap justify-center text-sm md:text-lg">
-        <a class="mx-4 my-2 hover:text-red-600" href="/">LEK Productions</a>
-        <a class="mx-4 my-2 hover:text-red-600" href="mailto:lektroid@gmail.com?subject=Lektroid booking">Contact & Bookings</a>
-    </header>
+    <header>
+    </header> 
 
     <!-- Main Content Section -->
     <main class="flex justify-center items-center flex-col">
-        
+       
         <!-- Image Section -->
-        <div class="image-container">
+        <div class="flex justify-center">
+
             <a class="flex-initial px-4 max-w-xs md:max-w-md">
                 <img class="w-auto" alt="LEK Productions" src="LEK.jpg">
             </a>
-            <a class="flex-initial px-4 max-w-xs md:max-w-md">
-                <img class="w-auto" alt="Mastering" src="Index_Images/masteringR.jpg">
-            </a>
+
         </div>
+
+        <div class="flex justify-center">
+            <a class="flex-initial px-4 max-w-xs md:max-w-md">
+            <img class="w-auto" alt="Discography" src="Contact_images/contactG.jpg">
+                </a>
+            </div>
+        </div> 
 
         <!-- Contact Form Section -->
         <div class="container">
@@ -128,7 +143,7 @@
                 <label for="name">Name</label>
                 <input type="text" id="name" name="firstname" placeholder="Your name.." required>
 
-                <label for="email">Your email *</label>
+                <label for="email">Email</label>
                 <input type="email" id="email" name="email" placeholder="Your email address.." required>
 
                 <label for="enquiry">Enquiry</label>
@@ -184,6 +199,18 @@
                 });
         });
     </script>
+
+    <footer class="flex flex-row justify-center text-sm md:text-lg">
+
+        <a class="m-2 hover:text-red-600" href="/">Back...<br></a>
+        <style>
+        body{
+        margin-bottom: 25px;
+        }
+        </style>
+    </div>
+
+</footer>
 
 </body>
 </html>
