@@ -109,6 +109,10 @@ input:focus, select:focus, textarea:focus {
             max-width: 300px;
             border-radius: 8px;
         }
+
+        .extra-dropdown {
+            display: none; /* Initially hidden */
+        }
     </style>
 </head>
 
@@ -148,11 +152,21 @@ input:focus, select:focus, textarea:focus {
 
                 <label for="enquiry">Enquiry</label>
                 <select id="enquiry" name="enquiry">
-                    <option value="booking">Artist Booking</option>
                     <option value="mastering">Mastering</option>
+                    <option value="booking">Artist Booking</option>
                     <option value="soundtrack/composition">Composition/Soundtrack</option>
                     <option value="sounddesign">Sound Design</option>
                 </select>
+
+                <div id="artist-booking-dropdown" class="extra-dropdown">
+                    <label for="artist-booking">Select Artist</label>
+                    <select id="artist-booking" name="artist-booking">
+                        <option value="Lektroid">Lektroid</option>
+                        <option value="InfiniteMotion">Infinite Motion</option>
+                        <option value="Brainstormer">Brainstormer</option>
+                        <option value="TurboStorm">Turbo Storm</option>
+                    </select>
+                </div>
 
                 <label for="subject">Subject</label>
                 <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>
@@ -197,6 +211,16 @@ input:focus, select:focus, textarea:focus {
                     messageBox.innerHTML = "<p>Sorry, something went wrong. Please try again.</p>";
                     console.error("Error details:", error);  // Log detailed error
                 });
+        });
+
+        // Show/Hide extra dropdown based on enquiry selection
+        document.getElementById('enquiry').addEventListener('change', function() {
+            var artistBookingDropdown = document.getElementById('artist-booking-dropdown');
+            if (this.value === 'booking') {
+                artistBookingDropdown.style.display = 'block'; // Show if "Artist Booking" is selected
+            } else {
+                artistBookingDropdown.style.display = 'none';  // Hide otherwise
+            }
         });
     </script>
 
