@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta name="description" content="Photos from LEK Production studios" />
@@ -12,211 +12,220 @@
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 
     <style type="text/css">
-        .img-links a:hover > img {
-            -webkit-filter: invert(1);
-            filter: invert(1);
+        /* Flexbox container for centering the content */
+        .grid-container {
+            display: flex;
+            justify-content: center; /* Center the entire grid horizontally */
+            padding-left: 1rem;      /* Adds padding to the left */
+            padding-right: 1rem;     /* Adds padding to the right */
+            width: 100%;
+        }
+
+        /* Ensure thumbnails have a little margin */
+        .column {
+            padding: 10px;  /* Add padding between images */
+        }
+
+        /* Adjust the grid layout for responsiveness */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Dynamically adjust columns */
+            gap: 16px; /* Adjusts the space between the items */
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        /* Style the images inside the grid */
+        .column img {
+            width: 100%; /* Ensures the image takes full width of the column */
+            max-width: 250px; /* Set a maximum width for the thumbnails */
+            opacity: 0.8;
+            cursor: pointer;
+            transition: opacity 0.3s ease, transform 0.3s ease; /* Adding transition */
+        }
+
+        .column img:hover {
+            opacity: 1;
+            transform: scale(1.05); /* Slight zoom effect on hover */
+        }
+
+        /* The expanding image container */
+        .container {
+            position: relative;
+            display: none;
+            justify-content: center;  /* Horizontally center the expanded image */
+            animation: fadeIn 0.5s ease-in-out forwards;
+            padding: 20px;    /* Add padding around the image */
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Expanding image text */
+        #imgtext {
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            color: white;
+            font-size: 20px;
+        }
+
+        /* Closable button inside the expanded image */
+        /* .closebtn {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            color: white;
+            font-size: 35px;
+            cursor: pointer;
+        }
+
+        /* Navigation buttons for carousel */
+        /* .prevBtn,
+           .nextBtn {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px;
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+            z-index: 2;
+        }
+
+        .prevBtn:hover,
+        .nextBtn:hover {
+            background-color: rgba(0, 0, 0, 0.9);
         }
     </style>
-
-    <style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: Arial;
-}
-
-/* The grid: Equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 25%;
-  padding: 10px;
-}
-
-/* Style the images inside the grid */
-.column img {
-  opacity: 0.8; 
-  cursor: pointer; 
-}
-
-.column img:hover {
-  opacity: 1;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* The expanding image container */
-.container {
-  position: relative;
-  display: none;
-}
-
-/* Expanding image text */
-#imgtext {
-  position: absolute;
-  bottom: 15px;
-  left: 15px;
-  color: white;
-  font-size: 20px;
-}
-
-/* Closable button inside the expanded image */
-.closebtn {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  color: white;
-  font-size: 35px;
-  cursor: pointer;
-}
-</style>
 
 </head>
 
 <body class="bg-black mx-auto text-gray-200">
 
     <header class="m-4 flex flex-row flex-wrap justify-center text-sm md:text-lg">
-
         <a class="mx-4 my-2 hover:text-red-600" href="#kitlist">Equipment list</a>
-
         <a class="mx-4 my-2 hover:text-red-600" href="/">LEK Productions</a>
-
     </header>
 
     <main>
 
         <div class="flex flex-col flex-wrap items-center">
             <div class="flex-initial mx-4 mb-2 max-w-xs lg:mx-8 lg:max-w-md">
-            <a href="/"><img class="w-auto" src="LEK.jpg"></a>
+                <a href="/"><img class="w-auto" src="LEK.jpg"></a>
             </div>
         </div>
 
         <div class="flex justify-center">
             <a class="flex-initial px-4 max-w-xs md:max-w-md">
-            <img class="w-auto" alt="Studio" src="Index_Images/studioY.jpg">
+                <img class="w-auto" alt="Studio" src="Index_Images/studioY.jpg">
             </a>
         </div>
 
         <div class="mx-auto max-w-2xl mt-6 px-4">
-            Richard's musical tools have been an ever-evolving accumulation over the decades. Starting out with 8- and 16-bit computers and a couple of synthesizers in the '80s. Over the decades, Richard has slowly amassed an admirable collection of synthesizers, effects and studio production tools; many of which are now considered vintage classics. 
+            Richard's musical tools have been an ever-evolving accumulation over the decades. Starting out with 8- and 16-bit computers and a couple of synthesizers in the '80s. Over the decades, Richard has slowly amassed an admirable collection of synthesizers, effects, and studio production tools; many of which are now considered vintage classics.
             <br><br>
-            Richard has also had a passion for audio electronics from a very young age and has built many interesting and unique analogue machines. Starting out in the early days modifying electronic toys, building analogue filters for his first keyboards and simple drone generators built on stripboard and etched PCB's. His latest hand-built projects include fully featured 5U and Eurorack modular systems, as well as semi-modular synthesizers, not to mention his array of analogue effects. This collection has been a steady progression built up to the studio we see today, and used to create some of his finest works.
- 
-        </div> 
-
-    <h2 id="studio" class="mx-4 md:mx-8 my-2 font-bold text-2xl md:text-3xl text-yellow-500">Studio</h2>
-        
-        <div class="flex flex-row flex-wrap justify-center img-links">
-            
-            <div class="column">
-                <img src="Studio_images/studio3.jpg" alt="At the Modular" style="width:100%" onclick="myFunction(this);">
-            </div>
-            
-            <div class="column">
-                <img src="Studio_images/studio2.jpg" alt="Mix Position" style="width:100%" onclick="myFunction(this);">
-            </div>
-            
-            <div class="column">
-                <img src="Studio_images/studio1.jpg" alt="Studio View" style="width:100%" onclick="myFunction(this);">
-            </div>
-        
+            Richard has also had a passion for audio electronics from a very young age and has built many interesting and unique analogue machines. Starting out in the early days modifying electronic toys, building analogue filters for his first keyboards, and simple drone generators built on stripboard and etched PCBs. His latest hand-built projects include fully featured 5U and Eurorack modular systems, as well as semi-modular synthesizers, not to mention his array of analogue effects. This collection has been a steady progression built up to the studio we see today, and used to create some of his finest works.
         </div>
 
-        <div class="flex flex-row flex-wrap justify-center img-links">
-        <!-- The expanding image container -->
-            <div class="container">
-        <!-- Close the image -->
+        <h2 id="studio" class="mx-4 md:mx-8 my-2 font-bold text-2xl md:text-3xl text-yellow-500">Studio</h2>
+
+        <!-- Thumbnail Grid for Studio -->
+        <div class="grid-container">
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 img-links">
+                <div class="column">
+                    <img src="Studio_images/studio3.jpg" alt="At the Modular" class="cursor-pointer" onclick="myFunction(this);">
+                </div>
+
+                <div class="column">
+                    <img src="Studio_images/studio2a.jpg" alt="Mix Position" class="cursor-pointer" onclick="myFunction(this);">
+                </div>
+
+                <div class="column">
+                    <img src="Studio_images/studio1.jpg" alt="Studio View" class="cursor-pointer" onclick="myFunction(this);">
+                </div>
+            </div>
+        </div>
+
+        <!-- Expanding Image Container -->
+        <div class="container">
+            <!-- Close the image -->
             <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-        <!-- Expanded image -->
-            <img id="expandedImg" style="width:100%">
-        <!-- Image text -->
+            <!-- Previous and next buttons -->
+            <button class="prevBtn" onclick="changeImage(-1)">&#10094;</button>
+            <button class="nextBtn" onclick="changeImage(1)">&#10095;</button>
+            <!-- Expanded image with onclick to close when clicked -->
+            <img id="expandedImg" style="width:100%" onclick="this.parentElement.style.display='none'">
+            <!-- Image text -->
             <div id="imgtext"></div>
         </div>
+
+        <h2 id="synths" class="mx-4 md:mx-8 my-2 font-bold text-2xl md:text-3xl text-yellow-500">Synthesizers</h2>
+
+        <!-- Thumbnail Grid for Synths -->
+        <div class="grid-container">
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 img-links">
+
+                <div class="column">
+                    <img src="Studio_images/synth0.jpg" alt="Analogue Modular" class="cursor-pointer" onclick="myFunction(this);">
+                </div>
+
+                <div class="column">
+                    <img src="Studio_images/synth1.jpg" alt="Analogue Wall 1" class="cursor-pointer" onclick="myFunction(this);">
+                </div>
+
+                <div class="column">
+                    <img src="Studio_images/synth2.jpg" alt="Analogue Wall 2" class="cursor-pointer" onclick="myFunction(this);">
+                </div>
+
+                <div class="column">
+                    <img src="Studio_images/synth3.jpg" alt="Polysynths & Modular" class="cursor-pointer" onclick="myFunction(this);">
+                </div>
+
+                <div class="column">
+                    <img src="Studio_images/richard100.jpg" alt="Richard Sys100 & Sys700" class="cursor-pointer" onclick="myFunction(this);">
+                </div>
+
+            </div>
         </div>
 
-    <h2 id="synths" class="mx-4 md:mx-8 my-2 font-bold text-2xl md:text-3xl text-yellow-500">Synthesizers</h2>
-
-        
-        <div class="flex flex-row flex-wrap justify-center img-links">
-
-            <div class="column">
-                <img src="Studio_images/synth1.jpg" alt="Analogue Wall 1" style="width:100%" onclick="myFunction(this);">
-            </div>
-            
-            <div class="column">
-                <img src="Studio_images/synth2.jpg" alt="Analogue Wall 2" style="width:100%" onclick="myFunction(this);">
-            </div>
-            
-            <div class="column">
-                <img src="Studio_images/synth3.jpg" alt="Polysynths & Modular" style="width:100%" onclick="myFunction(this);">
-            </div>
-
-        </div>
-        
-       <div class="flex flex-row flex-wrap justify-center img-links">
-        <!-- The expanding image container -->
-            <div class="container">
-        <!-- Close the image -->
+        <!-- Expanding Image Container for Synths -->
+        <div class="container">
+            <!-- Close the image -->
             <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-        <!-- Expanded image -->
-            <img id="expandedImg" style="width:100%">
-        <!-- Image text -->
+            <!-- Previous and next buttons -->
+            <button class="prevBtn" onclick="changeImage(-1)">&#10094;</button>
+            <button class="nextBtn" onclick="changeImage(1)">&#10095;</button>
+            <!-- Expanded image with onclick to close when clicked -->
+            <img id="expandedImg" style="width:100%" onclick="this.parentElement.style.display='none'">
+            <!-- Image text -->
             <div id="imgtext"></div>
-            </div>
-        </div>
-        
-    <h2 id="DIY" class="mx-4 md:mx-8 my-2 font-bold text-2xl md:text-3xl text-yellow-500">DIY & Handbuilt Gear</h2>
-        
-        <div class="flex flex-row flex-wrap justify-center img-links">
-            <div class="column">
-            <img src="Studio_images/DIY1.jpg" alt="At the Behemoth" style="width:100%" onclick="myFunction(this);">
-            </div>
-            
-            <div class="column">
-            <img src="Studio_images/DIY2.jpg" alt="'Richard' System 100 & 700" style="width:100%" onclick="myFunction(this);">
-            </div>
-            
-            <div class="column">
-                <img src="Studio_images/DIY3.jpg" alt="Various Effectors" style="width:100%" onclick="myFunction(this);">
-            </div>
         </div>
 
-        <div class="flex flex-row flex-wrap justify-center img-links">
-        <!-- The expanding image container -->
-            <div class="container">
-        <!-- Close the image -->
-            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-        <!-- Expanded image -->
-            <img id="expandedImg" style="width:100%">
-        <!-- Image text -->
-            <div id="imgtext"></div>
-            </div>
-        </div>
         
-        <script>
-    function myFunction(imgs) {
-      var expandImg = document.getElementById("expandedImg");
-      var imgText = document.getElementById("imgtext");
-      expandImg.src = imgs.src;
-      imgText.innerHTML = imgs.alt;
-      expandImg.parentElement.style.display = "block";
-    }
-        </script>
-   
-<h2 id="kitlist" class="mx-4 md:mx-8 my-2 font-bold text-2xl md:text-3xl">Gear list</h2>
+
+
+
+
+
+
+  
+
+    
+
+    <h2 id="kitlist" class="mx-4 md:mx-8 my-2 font-bold text-2xl md:text-3xl">Gear list</h2>
 
     <div class="mx-2 md:mx-2 text-yellow-500"><b>Mono-synths</b>
     <div class="mx-3 md:mx-6 text-white">
-        Arp Odyssey<br>
         Behringer TD3 Modded Out<br>
         Cyclone TT 303 Mk1<br>
+        Korg Arp Odyssey<br>
         Korg MS 10 mk1<br>
         Korg MS 20 mk1<br>
         Korg MS 20 mini (modified)<br>
@@ -234,7 +243,6 @@ body {
     <div class="mx-3 md:mx-6 text-white">
         Behringer Deep Mind 12<br>
         Casio CZ1<br>
-        Korg Triton<br>
         Korg Z1<br>
         Roland JD 800<br>
         Roland JP 8000<br>
@@ -243,7 +251,6 @@ body {
         Roland Juno 106<br>
         Roland Jupiter 6<br>
         Roland JX 10<br>
-        Roland RS 09<br>
         Roland SH 201<br>
         Yamaha DX9 (Aphex soundset)<br></br>
     </div>
@@ -270,26 +277,34 @@ body {
     <div class="mx-3 md:mx-6 text-white">
         Arturia MicroBrute<br>
         Behringer Cat<br>
+        Behringer Kobol Expander<br>
         Behringer Model D<br>
         Behringer Pro 1<br>
+        Behringer Pro 800<br>
         Behringer Wasp<br>
         Dubreq Stylophone Gen X-1<br>
         Korg Monotron<br>
         Korg Monotron Delay<br>
         Korg Monotron Duo<br>
-        Roland D 05<br>
-        Roland SH 1a<br>
-        Roland VP 03</br><br>
+        Roland D-05<br>
+        Roland JX-03<br>
+        Roland JX-08<br>
+        Roland SE-02<br>
+        Roland SH-1a<br>
+        Roland VP-03</br><br>
     </div>
     </div>
 
     <div class="mx-2 md:mx-2 text-yellow-500"><b>Modular / Handbuilt</b>
     <div class="mx-3 md:mx-6 text-white">
         <span style="color:gray">Please refer to <a class="text-yellow-500 hover:text-red-600" href="https://www.modulargrid.net/e/users/view/231424" target="_blank">ModularGrid </a> for the current Eurorack systems & module list</span><br>
+        Behringer 55 (9U)<br>
+        Behringer 2500 (6U)<br>
         Behringer 2600<br>
+        Behringer Sys100 (6U)<br>
         Jasper (Wasp clone) (x5)<br>
-        Large Eurorack system (x2)<br>
-        Large 5U system<br>
+        Large hand-built Eurorack system<br>
+        Large hand-built 5U system<br>
         MFOS Soundlab Ultimate (suitcase synth)<br>
         MFOS Vocoder<br>
         Sys 100 (clone of Roland System 100)<br>
@@ -303,7 +318,10 @@ body {
         Behringer RD 8 (Modded)<br>
         Cyclone TT 78<br>
         Cyclone TT 606<br>
-        Novation Drumstation<br><br>
+        Novation Drumstation<br>
+        Roland TR-8<br>
+        Roland TR-08<br>
+        Roland TR-09<br><br>
     </div>
     </div>
 
@@ -356,21 +374,19 @@ body {
     <div class="mx-2 md:mx-2 text-yellow-500"><b>Utility / Outboards</b>
     <div class="mx-3 md:mx-6 text-white">
         Alesis 3630<br>
-        ART Dual Levelar<br>
         ART Tube EQ<br>
-        Arturia Beatstep Pro<br>
-        ARX 6-Gate<br>
+        Arturia Beatstep Pro (x2)<br>
         Behringer Ultrapatch Pro<br>
-        DBX 231s<br>
         E-Magic Unitor 8 (x3)<br>
+        Focusrite OctoPre MkII<br>
         Line 6 Pod XT Pro<br>
         MOTU MIDI Express 128<br>
         Kenton Pro 2 (x2)<br>
         Kenton Spindoctor<br>
         Korg SQ1<br>
         Philip Rees MCV<br>
-        RME Fireface 800<br>
         Sony A6 DAT<br><br>
+        
     </div>
     </div>
  
@@ -378,17 +394,22 @@ body {
     <div class="mx-3 md:mx-6 text-white">
         AKG K-712<br>
         Alesis Multimix 6 FX<br>
-        Beyerdynamic DT 150<br>
-        Beyerdynamic DT 990 Pro<br>
+        Beyerdynamic DT-150<br>
+        Beyerdynamic DT-700 Pro-X
+        Beyerdynamic DT-990 Pro<br>
         Fluid Audio F8S<br>
         Genelec 8040A<br>
         Mackie 1202 VLZ Pro<br>
         Mackie 24-8-24e<br>
         Mackie LM 3204<br>
+        Presonus E-3.5<br>
         Presonus Eris 5<br>
         Presonus HP 4 (Mk1 + Mk2)<br>
+        RME Fireface 800<br>
         Rode NT1 (Mk1)<br>
         Sennheiser HD 25<br>
+        Sony SRP-X100 Audio Mixer<br>
+        SSL-12<br>
         Tannoy System 800<br><br>
     </div>
     </div>
@@ -407,24 +428,31 @@ body {
     </div>
 
 </main>
-</body>
 
-<footer class="flex flex-row justify-center text-sm md:text-lg">
 
-    <div class="flex flex-col flex-wrap items-center">
-        <div class="flex-initial mx-4 mb-2 max-w-xs lg:mx-8 lg:max-w-md">
-        <a href="/"><img class="w-48" src="logo.jpg"></a>
-        </div>
+<footer class="mt-8 text-center text-xs text-gray-400">
+        &copy; 2024 LEK Productions
+    </footer>
 
-        <a class="m-2 hover:text-red-600" href="studio.html">Top of page...<br></a>
-        <style>
-        body{
-        margin-bottom: 25px;
+    <script>
+        let slideIndex = 1;
+
+        function myFunction(img) {
+            let expandedImg = document.getElementById("expandedImg");
+            let imgText = document.getElementById("imgtext");
+            expandedImg.src = img.src;
+            imgText.innerHTML = img.alt;
+            document.querySelector(".container").style.display = "block";
+            slideIndex = [...img.parentElement.parentElement.children].indexOf(img.parentElement) + 1;
         }
-        </style>
-    </div>
 
-</footer>
+        function changeImage(n) {
+            let images = document.querySelectorAll('.img-links img');
+            slideIndex = (slideIndex + n - 1) % images.length + 1;
+            document.getElementById("expandedImg").src = images[slideIndex - 1].src;
+            document.getElementById("imgtext").innerHTML = images[slideIndex - 1].alt;
+        }
+    </script>
 
 </body>
 
