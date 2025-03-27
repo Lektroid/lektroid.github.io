@@ -22,12 +22,14 @@
         /* Custom image hover effect for brightening without affecting black areas */
         .img-links a img {
             transition: filter 0.2s ease-in-out;
+            filter: grayscale(100%); /* Makes icons greyscale */
         }
 
         .img-links a:hover img {
-            filter: brightness(1.35) contrast(1.1); /* Adjust brightness and contrast */
+    filter: grayscale(0%) brightness(1.35) contrast(1.1); /* Restores color & enhances */
         }
 
+    
         .social {
             color: #999999;
             color: 0.2s;
@@ -41,19 +43,23 @@
         
         p {text-align: center;
         }
-        
-.social-icon {
-    width: 40px;  /* Adjust size */
-    height: 40px; /* Adjust size */
-    margin: 8px;  /* Adds spacing */
-    transition: transform 0.2s ease-in-out;
-}
+    
 
-.social-icon:hover {
-    transform: scale(1.1); /* Slight zoom on hover */
-}
 
-        
+        .social-icon {
+            width: 40px;  /* Adjust size */
+            height: 40px; /* Adjust size */
+            margin: 8px;  /* Adds spacing */
+            filter: grayscale(100%); /* Makes icons greyscale */
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .social-icon:hover {
+            transform: scale(1.1); /* Slight zoom on hover */
+            filter: grayscale(0%); /* Restores color on hover */
+        }
+
+
     </style>
 
 </head>
@@ -99,40 +105,15 @@
         </div>
 -->
 
-        <div class="flex flex-row flex-wrap justify-center img-links">
-            <div class="flex-initial mt-4 max-w-xs lg:mx-8 lg:max-w-md">
-                
-                <a class="social" href="https://www.tiktok.com/@infinitemotion" target="_blank">
-                    <img src="icons/tiktok.png" alt="TikTok" class="social-icon">
-                </a>
-
-                <a class="social" href="https://www.youtube.com/@LEKProductions" target="_blank">
-                    <img src="icons/youtube.png" alt="YouTube" class="social-icon">
-                </a>
-
-                <a class="social" href="https://twitter.com/lektroid" target="_blank">
-                    <img src="icons/twitter.png" alt="Twitter" class="social-icon">
-                </a>
-
-                <a class="social" href="https://www.instagram.com/lektroid" target="_blank">
-                    <img src="icons/instagram.png" alt="Instagram" class="social-icon">
-                </a>
-
-                <a class="social" href="https://www.facebook.com/Lektroid" target="_blank">
-                    <img src="icons/facebook.png" alt="Facebook" class="social-icon">
-                </a>
-
-                <a class="social" href="https://lektroid.bandcamp.com/" target="_blank">
-                    <img src="icons/bandcamp.png" alt="Bandcamp" class="social-icon">
-                </a>
-            
-            </div>
-        </div>
-
-            
         <div class="mx-auto max-w-2xl mt-2 px-4">
-            LEK Productions is best known for music production and mastering within the underground dance music scene. LEK Productions also specialises in creating immersive soundscape compositions for film and game development, offering a full range of sound design services.<br><br>
+            LEK Productions is best known for music production and mastering within the underground dance music scene. LEK Productions also specialises in creating immersive soundscape compositions for film and game development, offering a full range of sound design services.<br>
         </div> 
+
+
+
+
+            
+
 
 
 
@@ -288,8 +269,33 @@
     </div>
 </div>
 
+        <div class="flex flex-row flex-wrap justify-center img-links">
 
-        
+            <a class="social" href="https://www.facebook.com/Lektroid" target="_blank">
+                <img src="icons/facebook.png" alt="Facebook" class="social-icon">
+            </a>
+
+            <a class="social" href="https://www.instagram.com/lektroid" target="_blank">
+                <img src="icons/instagram.png" alt="Instagram" class="social-icon">
+            </a>
+
+            <a class="social" href="https://twitter.com/lektroid" target="_blank">
+                <img src="icons/twitter.png" alt="Twitter" class="social-icon">
+            </a>
+
+            <a class="social" href="https://www.youtube.com/@LEKProductions" target="_blank">
+                <img src="icons/youtube.png" alt="YouTube" class="social-icon">
+            </a>
+
+            <a class="social" href="https://www.tiktok.com/@infinitemotion" target="_blank">
+                <img src="icons/tiktok.png" alt="TikTok" class="social-icon">
+            </a>
+
+            <a class="social" href="https://lektroid.bandcamp.com/" target="_blank">
+                <img src="icons/bandcamp.png" alt="Bandcamp" class="social-icon">
+            </a>
+        </div>
+        <br>
 
    </main>
 
