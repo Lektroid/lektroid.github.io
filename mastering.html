@@ -11,73 +11,54 @@
 
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
-    <style type="text/css">
+<style type="text/css">
     /* Custom image hover effect for brightening without affecting black areas */
-        .img-links a img {
-            transition: filter 0.2s ease-in-out;
-        }
+    .img-links a img {
+        transition: filter 0.2s ease-in-out;
+    }
 
-        .img-links a:hover img {
-            filter: brightness(1.35) contrast(1.1); /* Adjust brightness and contrast */
-        }
+    .img-links a:hover img {
+        filter: brightness(1.35) contrast(1.1); /* Adjust brightness and contrast */
+    }
 
-        .iframe-container{
-            position: relative;
-            width: 100%;
-            padding-bottom: 56.25%; 
-            height: 0;
-        }
+    .iframe-container {
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%; 
+        height: 0;
+    }
 
-        .iframe-container iframe{
-            position: absolute;
-            top:0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-    </style>
+    .iframe-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
 
-    <style>    
-        .social {
-            color: #999999;
-            color: 0.2s;
-            text-decoration: none;
-            margin: 0 10px;
-        }
+    .social {
+        color: #999999;
+        text-decoration: none;
+        margin: 0 10px;
+    }
 
-        .social:hover { color: #FFFFFF; }
-    </style>
+    .social:hover { color: #FFFFFF; }
 
-    <style>
-        iframe { border: 1px gray solid; }
-    </style>
+    iframe {
+        border: 1px gray solid;
+    }
 
-    <style>
-            a.contact-link {
-                color: red; /* Default color */
-                text-decoration: none; /* Optional: Removes underline */
-                transition: color 0.2s ease-in-out;
-            }
+    .link {
+        color: #dc2626; /* Tailwind red-600 */
+        text-decoration: none;
+        transition: color 0.2s, background-color 0.3s;
+    }
 
-            a.contact-link:hover {
-                color: white; /* Changes to white on hover */
-            }
-    </style>
+    .link:hover {
+        color: white; /* Changes to white on hover */
+    }
 
-    <style>
-        .event-link {
-                color: #dc2626; /* Tailwind red-600 */
-                text-decoration: none;
-                transition: color 0.3s, background-color 0.3s;
-            }
-
-        .event-link:hover {
-                color: white;
-                background-color: #dc2626;
-                padding: 2px 4px; /* Optional: small padding for nice hover effect */
-                border-radius: 4px; /* Optional: slight rounding */
-            }
-    </style>
+</style>
 
 </head>
 
@@ -140,9 +121,9 @@
         I will be on leave during the following dates and unavailable for mastering work. Where events are listed, you are welcome to arrange a meeting with me in person there.<br>
         If you require your project to be completed before these dates, please submit your material well in advance. Thank you for your understanding.
         <br><br>
-        <strong>7th–11th May 2025:</strong> <a href="https://www.superbooth.com/en/" target="_blank" class="event-link">Superbooth, Berlin</a><br>
+        <strong>7th–11th May 2025:</strong> <a href="https://www.superbooth.com/en/" target="_blank" class="link">Superbooth, Berlin</a><br>
         <strong>10th–20th August 2025:</strong> Annual Leave<br>
-        <strong>27th–28th September 2025:</strong> <a href="https://machinabristronica.uk/" target="_blank" class="event-link">Machina Bristronica, Bristol</a>
+        <strong>27th–28th September 2025:</strong> <a href="https://machinabristronica.uk/" target="_blank" class="link">Machina Bristronica, Bristol</a>
         <br><br>
     </div>
         
@@ -172,7 +153,7 @@
         <br><br>
         We are capable of working with any bitrate and sample depth. While sample rate conversion is possible, to avoid potential aliasing during the process and to ensure optimal quality, we typically deliver the file in its original format unless otherwise requested.
         <br><br>
-        Once you have everything ready, please get in touch via this <a href="/contact" class="contact-link"><b>contact form</b></a> to discuss the next steps for submitting your pre-masters. I’ll provide details on using WeTransfer and the additional information required.
+        Once you have everything ready, please get in touch via this <a href="/contact" class="link"><b>contact form</b></a> to discuss the next steps for submitting your pre-masters. I’ll provide details on using WeTransfer and the additional information required.
         <br><br>
     </div>
 
