@@ -1,0 +1,635 @@
+
+# https://www.youtube.com/watch/2GNWPnjjk88
+
+00:00:00.430 [Music]
+00:00:06.240 during the 1980s Tandy was one of my favorite stores I just got into
+00:00:11.599 Electronics I was young I was a young teenager and I wanted to know things worked walked into tandi and I was
+00:00:18.880 absolutely Blown Away with the stuff that was in there one of the things that I absolutely fell in love with was the
+00:00:25.279 multitester now my first multitester is one that I'm going to review right at the end of this video so stay tuned and
+00:00:32.719 you'll see which one it is all of the multimeters around the 80s they there were multimeters before this um these
+00:00:40.520 are the catalog 22-2 XX range um this one's 2011 so this
+00:00:48.399 was the first one of the catalog numbers not saying it's the first meter but this one did come out in
+00:00:54.719 1974 um along with 202 203 204 4 and
+00:01:01.480 205 um this one had quite a long rain this this one went right up until
+00:01:06.600 1992 this one is the a revision there was a b and there was a u then there was a facelift back uh in 1993 after these
+00:01:15.280 were discontinued and it became
+00:01:21.240 22221 so this is the meter we have in question that's
+00:01:28.840 the so you got the books with these and quite often you got little schematic with them I'm not sure if this one came
+00:01:35.399 with a schematic this was quite one of the one of the lower end one of the budget end of the series so this doesn't
+00:01:43.159 have the schematic but many of the manuals have the schematics it came with cables that's not how they're wrapped by
+00:01:50.079 Factory obviously this has been used um and this is a meat
+00:01:55.240 itself I'm not going to spend too long on each one but um I might open each one up and have a quick look um so we're
+00:02:02.360 just going to go straight
+00:02:08.318 in okay um before I do that I'm just going to go through the the functions so there we are we switched off so we got
+00:02:15.160 AC volts DC volts and ohms very basic very you know nothing really to write
+00:02:21.800 home about it was quite a a simple meter but that was all you needed you know
+00:02:27.400 this this would do the job um so we're going to have a quick we're just going to see because I
+00:02:34.360 believe there's a battery in this which I will need to take out and I'll will take it out and once I open it up and uh
+00:02:41.519 so there's your common so you have
+00:02:49.200 resistance okay fairly fast needle some of the bigger meters tend to have a much
+00:02:55.599 slower needle but anyway that's that's that's that one um going
+00:03:01.800 to have a quick look inside see what drives it see what protection it's got not a lot because these were budget
+00:03:08.239 meters um anyway so let's get into
+00:03:14.040 it okay so we got a PCB here we've got a couple of trimmers three trim pots there
+00:03:21.239 a few metal film resistors inside there
+00:03:27.040 um yeah it's just a bunch of metal film resist and a a capacitor there I would
+00:03:32.280 imagine that is so that's got an output so maybe you can uh change them
+00:03:38.280 and use one for volts and another one for amps I have no idea why they would
+00:03:45.439 have an output no idea anyway so that's that's about the size of that one
+00:03:51.680 it's very simple mechanical switch proper clunky switch I'm going to take
+00:03:57.879 the battery out now because we don't don't want that corroding while it's in storage okay so there we go that's
+00:04:05.319 that's the first of the of the bunch so that is mic 22201 and like I
+00:04:12.159 say goes they come out in 1974 they were discontinued in 1992 had a catalog change in 93 and I
+00:04:20.079 don't know what happened after that but that's that one so um so what we're going to do we're going
+00:04:26.840 to move on to I'm going to do them chronologically I'm going to go through them so be 22 202 next um and there this
+00:04:37.600 one's quite interesting actually the the next one that I've got find up the next one I've got
+00:04:44.880 22202 is this one here now this is
+00:04:53.039 22202 B so there was an a a b and a u i
+00:04:58.440 don't know what the U was I don't know what the revisions were what they did you know or anything like that
+00:05:05.160 so okay so we're going to get this one out and we're going to see how that one measures up
+00:05:12.479 for oh we got a we got a tamy headquarters wednesbury West
+00:05:20.360 Midlands so Corporation Branch UK international Victoria
+00:05:26.600 Road New South Wales interesting so custom manufactured for the Radio Shack
+00:05:32.400 for Radio Shack a division of the tandi corporation and does this one have a scematic yes it does so there so we've
+00:05:40.960 got a nice little sorry just moving that lamp out the way there so we got the schematic
+00:05:47.560 for this one which is quite nice and this one here is's another one it's
+00:05:54.960 got the 2 mm jacks on there so your common in
+00:06:00.600 there and we we'll just measure ohms just just so we can get the needle moving um so times 1K and let's do the
+00:06:15.120 continuity so the needle was quite responsive I would
+00:06:26.680 say yeah so that's that one we're going to take a quick look inside but I think
+00:06:33.280 um I think it might be worth having a look because they also did an Archer kit
+00:06:39.440 version of this meter so this one has two screws so the
+00:06:45.840 2011 had one screw the 202 has two screws does the 203 have three screws
+00:06:51.520 we'll find out so again we've got original radio
+00:06:59.479 Shack battery you don't see them very often we certainly won't from from now
+00:07:04.720 onwards anyway cuz uh it's not even going to focus so they're um
+00:07:11.199 discontinued the old Radio Shack NSL extra
+00:07:17.560 life okay so that's that got a capacitor once again go into the output
+00:07:25.440 socket and we' got three trim pots there I would imagine
+00:07:32.520 um I do not know actually what they were used for because I don't have a
+00:07:38.280 calibration thing but I'm going to leave that aside for now because this is something I wanted to show you this is
+00:07:44.919 the same meter made by Archer kit and it is a kit it's a kit version of that very
+00:07:53.840 meter so you get
+00:08:00.159 all of the sockets the switch so in there you've
+00:08:06.639 got you get the um the switch for the PCB you
+00:08:11.919 get this you even get a bit of solder in there as well
+00:08:17.720 some I would imagine that would be 60/40 um a load of metal foil
+00:08:23.440 resistors to go inside and a 1 oh
+00:08:30.479 very interesting and there's the output capacitor uh so we've got all of the
+00:08:36.760 stuff this is still stapled down as it was originally
+00:08:42.679 so uh so this is interesting because these ones were actually blue these ones had a
+00:08:50.279 blue back as as opposed to the the
+00:08:55.640 black so I actually really like the blue ones because they were just different
+00:09:01.200 and they they had a sort of very scientific sort of look to them so there
+00:09:06.600 it is we have no this just been Loosely screwed on
+00:09:13.720 the ohms are just dial has been screwed on there it looks to
+00:09:19.760 be the same circuit except for it's got solder on
+00:09:28.120 it see if I can just zoom in just a little bit there
+00:09:33.680 right okay so we're just going to
+00:09:42.279 see how that does look pretty much the same we've got the ground plane coming
+00:09:49.120 around here uh just the same one here
+00:09:55.160 um it pretty much looks like it is the exactly the same board uh
+00:10:01.200 2031 2031 it is the same PCB basically so interesting there you go so that was
+00:10:10.079 the the Archer kit version of the
+00:10:16.040 22202 M I'm just going to screw that back down
+00:10:25.600 put it back in its case and I might do a video assembling
+00:10:30.800 this one if anybody's interested um I'm happy to do an assembly video if you if
+00:10:37.120 you fancy watching that um do a few little solder tips for the
+00:10:44.639 for the newbies at the same time uh you know all your people just getting
+00:10:52.440 into it and stuff right
+00:10:58.040 now so there you go that was the Archer kit and this is the Micon so this one
+00:11:06.480 again this one came out in 1974 didn't have such a long rain as the previous meter which went all the way through to
+00:11:12.440 92 and in 93 it had a facelift um but
+00:11:17.760 in this one only ran until 1983 so after 1983 you wouldn't have seen these for
+00:11:25.079 sale that was the end of those so this is the 203 let me just
+00:11:32.200 zoom back out again right so this is the 203 now this one is a
+00:11:38.959 203b this one has 4 mil banana plugs as opposed to the 2 mil so we've upgraded
+00:11:46.480 the cables when we got to this one this one again has come out in
+00:11:52.120 1974 when now we first released we've got all your your guarantee card I don't
+00:11:57.560 think that's of any use now as is it um you always got your little packet
+00:12:03.079 of silica gel um and the meter
+00:12:09.959 itself and the schematics for it pretty much all of these did the same
+00:12:17.800 thing they none of these were like Mega Advanced or anything like that they were really for your back street repair man and your
+00:12:26.320 hobbyist and people like that you know those the sort of people would have these meters so we're going
+00:12:34.560 to run into this we're going to put it on
+00:12:40.760 ohms and we're going to see if now you can see there how slow that
+00:12:49.240 meter dodgy contacts so you can see on there how the meter runs so much
+00:12:57.839 slower see how the larger meters had a much
+00:13:03.360 much slower now I'm not sure of the accuracy of these
+00:13:08.680 but I did actually test one and I was quite
+00:13:13.800 surprised I think it's the ones I'm going to review next so this one uh this
+00:13:19.000 one ran from 1974 and ran all the way through to
+00:13:25.320 1985 so prior to that this meter is actually older but it wasn't it got
+00:13:31.519 renumbered it was originally 22260 between 1972 to 74 when this was
+00:13:39.079 revised so this was a revision model of uh a meter that had come previously that
+00:13:45.519 run for 2 years known as a 22260 is the same same meter there were other meters
+00:13:51.800 around at the same time um I've had a fairly hard time locating them and
+00:13:57.399 finding them so there we go that is the
+00:14:02.519 203 22 203b so actually I didn't open it I
+00:14:09.920 should make a habit of opening all of these and funny enough we've got three screws remember what I said I said I
+00:14:17.000 wonder if that one's got three screws and it does so the 202 2011 had one
+00:14:22.120 screw in the back the 202 had two screws in the back and a 203 has three screws
+00:14:29.240 in the back now these ran up to 22 221 224 and that I don't think they'll
+00:14:36.959 be putting 24 screws in those so anyway this one's got two pcbs you've got your
+00:14:42.720 You' got your switch PCB here and then you've got another PCB which looks like a calibration PCB cuz you got your your
+00:14:49.880 trim pots there um they haven't used metal film on this they have used these
+00:14:56.560 are metal film here the old Brown type metal films um and you can tell that the
+00:15:02.040 metal film because usually the metal films have got an extra color band um
+00:15:07.560 it's rare you see actually these have got an extra color band but they are carbon resistors
+00:15:14.240 because of the color so the brown ones maybe they're not metal film maybe they're another type of
+00:15:21.120 film resistor so again we've got a capacitor got electrolytic on there not sure how
+00:15:28.959 good that'll be now um I'm going to whip out the battery on that I think um it also took a 9V
+00:15:37.160 battery now wonder why would it have a 9vt battery in there as well that's
+00:15:42.519 interesting so I'm sure the instructions will tell me I don't like going overly
+00:15:48.040 tight with the screws on Vintage gear because the plastic does get brittle
+00:15:53.399 over over the ages so um I can't actually see anything mentioned in the 9V
+00:15:59.319 battery um but it takes one and debel
+00:16:07.040 measurements oh so it measures decibel so you've got
+00:16:12.240 your decibel meter here let's just zoom that that's an interesting thing to have
+00:16:18.319 on a on a multitester there's a decibel meter we've got - 10 to +
+00:16:26.240 22 so zero is there - 10 so I don't think there's going to be
+00:16:32.160 much that's going to be needing 22 DB because all your dbel stuff is in the
+00:16:39.319 minus that you s of within your hearing range um zero is Unity gain which is just your
+00:16:48.480 average level so yeah that's quite unusual I would not know why you would use that uh it's it doesn't actually
+00:16:56.240 show you a debel connection on here you've got your
+00:17:01.399 common uh and when it says it says here debel measurements plug the test leads
+00:17:07.319 into the correct Jacks but it doesn't actually tell you
+00:17:12.439 which are the correct Jacks ah so we have DC amps got DC AC volts and DC
+00:17:21.119 volts but it seems that we've got DC volts all the way to a th000 we've got
+00:17:27.199 the line that runs to there that's quite interesting the way this is laid out and so you would use so if
+00:17:33.919 you're going to run do DC volt test you would basically put it onto
+00:17:39.840 the center for the plus and the upper for the minus uh and then you can run up to
+00:17:46.480 1,000 volts there when you run in AC you're just going to get from 10 volts
+00:17:53.280 up um yeah that's an interesting way of laying that switch out there with the
+00:18:00.880 the three-way switch there that's interesting but yeah it doesn't say why you would
+00:18:06.640 need uh the 9V battery I would assume it's something to do with the decibel meter let's have a look and see on the
+00:18:12.880 schematic and see where that's connected to so we
+00:18:19.400 have 9V battery going to it's for the 10 times
+00:18:27.320 resistance that 9V battery solely does the r * 10 let me just see if just
+00:18:36.840 here so you can see there you got the 9vt battery there's your switch and it
+00:18:42.760 just literally does r * 10 so all of these will
+00:18:51.039 run from the 9vt battery which is here
+00:18:57.360 you've got B1 batter battery one 1.5 volts running this all of these so 1 10
+00:19:05.000 1,000 times and then 10,000 times um no Auto ranging in them days uh yeah so
+00:19:12.400 that's basically all it does is the 9vt was
+00:19:17.600 literally just for your for your 10K range that's it so you wouldn't get
+00:19:23.559 anything on there if you only had the 1.5 volt batteries in that's the only reason that they've got those batteries
+00:19:30.400 so there you go interesting would you run out of run out to go and get
+00:19:36.360 yourself a little 9vt battery just so you can use that that range maybe I
+00:19:42.720 suppose 10K range is quite useful you know considering majority of resistors
+00:19:49.039 are over the 10K area so just going to put this one
+00:19:56.679 back along with it like AEL and of course the
+00:20:02.320 manual so that is the 203b
+00:20:08.679 which came out between 74 to 85 there was a previous version of that um came
+00:20:15.320 out 72 to 74 so this is a 204 let's zoom out a
+00:20:20.400 little bit more we've got this one which is also a 204 so this is a 204c so this
+00:20:27.039 is the the latest revision now so these run between 1974 to
+00:20:36.559 1986
+00:20:41.679 um and we're just going to test these out and see I'm going to open up side by
+00:20:47.280 side and see so I wonder if they got four screws in these we'll find out w't
+00:20:53.159 we right so let's go voltage again this one's got
+00:21:00.240 the the more sort of Industry standard 4 mil banana Jacks
+00:21:07.720 there and let's go for oh the 10 times Works doesn't need a
+00:21:13.480 9vt battery Al
+00:21:21.240 though yeah so let's see that see I can't see if
+00:21:29.039 that's zero you actually see that better on on camera so this one is this is a
+00:21:35.480 204c the one I've got next to is a 204b so that one's the one before it but you
+00:21:41.080 see how slow that needle moves ow it's just come to its resting point there and
+00:21:49.520 again and it's just come to the resting point there and back down again
+00:21:55.159 extremely slow these old the bigger the meters the slower they were and
+00:22:03.559 uh that's quite interesting so let's have a look at the 204b also on the
+00:22:11.520 10 oh that's one right out of its range so let's check that out again it's
+00:22:19.840 it's about the same speed of needle very very slow Okay
+00:22:26.960 so we're going to have a quick look at this
+00:22:34.320 um so what do we got here we've got a we got divided by two a volt divided
+00:22:41.240 by two so that's interesting so I would imagine if you
+00:22:49.200 on 2.5 volts now is that only deal with AC
+00:22:57.440 volts where is that for volts amps divided by two so I would
+00:23:05.200 imagine you've got your 125 range here so you got your 250 so that
+00:23:12.279 would that would match up to this then you've got 125 so if you put that on and
+00:23:17.720 divide by two it would should well let's see if that works with the with the
+00:23:23.159 resistance let's so it should actually go to half
+00:23:28.919 when we run continuity across it so let's go to
+00:23:35.880 resistance see
+00:23:41.320 if ah no that is that is ohms here you need to have it on switch down there for
+00:23:49.640 ohms so it doesn't work with resistance so now we
+00:23:56.200 know okay so yeah let's open these oh two screws okay so well four screws in total
+00:24:03.960 so there you go so the first thing I've noticed is there is no sticker on this one now this one
+00:24:11.080 actually got um an indent for the sticker to sit in so if I were to peel the sticker off
+00:24:17.880 you'd actually see where it you know the smooth part of the think maybe this had
+00:24:23.640 a sticker maybe this had something stuck on but because of the the fake tolex
+00:24:30.080 type finish ah so I put a battery in that 9V
+00:24:35.600 and I put a n Vol in there as well so there we go I can see a difference straight away I can certainly smell
+00:24:44.600 198s early 1980s late '70s early ' 80s that smelling lovely so we have a
+00:24:52.159 resistor here in
+00:24:58.720 a non-conductive shield so I would imagine cu the
+00:25:05.200 PCB is which is different this is a taller PCB and this is the smaller PCB now this
+00:25:12.279 one's got 11 A3 this one's got 1 A1 whether or not it's a different type of
+00:25:18.039 needle that is a revision of something I don't know um we've definitely got
+00:25:24.559 thicker power cables we've got the got much thicker power cables going in
+00:25:31.200 whereas these have just got very thin cables um we got thicker cables
+00:25:36.360 running across the board the boards are quite different by Design um oh they smell amazing oh I
+00:25:44.640 love that smell absolutely love the smell of the old electronics there's nothing you cannot beat
+00:25:51.559 that um yeah so this is basically the same is that the same value so we've got
+00:25:58.440 brown gray gray green brown gray gray green yep that's the same
+00:26:06.919 so yeah that's interesting so they did have oh and I just noticed something
+00:26:12.080 else at the top this one has a fuse this one doesn't so this is fused
+00:26:19.320 so that's so they made some major improvements on that that was basically it looks like a complete redesign inside
+00:26:26.640 this the front of these look exactly the same but the 204 was definitely a vast
+00:26:34.480 Improvement um I would imagine this resistor that's sitting in here has been added to this PCB because we've
+00:26:42.159 actually got a slightly larger PCB so I'd imagine this is sitting on the on the
+00:26:47.799 PCB on this revision um yeah definitely
+00:26:52.919 oh we've got some thermal shield in there I wonder why they would use that so does it have temp
+00:26:59.640 um now these none of these have been donated all of these I've bought myself
+00:27:04.880 from eBay um so you know it's taken me quite a while
+00:27:12.120 to get this video together um I can make some more content and stuff but it does
+00:27:17.440 take time to get these together if you really like the content then you know um you can support
+00:27:23.600 me um by going to my it which I'll link in down below I sell music there even if
+00:27:30.720 you don't like it you just want to support me just buy something you don't have to download it but you know you might like it so this is the 204c
+00:27:40.320 box so I'm just going to put this one away here and along with its
+00:27:47.559 cables and this one so the 204 came out between 1974 1986 it had a b and c
+00:27:54.760 revision so I don't have an a revision I have the B and the C and as you can see
+00:28:00.440 inside that's quite a lot of difference absolutely nothing on the outside so we've
+00:28:06.039 got basically exactly the same um they have been reprinted because
+00:28:14.159 some of the fonts are slightly smaller on this one um they've made them slightly larger on here so they're more
+00:28:20.960 visible uh we've got you got your DB range just as 4 so
+00:28:28.480 you got 1050 1 25 250 it's basically the the meters are the same this section is
+00:28:37.200 the same this one has the um the cap warning doesn't actually say what cap it
+00:28:44.000 is it just says 1,000 Vols AC 250 volts
+00:28:50.720 DC even though the DC volts goes up to a th000 so so I do do not have a 22 205 206 207
+00:29:02.240 208 or 209 they come out between 1974 to
+00:29:10.440 1980 um the last one 209 ran 1980 to 81 so there was only one year of that there
+00:29:17.480 was only one year of the 208 which ran from 78 to 79 207 that came before that
+00:29:22.559 it ran from 76 to 79 the 20 206 from 75
+00:29:27.799 to 77 205 74 to 75 so they didn't have much of a a long life and that's
+00:29:34.880 probably why you don't see them about I don't think they're valuable I think they're just
+00:29:40.320 more um just sort of rare they're just you
+00:29:46.960 know you don't see them about and Rarity or doesn't always mean valuable cuz these meters they can be got quite cheap
+00:29:54.440 um maybe after this video is on people might might get interested and then might gain value I don't know I don't
+00:30:00.720 think I'm that popular yet I think I've got about 10 subscribers at the moment so uh anyway if you're watching uh
+00:30:07.240 you're one of the 10 so you're one of the first guys in on this channel um so
+00:30:12.679 this was the next one this was the 22
+00:30:19.519 210 and now these were the meters I absolutely love these meters these
+00:30:25.760 were one of my favorite I always strive to get one of
+00:30:31.039 these there was also one that looked very similar called a 220 in fact I'm going to put them up next to each other
+00:30:38.240 uh just now so so they are quite similar even though this is a two 2210 and 22
+00:30:46.559 this is a fet meter now for some reason and I have changed
+00:30:52.200 the fets in this um it's not very accurate this is actually more accurate
+00:30:58.200 the one that isn't a f meter is more accurate than the F meter that they were all raving about um whether or not it
+00:31:06.279 just needs new capacitors whether the needles a bit heavy I don't know so this
+00:31:11.639 is common this is where's your OHS there's your ohms right so
+00:31:18.720 continuity got continuity beep oh it had a
+00:31:26.159 beep wow so it's not latched it's actually
+00:31:36.039 just crackly crackly which can be it can be good I
+00:31:41.200 mean you know the latched ones sometimes take you know couple of Nan seconds to kick in to
+00:31:49.159 you know some of them sort half a second and and it kicks in you know so it's the latched ones are good
+00:31:57.559 because they this once they're connected that's it you know it's connected but with the with these that are non-
+00:32:04.320 latched they just literally crackly crackly ones it's
+00:32:09.760 instant you know so let's look so that meter seems to be a bit
+00:32:15.639 faster so let's just put it on zero and let's see if it actually is cuz it might have just been racing across because it
+00:32:21.039 was trying to get so again this looks like about the same sort speed as the previous meter we
+00:32:28.960 looked at so they're very very slow
+00:32:35.799 these yeah so that's that um going to do
+00:32:42.080 220 next I just wanted to put them side by side I'm not going to do it next cuz there's another one that I want to do
+00:32:47.320 before then um there a couple that I want to do before then
+00:32:53.720 um so here oh we have well these big big screws let me see if
+00:33:01.440 I've got a screwdriver nearby I'm still building the workshop so finding stuff
+00:33:09.600 is not so easy so there we go o so we've got a
+00:33:16.159 nice big battery we've got a fuse we've got a spare
+00:33:21.840 fuse and let's get it open let's get let's get into it and find out what's
+00:33:27.880 going on inside what makes this one tick this one's got 11 A6 on the
+00:33:37.279 back ah we've got a tapped screws rather than the machine
+00:33:43.480 screws so that means that it's going straight into the plastic we don't like that we
+00:33:49.639 don't like that in this Workshop we like the real
+00:33:54.919 deal so this one 210 1983 to 1987 this one R oh that is a lovely smell of the80s 8s
+00:34:05.760 PCB that is crusty that has not been cleaned this
+00:34:12.199 needs some isopropyl and a toothbrush
+00:34:17.839 um yeah so there we go we've got some
+00:34:25.879 more shield in there
+00:34:31.000 interesting anyway so there's Kodak battery fortunately they
+00:34:37.480 haven't leaked that is quite fortunate I must have not actually been into this meter
+00:34:45.480 because it probably just worked and I thought all right that's fine but you
+00:34:50.560 know like I say I was getting a lot of these on eBay um I would like to do another video
+00:34:57.520 of these I've got some other meters as well that uh I've got like Robin um
+00:35:05.160 starco if anybody's heard of that and what else sanir I've got some old
+00:35:13.839 baker light Swire meters that I'd like to do a video on those
+00:35:20.040 um and the thing is with this with the old baker lights they most of them work
+00:35:25.880 but there is one or two that haven't really sort of stuck it out should we
+00:35:34.040 say now so that is the I love that switch by
+00:35:39.160 the way the little tail on the chicken head switch there let's get a profile view of that so we got a nice long
+00:35:46.440 chunky
+00:35:52.560 switch Yeah so there you go I don't have a manual for this because I don't didn't come in its box we're now going to do
+00:35:59.040 this this is an interesting one you see loads of these about but it is interesting because it was a folding
+00:36:07.000 meter so this one here came with instruction manual where got a schematic we got a
+00:36:14.800 schematic we like schematics here and we have one just there if anybody needs it
+00:36:20.319 take a screenshot now
+00:36:25.720 okay now this this is as cool as anything now
+00:36:33.839 I wanted one of these so much when I was
+00:36:39.839 young it's basically it looks very much like the
+00:36:46.280 original 2011
+00:36:54.480 so let's get it plugged in let's see how how responsive that is when it comes to
+00:37:00.880 measuring ohms that's AC Vols see they put the switches in different places yeah I'm
+00:37:06.960 pretty sure that is the same as
+00:37:12.200 the not quite there that seems very responsive
+00:37:17.839 actually that meter it's very quick so that is very
+00:37:23.880 much like the original 2011 I would imagine they use the same circuit and
+00:37:30.079 basically split it so let's have a look and's see if we can get into this thing
+00:37:35.400 it's got a battery cover here um it's got a batter oh don't you love these pool tags that used to get in
+00:37:42.040 batteries things you don't seem to get these now just that little bit of extra effort just to Just Help You Yank the
+00:37:49.520 battery you know that's all you need so we got a fuse so it's fused also with a pull
+00:37:55.599 pod uh a spare fuse now you know little touches like that go a long long way and
+00:38:02.800 and it was quite common you know you wouldn't have to pay extra for these features you know you wouldn't say oh yeah this is a luxury model you know
+00:38:09.200 this one's got pull tabs and you've got an extra fuse you know no these these
+00:38:14.920 just came as they were so I'm going to quickly just take the only screw that I
+00:38:20.240 can see on here out and see if we get anywhere that so
+00:38:27.680 again that is a self-tapping screw now it doesn't seem that I'm
+00:38:33.599 getting anywhere with that and I'm not going to waste any more time on it
+00:38:39.200 CU I want to get through these meters so that was the my
+00:38:44.400 Quant 22 211 now there was
+00:38:52.440 a so what's that one that's oh this guy goes on first then the cables then the
+00:39:02.280 manual okay I've left these out because some of the meters I've got don't have so what do we got next we
+00:39:10.440 have the 22212 now this is the meter that I
+00:39:19.520 had when I was a kid I actually got it for my birthday and I was probably about
+00:39:25.839 10 or 11 years old and it is the tiniest
+00:39:31.240 meter going I absolutely love this thing this
+00:39:37.119 was my hands were a lot smaller then obviously but you know even then it's so
+00:39:42.160 cool I used to carry it about in my pocket it was that cool you know but you
+00:39:47.599 know I suppose that's a real nerd thing to do isn't it you know as a child you
+00:39:52.760 know most kids of my age were sort of carrying Pen Knives and stuff like that around no me a multimeter cuz you never
+00:40:01.520 know when you're going to get tacked by a resistor or something so let's see if
+00:40:06.760 I so we've only got one resistance range and that's for 1K now look at that look
+00:40:13.200 at the speed of that needle that is
+00:40:18.560 absolutely phenomenal now this I remember going
+00:40:23.839 into um one of the repair shops and I had the meter because I just
+00:40:30.800 got it for my birthday and I carried it around and I wanted to show it off because I was so cool and I was friends
+00:40:36.079 with um local repair shops and also one of the wholesalers that um was in my
+00:40:42.119 town I used to go in there and I used to buy a lot of components and stuff uh guy sadly passed away a few years ago
+00:40:50.480 um but I went in there with this and I think it was his son he had one of these
+00:40:57.400 and he was like oh what's that thing you know I'm just going to put these up next to each other
+00:41:03.400 just just to sort of show you what the what the size difference was look at that that is absolutely
+00:41:10.680 incredible so this so I went in there happy as Larry with this little thing
+00:41:15.960 here I went in and his he had this up on his desk and he was telling me how amazing
+00:41:23.359 this was you know and I was a little bit jealous you know but I was still
+00:41:29.960 delighted with my little meter cuz I could test stuff you know I was I'd started building stuff on radbard and uh
+00:41:37.440 and all that by that stage you know when I got this so I went in and he and he was showing this off and he's like cuz I
+00:41:43.920 said oh look I've got one of these and he's like grunt grunt you know what's
+00:41:49.280 that you know sort of thing and then said oh no you need a proper proper meter and I I said all right I said uh
+00:41:56.319 he said oh it's it's it's way way better you know all these you know accuracy
+00:42:01.480 blah blah blah blah blah anyway it turns out these are not that accurate and uh
+00:42:08.000 yeah and and he showed me the ohms thing and it's slowly as you've seen I mean
+00:42:13.040 I've taking the batteries out of this now but or did I take the batteries out did I take the batteries out I don't think I did not that one cuz I haven't
+00:42:19.319 opened this one up yet so anyways showing off oh look at this and put a resistor on there and it's slowly crept
+00:42:25.160 across and I said oh that's really slow
+00:42:30.319 you know not really thinking and then showed him this and he's like oh yeah but that's
+00:42:35.880 just you know that's just cheap stuff you know and he's defending his big expensive meter and uh you know I
+00:42:43.680 actually left there feeling quite smug not that it was my intention of course because I wasn't that sort of kid you
+00:42:50.000 know I wasn't out to s be smug but you know sometimes you do feel smug and I
+00:42:55.040 did at that point so yeah so anyway that is the the meter that I had when I was a
+00:43:02.559 kid interestingly I was on eBay and I also came across this now let's see if
+00:43:11.400 anyone can Spot the Difference here just put that back
+00:43:17.599 there got it yet no probably wouldn't but the catalog number 7 7212 so this is
+00:43:25.079 22721 2 and this is 22212
+00:43:30.599 now that was a really strange thing there because they did
+00:43:36.400 have a uh a facelift in because these ran from 1985 to 1993 I must have got
+00:43:43.720 this the year they come out um but they had a facelift
+00:43:50.160 1994 to 1996 they updated them and then they did a catalog change to 22
+00:43:57.240 218 uh from 1997 onwards they just changed the catalog number probably just to sort of adjust the stocks cuz a lot
+00:44:04.400 of the older ones were defun and Obsolete and stuff so they probably wanted to use those catalog numbers for
+00:44:11.079 other stock but interestingly what was that seven all about so we've got 22 212
+00:44:16.839 and 22 7212 so they do the same thing they've
+00:44:22.640 got the same 2in screen mirrored scale rotary range
+00:44:27.960 selector they take one battery and then measure the same
+00:44:33.920 stuff so I cannot see a difference this finish is different this one
+00:44:43.240 was that's different so this is more like a plasticky sort of you know the plastic stickers overlay
+00:44:50.599 stickers whereas this is like a metal you can feel that it's like cold to the
+00:44:55.640 touch so let me just go in there a bit let's move them into
+00:45:01.520 range um yeah so this one is has got the metal and this one was plastic so
+00:45:07.400 there's probably a bit more hard wear in being plastic but it's a strange thing now I'm
+00:45:14.520 not sure this has a battery it feels just slightly lighter than the other one
+00:45:20.000 we can have a quick look no there's no battery in there so we've got some batteries kicking about so let's battery
+00:45:26.319 in there in fact I'm going to quickly while I've got it
+00:45:32.559 open I'm going to compare the two because
+00:45:37.760 227 212 what was that s all about what was it all
+00:45:43.640 about they look identical we've got a geranium diode got a resistor we' got
+00:45:50.280 that resistor that one uh we've got these here is
+00:45:57.839 see yeah they appear to all be the same value as well
+00:46:04.720 um the wiring is looks like it's the same it's just probably a little bit
+00:46:09.839 more messy use different color cables so I have absolutely no
+00:46:17.720 idea why they changed they added a seven into the
+00:46:26.000 catalog number because it totally throws it off the usual thing see if there's
+00:46:32.240 any clues on the
+00:46:42.240 back okay so this one custom manufactured in career for
+00:46:48.160 Radio Shack a division of Tandy Corp this one was custom manufactured in China for intertan UK Limited
+00:46:56.480 trademarks of tandi Corporation so it was so something going on with that I
+00:47:02.680 have no idea absolutely no idea it's the same it's the same meter this one's got
+00:47:07.960 a warning on the back actually embossed into the plastic
+00:47:14.240 so this was made in Korea this was made in China I would imagine the Korean one was the first one and then this one came
+00:47:21.280 later um so I'm pretty sure did I put a
+00:47:28.079 battery in that
+00:47:35.200 yeah oh the Chinese one's not fair and up so well with the pot the pots
+00:47:41.079 crackling it's give it a little right so look at that lightning
+00:47:51.160 fast lightning fast
+00:48:01.480 look at that look at the speed of that absolutely
+00:48:07.160 phenomenal you know when you compare it with the bigger meters
+00:48:13.680 yeah that's something else so this is the
+00:48:20.000 7212 this one had a manual see if has a date printed in Hong Kong
+00:48:27.200 uh manuals don't tend to we got a schematic very very
+00:48:34.000 basic not much going on there at all
+00:48:41.680 um
+00:48:47.040 so I like that manuals they took so care and effort like you know they
+00:48:53.319 didn't need to do that you know you you'd expect expect to one of these fold out pages to have like a like a large
+00:49:00.119 sort of layout of it or something you know fold it out so you can see the schematic fold it out so you can see you
+00:49:06.559 know the the silk screen or you know whatever's printed on the front you know
+00:49:11.640 but yeah interesting so 1990 um bearing in mind these run from
+00:49:18.880 85 to 93 it's interesting that they they had
+00:49:24.680 that anyway so there you go so that's an interesting thing 22 212 22 7212 same
+00:49:31.960 meter plastic front one's made in Korea one's made in China and that's that this
+00:49:38.400 is a range doubler so this is another one of those that's got the the divide
+00:49:45.280 by see how slow that goes when you've been running those other meters and then
+00:49:51.280 you see that it's like
+00:49:57.839 yeah and we've got a continuity on this again it's not latched but I don't think
+00:50:03.119 latched um continuity meters were a thing back then you know or they
+00:50:09.319 certainly weren't popular uh oh we're back to the three screws so this is a 214 when did the 214
+00:50:16.480 come out there was a 213 now I don't have one of those either um a lot of these meters I would
+00:50:23.760 love to get my hands on if anybody's got one send me a message drop me a line
+00:50:32.359 right I'm just going to come out a little bit there so you can see what I've got so this is the 214 again it's one of
+00:50:39.480 these that's got the two batteries and I would imagine one of them is for your 10 times
+00:50:46.799 range that's continuity so there's your 10 times
+00:50:54.119 range one times range here so as you can see it's going extremely extremely
+00:51:00.640 slow um yeah so take those
+00:51:06.079 out uh not much to write home about when it comes to the circuitry the nice
+00:51:11.640 switches they're very nice wafer switches um usual sold to the board pots
+00:51:19.839 which uh these are getting quite hard to come by these ones that sold are actually to the pots and fold back um
+00:51:28.559 there's quite a few electronic musical instruments that use those yeah so that is the
+00:51:37.760 214 uh those run from 1988 to
+00:51:42.960 1994 they got machine screws so nice touch there so here we go this is the
+00:51:50.520 the final meter the final my Quant meter I'm going to to give you a quick very brief
+00:51:58.240 extremely brief view of the other meters and you can let me know if you want me to do a good view on that or
+00:52:05.799 not crackly continuity works
+00:52:14.640 so yeah so I mean that was okay but let's a look inside again these are not machine
+00:52:21.440 screws these are self tappers so no points
+00:52:27.920 there they do get points with a spare fuse though so we'll let them
+00:52:35.119 off so the this is the difference this
+00:52:40.559 here this one I believe it's this circuit because I'm sure I change the fets in
+00:52:47.720 this um yes the fat runs across here it's one
+00:52:55.680 of them single line packages so just come in there and hopefully you can see
+00:53:02.440 that focus focus there we go yeah so
+00:53:07.559 this is the fat that sits along there it's a seal package single and
+00:53:14.200 line package so so I have replaced that
+00:53:19.400 thinking that that was the problem with the calibration or whatever but it turns out that it just a poor design maybe a
+00:53:28.040 poor design maybe a poorly capacitor could be a number of things um but anyway that's that meter
+00:53:36.000 one of the phenomenons with some of the Micron meters is the needle um and
+00:53:41.559 gravity um it doesn't happen with all the meters but this is the worst so I thought I'd show you this stand it
+00:53:48.520 up watch that needle go up up
+00:53:54.160 up yeah so yeah interesting so not all of them
+00:54:01.760 do it some of them go the other way and some of it some of them just go a little bit but they all seem to do it
+00:54:09.440 um except for a few of them a few of them are really good that's a 220 there
+00:54:14.839 that's a really good needles cuz that's sits the same whether it's flat or you know 90° or
+00:54:22.040 0° so here you go just a something to look out for when you're taking
+00:54:29.440 measurements there you go this these are the things that you you laughed at
+00:54:34.799 because multimeters were out and why would you want a battery
+00:54:41.079 tester well apparently the battery tester was good because it did actually
+00:54:46.839 put a load on the right so what we got we've got lithium Button
+00:54:54.079 cell got 1.5 let's put a 1.5 on there
+00:55:00.680 so let's see if this is
+00:55:05.880 good it's trying to be I think these I think it actually
+00:55:13.640 needs some kind of cleaning solvent it's I wonder if that's a Dody switch let's
+00:55:21.079 try that again yeah that's hopping about like a yeah look at that it's the
+00:55:29.640 switch we got a good battery let's try the Radio Shack let's
+00:55:35.920 see if that one holds up
+00:55:46.119 no another Panasonic I'm not going to test them all just going to test a
+00:55:51.319 couple that's good Panasonic's good let's try this Sony one new
+00:56:00.400 Ultra seems good see how rapid that needle is that is absolutely rocketing
+00:56:06.280 that is the fastest needle I've seen so we got that we've got the 9V one
+00:56:12.640 here now that works now does it work if I put
+00:56:19.559 it into a different position no it needs to be on hence the little line
+00:56:28.000 oh another thing this does let's just get this one example it's got a negative
+00:56:33.720 thing there so if you're on 1.5 you can just literally put it onto that pad there and
+00:56:41.079 it does the same thing as a negative lead so yeah just in case you need it to do that
+00:56:48.039 but yeah we have a schematic so that is the battery tester
+00:56:56.319 I'm going to take it out and let me see it's got an angled bit on it oh it's got a coin cell and it's got a little push
+00:57:02.480 down thing so you put like a
+00:57:07.559 cr20 I can see one there that one's done right let's have a look so we've got the
+00:57:14.319 3vt lithium setting right so let's have a look at
+00:57:20.359 this put in backwards not bad
+00:57:27.440 look at that excellent so yeah this actually tests them under loan so yeah
+00:57:34.240 now when I was a kid I remember sneering at these things battery tester you know
+00:57:39.640 who wants a battery tester but I mean they they they're quite uninspiring to look
+00:57:47.079 at but they did they served a function and they did it well so you know these
+00:57:54.480 were handy little thing to have
+00:58:02.079 and there is I do have a couple more things to show you what am I talking
+00:58:07.319 about we got this one we got
+00:58:13.720 the AC voltmeter let's have a look at this
+00:58:19.400 baby now you come there's no manual no manual lot of poar in no
+00:58:25.440 manual no manual no cables but we don't need a cable cuz we
+00:58:31.000 got a clamp meter now as I
+00:58:37.720 recall this meter was actually out of calibration and I don't
+00:58:44.520 believe it
+00:58:53.720 went yeah it's not going to go
+00:59:00.640 in so you've got all your different amps settings there got voltage you got
+00:59:07.039 actual probes there for AC volts it only does AC because this is
+00:59:13.359 for the mains and that's why you've got the clamp for your for your
+00:59:20.799 amps minimum of six amps so these were no good for any sort of precision stuff this is really for mains you know you'd
+00:59:28.599 clamp it around your one of the cables on your consumer box to see if you've got amps running through it and see if
+00:59:34.400 it's pulling any anything ridiculous you know so yeah these were more sort of
+00:59:41.200 sort of electricians sort of thing but yeah it's another part of the history I
+00:59:49.079 guess this is a lead a test lead kit
+00:59:59.839 so these you'd often see these they had so
+01:00:05.640 they had all your test leads they had these which would screw
+01:00:12.000 on although they would plug it obviously I'm not going to put the pl to
+01:00:17.599 the so you plug them on to the end there but if you didn't want them and
+01:00:24.319 you some of these little fellas you could plug one of them one
+01:00:30.400 bolt it on to something you know hold it onto a terminal you had
+01:00:38.559 alligator clips so you
+01:00:44.480 know these were brilliant but they only served certain meters as you've seen
+01:00:50.480 some of these meters only cater for
+01:00:58.119 there's another one just a straight probe some these meters only have the
+01:01:04.240 facility to take 2 mm
+01:01:10.359 connectors that is probably what that is for then cuz that looks to me like a 2 mm so You' put this at one
+01:01:17.880 end put that at one end you plug that into your
+01:01:23.440 meter and then you've got your probes at the other
+01:01:30.480 end so yeah that makes sense there you go
+01:01:38.039 um so that's it for the micrometer stuff right I'm just going to pull a load of
+01:01:44.760 stuff up right so Robin we heard of Robin
+01:01:53.440 meters I'm not sure if they had something to do with fluke or something at one point but
+01:02:01.039 so so obviously no battery in there no there's no battery cuz the battery P's gone look can see there's no battery so
+01:02:07.520 yeah this was um this was Robin's version which is a lot
+01:02:13.160 Slimmer of the the clamp meter so there you go there a couple of
+01:02:19.720 Robin meters these were the original cables so again these are in
+01:02:25.279 inverted um female connectors rather than the male female 2 mm
+01:02:33.760 banana this is an eagle
+01:02:39.480 International now how often do you see meters like that not often I've
+01:02:46.799 never seen them where you put
+01:02:52.240 you probes there I'm just going to check and see if it's got a battery in
+01:02:58.920 because yes there's a battery right a common okay let's look at that
+01:03:06.039 and see if we get anything we get absolutely nothing
+01:03:19.000 oh that's a bit unusual what is going
+01:03:26.440 there well that's a bit sensitive it's just a bit of unusual bit of history
+01:03:32.319 there during my travels of eBay looking for the
+01:03:38.599 micrometers I stumbled upon a few other meters such as this one the robin ones I
+01:03:44.520 had the robin one for ages um this I've never heard of now this is really sad
+01:03:51.319 this meter this the story behind this it it belonged to a guy and his and his
+01:03:57.240 father had passed away and he cleared out his stuff he didn't have any idea
+01:04:02.960 what it was and in transit the needle became
+01:04:10.240 broke because when I mentioned to him I said oh you know the the needle's not working he said oh he did check it out
+01:04:16.680 and he said it was working fine he was really sorry and all that and he said I could send it back to him and I said I said look don't worry about it I
+01:04:24.240 didn't want to refund or anything like that even though the needle isn't working I find this
+01:04:32.200 fascinating piece of Baker light it's absolutely lovely and I love the shape
+01:04:37.559 of that needle you don't see these especially boxed now there might be someone out there that can rebalance a
+01:04:45.400 needle I believe it's something that isn't for the
+01:04:51.920 fainthearted maybe I could use a guarantee there a guarantee there she use that should send it
+01:04:58.599 back ah can't the dealer didn't put that Bloody address on live day oh well
+01:05:03.920 that's that idea at the window so it's a Model 62 multitester how to use
+01:05:09.039 instrument blah blah capacitance measurements you know so it
+01:05:16.559 had some quite interesting features with that so that was the
+01:05:24.640 the starco that's now Sparco in UK Sparco means you've been
+01:05:30.720 sparked out by a Punch Yeah so that's those uh another
+01:05:36.160 thing is these two here these are sun wre meters now these do work these do
+01:05:42.119 actually work work so we're going to check them out I absolutely love these
+01:05:47.279 things I love the design I love the these Baker light finish um I've
+01:05:52.920 reconditioned all of this I've polished it all up Baker light is really nice when it polishes up um anyway so let's
+01:06:00.799 just have a quick look at this put on the ohms and see if we got a battery in there yes we do the
+01:06:10.319 adjust see that is a meter I absolutely adore this meter the amount of stuff
+01:06:16.640 that is on this just look at that meter that is
+01:06:23.000 phenomenal see if I can get it to focus come on
+01:06:31.400 Focus I think we're in I think that is that focused it looks focused it's hard
+01:06:37.119 to see but anyway look at that that is a phenomenal meter for its size look at
+01:06:42.880 all of the different features you got capacitor microfarad and you've
+01:06:49.920 got you know all these ranges on here
+01:06:55.240 absolutely beautiful meter that is absolutely love that that is got to be
+01:07:00.640 when it comes to the actual meter itself this tester has got to be my one
+01:07:07.240 of my favorites it's a sire now I'm not sure when this one came out compared to the other one so I'm
+01:07:14.119 just going to put them both in view there and I'm going to do some little
+01:07:22.680 comparisons so they both had the same
+01:07:28.839 switch pointers they were both the same the meters are very different the logo is
+01:07:36.160 very different I have no idea what area these from this for some reason just strikes me as being
+01:07:42.359 older which is probably why it's got the real fancy meter cuz you
+01:07:48.520 know back in those days they they just went the extra mile you know but these
+01:07:54.440 Japanese meters I've actually got a a very Slimline sanir digital and I think
+01:08:00.400 it's in my car I usually just leave that in the car in a glove box in case I get any problems it's just a digital meter
+01:08:07.119 it's the thinnest meter I've got it's like about that it's like a a ridiculously thin
+01:08:13.319 meter um but yeah this these meters I
+01:08:19.158 absolutely adored these things when these come through the post I'm like these are amazing I
+01:08:26.520 think you know I would would happily collect sanir meters for my next
+01:08:34.040 video don't think we've got a battery ah no we don't have a battery in this now there was a problem because the battery
+01:08:40.640 corroded in this the meter Works everything works but I'm going to show
+01:08:46.120 you this see who used
+01:08:51.679 Flathead tiny Flathead screw screws look tiny Flathead screws you don't see them
+01:08:58.839 everything's Phillips or
+01:09:05.319 hex yeah so in here we had a battery leak issue this is
+01:09:12.600 where the terminal terminates so there was that and that
+01:09:18.479 hopped over and connected onto this one so unfortunately this is an
+01:09:24.399 absolutely lovely bit of Kit and I love the weight of it the the weight of the it's got a metal back we've
+01:09:30.839 got some nice uh writing there that I cannot read
+01:09:36.479 anybody read that no yeah maybe anyway
+01:09:45.600 so that's really the last of the multimeter thing I would like to do
+01:09:52.198 another one in the future if I can get some more of these sunwire meters I would I'd be really interested to find
+01:09:58.520 out a bit more about these and the dates when they come out and stuff like that
+01:10:05.400 um I've got a big thing for analog meters so that's it really uh that's
+01:10:10.800 really I mean this I've moved over to sort of sand and other brands here but that was my
+01:10:16.719 micr review and I said it was coming in a couple of videos I've only had the
+01:10:21.760 channel running sort of this is a sister channel to my main channel the main channnel was uh my electroid channel
+01:10:28.600 which has got mostly music on which you know that's you know but the these are my
+01:10:35.040 hobbies this is my other channel and you know I'd like to sort of share a few things and I hope you enjoyed it so
+01:10:42.360 thanks ever so much for sticking out if you've stuck out to the end that's nearly an hour well done yeah so thanks
+01:10:50.520 ever so much and I will see you in the next video bye for now
