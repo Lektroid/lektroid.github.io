@@ -20,6 +20,25 @@
         .img-links a:hover img {
             filter: brightness(1.35) contrast(1.1); /* Adjust brightness and contrast */
         }
+
+    /* Dropdown */
+              .release {
+        display: inline-block;
+      }
+      .toggle {
+        color: #ff0000;
+        cursor: pointer;
+        margin-left: 4px;
+        font-weight: bold;
+        user-select: none;
+      }
+      .tracklist {
+        display: none;
+        color: gray;
+        font-family: sans-serif;
+        font-size: 0.9em;
+        margin-left: 18px;
+      }
     </style>
 </head>
 
@@ -56,7 +75,8 @@
 
         <span style="color: #f59e0b;"><b>V</b></span> = Vinyl<br> <!-- Yellow -->
         <span style="color: #10b981;"><b>C</b></span> = CD<br> <!-- Green -->
-        <span style="color: #3b82f6;"><b>D</b></span> = Digital Download<br><br> <!-- Blue -->
+        <span style="color: #3b82f6;"><b>D</b></span> = Digital Download<br> <!-- Blue -->
+        <span style="color: #ff0000;"><b>+</b></span> = Tracklisting<br><br> <!-- Red -->
     
     </div>
 
@@ -64,53 +84,136 @@
 
     <div style=padding:20px>
 
-        <a class="hover:text-green-700" href="https://omnimusic.bandcamp.com/album/sacred-shores-ep" target="_blank">Brainstormer - Sacred Shores EP <span style="color:gray">(Omni Music 2025)</span></a>
-            (
-            <span style="color: #3b82f6;"><b>D</b></span>
-            )<br>
+        
+        <div class="release">
+          <a class="hover:text-green-700" href="https://omnimusic.bandcamp.com/album/sacred-shores-ep" target="_blank">
+            Brainstormer - Sacred Shores EP <span style="color:gray">(Omni Music 2025)</span>
+          </a>
+          (<span style="color: #3b82f6;"><b>D</b></span>)
+          <span class="toggle" onclick="this.textContent = this.textContent === '＋' ? '−' : '＋'; this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';">＋</span>
+          <div class="tracklist">
+            1. Sacred Shores (05:37)<br>
+            2. Signal Path (05:15)<br>
+            3. Island Mist (04:53)<br>
+            4. Rollin' The Dice (05:56)
+          </div>
+        </div>
+        <br>
 <!--
         <a class="hover:text-green-700" href="https://brainstormer.bandcamp.com/track/southey-woods-crew" target="_blank">Brainstormer - Southey Woods Crew <span style="color:gray">(LEK Productions 2024)</span></a><br>
 -->
-        <a class="hover:text-green-700" href="https://skyborg.bandcamp.com/album/uk-electro-vol-2" target="_blank">Lektroid - This is UK Electro <span style="color:gray">(UK Electo 2, Borg Recordings 2024)</span></a>
-            (
-            <span style="color: #10b981;"><b>C</b></span>
-            )<br>
+        <div class="release">
+          <a class="hover:text-green-700" href="https://skyborg.bandcamp.com/album/uk-electro-vol-2" target="_blank">
+            Lektroid - This is UK Electro <span style="color:gray">(UK Electro 2, Borg Recordings 2024)</span>
+          </a>
+          (<span style="color: #10b981;"><b>C</b></span>)
+          <span class="toggle" style="color:#ff3333;" onclick="this.textContent = this.textContent === '＋' ? '−' : '＋'; this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';">＋</span>
+          <div class="tracklist">
+            1. This is UK Electro (05:14)
+          </div>
+        </div><br>
 
-        <a class="hover:text-green-700" href="https://ozonerecordings1.bandcamp.com/album/lektroid-the-lek-productions-collection" target="_blank">Lektroid - The LEK Productions collection <span style="color:gray">(Ozone Recordings 2023)</span></a>
-            (
-            <span style="color: #3b82f6;"><b>D</b></span>
-            )<br>
+        <div class="release">
+          <a class="hover:text-green-700" href="https://ozonerecordings1.bandcamp.com/album/lektroid-the-lek-productions-collection" target="_blank">
+            Lektroid - The LEK Productions collection <span style="color:gray">(Ozone Recordings 2023)</span>
+          </a>
+          (<span style="color: #3b82f6;"><b>D</b></span>)
+          <span class="toggle" style="color:#ff3333;" onclick="this.textContent = this.textContent === '＋' ? '−' : '＋'; this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';">＋</span>
+          <div class="tracklist">
+            1. UFO (05:24) <br>
+            2. Another World (04:56) <br>
+            3. Supersonic (05:52) <br>
+            4. Synthtone 1000 (06:26) <br>
+            5. Cosmos (05:48) <br>
+            6. Odyssey (08:19) <br>
+            7. Welcome To The Future (Original Instrumental) (06:03) <br>
+            8. Twice As Nice (05:38) <br>
+            9. Hydra (06:11) <br>
+            10. CQDX (06:53) <br>
+            11. Darktones (06:49) <br>
+            12. Places (06:22) <br>
+            13. Parametric Shift (04:46) <br>
+            14. Modular (05:17) <br>
+            15. Deltawave (06:08) <br>
+            16. Welcome To The Future, Featuring: Xidus Pain (Radio Edit) (03:21)
+          </div>
+        </div><br>
 
-        <a class="hover:text-green-700" href="https://ozonerecordings1.bandcamp.com/album/lektroid-journey-into-the-80s" target="_blank">Lektroid - Journey into the '80s' <span style="color:gray">(Ozone Recordings 2023)</span></a>
-            (
-            <span style="color: #3b82f6;"><b>D</b></span>
-            )<br>
+        <div class="release">
+          <a class="hover:text-green-700" href="https://ozonerecordings1.bandcamp.com/album/lektroid-journey-into-the-80s" target="_blank">
+            Lektroid - Journey into the '80s' <span style="color:gray">(Ozone Recordings 2023)</span>
+          </a>
+          (<span style="color: #3b82f6;"><b>D</b></span>)
+          <span class="toggle" style="color:#ff3333;" onclick="this.textContent = this.textContent === '＋' ? '−' : '＋'; this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';">＋</span>
+          <div class="tracklist">
+            1. Journey Into The '80s (12" Mix) (04:31) <br>
+            2. 2-4-6-8 (05:26) <br>
+            3. Ruffneck Beats (05:17) <br>
+            4. Journey Into The '80s (Radio Edit) (02:51)
+          </div>
+        </div><br>
 
-        <a class="hover:text-green-700" href="https://brainstormer.bandcamp.com/album/9t2-ep" target="_blank">Brainstormer – Brainstormer EP <span style="color:gray">(9T2 Retroactive / LEK Productions 2021)</span></a>
-            (
-            <span style="color: #f59e0b;"><b>V</b></b></span>
-            <span style="color: #3b82f6;"><b>D</b></span>
-            )<br>
+        <div class="release">
+          <a class="hover:text-green-700" href="https://brainstormer.bandcamp.com/album/9t2-ep" target="_blank">
+            Brainstormer – Brainstormer EP <span style="color:gray">(9T2 Retroactive / LEK Productions 2021)</span>
+          </a>
+          (<span style="color: #f59e0b;"><b>V</b></span>
+           <span style="color: #3b82f6;"><b>D</b></span>)
+          <span class="toggle" style="color:#ff3333;" onclick="this.textContent = this.textContent === '＋' ? '−' : '＋'; this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';">＋</span>
+          <div class="tracklist">
+            1. (A1) Can You Reach (06:19) <br>
+            2. (A2) Harder (05:55) <br>
+            3. (B1) Reach Up (Remix) (06:04) <br>    
+            4. (B2) Plastic Man (Remix) (04:37) <br>
+            5. Can You Reach '93 Orig. (03:47) *digital only* <br>
+            6. Plastic Man VIP (04:46) *digital only*
+          </div>
+        </div><br>
 
-        <a class="hover:text-green-700" href="https://infinitemotion.bandcamp.com/track/pamela" target="_blank">Infinite Motion – Pamela <span style="color:gray">(LEK Productions 2020)</span></a>
-            (
-            <span style="color: #3b82f6;"><b>D</b></span>
-            )<br>
+        <div class="release">
+          <a class="hover:text-green-700" href="https://infinitemotion.bandcamp.com/track/pamela" target="_blank">
+            Infinite Motion – Pamela <span style="color:gray">(LEK Productions 2020)</span>
+          </a>
+          (<span style="color: #3b82f6;"><b>D</b></span>)
+          <span class="toggle" style="color:#ff3333;" onclick="this.textContent = this.textContent === '＋' ? '−' : '＋'; this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';">＋</span>
+          <div class="tracklist">
+            1. Pamela (08:51)
+          </div>
+        </div><br>
 
-        <a class="hover:text-green-700" href="https://infinitemotion.bandcamp.com/track/interface"target="_blank">Infinite Motion – Interface <span style="color:gray">(LEK Productions 2020)</span></a>
-            (
-            <span style="color: #3b82f6;"><b>D</b></span>
-            )<br>
+        <div class="release">
+          <a class="hover:text-green-700" href="https://infinitemotion.bandcamp.com/track/interface" target="_blank">
+            Infinite Motion – Interface <span style="color:gray">(LEK Productions 2020)</span>
+          </a>
+          (<span style="color: #3b82f6;"><b>D</b></span>)
+          <span class="toggle" style="color:#ff3333;" onclick="this.textContent = this.textContent === '＋' ? '−' : '＋'; this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';">＋</span>
+          <div class="tracklist">
+            1. Interface (08:30)
+          </div>
+        </div><br>
 
-        <a class="hover:text-green-700" href="https://infinitemotion.bandcamp.com/track/furious-dog"target="_blank">Infinite Motion – Furious Dog <span style="color:gray">(LEK Productions 2020)</span></a>
-            (
-            <span style="color: #3b82f6;"><b>D</b></span>
-            )<br>
+        <div class="release">
+          <a class="hover:text-green-700" href="https://infinitemotion.bandcamp.com/track/furious-dog" target="_blank">
+            Infinite Motion – Furious Dog <span style="color:gray">(LEK Productions 2020)</span>
+          </a>
+          (<span style="color: #3b82f6;"><b>D</b></span>)
+          <span class="toggle" style="color:#ff3333;" onclick="this.textContent = this.textContent === '＋' ? '−' : '＋'; this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';">＋</span>
+          <div class="tracklist">
+            1. Furious Dog (06:29)
+          </div>
+        </div><br>
 
-        <a class="hover:text-green-700" href="https://infinitemotion.bandcamp.com/track/the-light" target="_blank">Infinite Motion – The Light <span style="color:gray">(LEK Productions 2020)</span></a>
-            (
-            <span style="color: #3b82f6;"><b>D</b></span>
-            )<br>
+        <div class="release">
+          <a class="hover:text-green-700" href="https://infinitemotion.bandcamp.com/track/the-light" target="_blank">
+            Infinite Motion – The Light <span style="color:gray">(LEK Productions 2020)</span>
+          </a>
+          (<span style="color: #3b82f6;"><b>D</b></span>)
+          <span class="toggle" style="color:#ff3333;" onclick="this.textContent = this.textContent === '＋' ? '−' : '＋'; this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';">＋</span>
+          <div class="tracklist">
+            1. The Light (07:04)
+          </div>
+        </div><br>
+
 
         <a class="hover:text-green-700" href="https://www.discogs.com/master/1344016-Various-Global-Surveyor-Phase-4" target="_blank">Energy Principle - Tempus Fugit <span style="color:gray">(Global Surveyor Phase 4, Dominance Electricity 2018)</span></a>
             (
@@ -279,25 +382,60 @@
             <span style="color: #f59e0b;"><b>V</b></b></span>
             )<br>
 
-        <a class="hover:text-green-700" href="https://www.discogs.com/release/135107-Wise-Ones-Power-Of-Darkness-EP" target="_blank">Wise Ones - Power of Darkness <span style="color:gray">(F-Project 1993)</span></a>
-            (
-            <span style="color: #f59e0b;"><b>V</b></b></span>
-            )<br>
+        <div class="release">
+          <a class="hover:text-green-700" href="https://www.discogs.com/release/135107-Wise-Ones-Power-Of-Darkness-EP" target="_blank">
+            Wise Ones - Power of Darkness <span style="color:gray">(F-Project 1993)</span>
+          </a>
+          (<span style="color: #f59e0b;"><b>V</b></span>)
+          <span class="toggle" style="color:#ff3333;" onclick="this.textContent = this.textContent === '＋' ? '−' : '＋'; this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';">＋</span>
+          <div class="tracklist">
+            1. (A1) Power Of Darkness (04:38)<br>
+            2. (B2) Feelings (04:25)
+          </div>
+        </div><br>
 
-        <a class="hover:text-green-700" href="https://www.discogs.com/master/10938-Brainstorm-Crew-The-Storm-EP" target="_blank">Brainstorm Crew - Storm EP / Red EP <span style="color:gray">(F-Project 1992)</span></a>
-            (
-            <span style="color: #f59e0b;"><b>V</b></b></span>
-            )<br>
+        <div class="release">
+          <a class="hover:text-green-700" href="https://www.discogs.com/master/10938-Brainstorm-Crew-The-Storm-EP" target="_blank">
+            Brainstorm Crew - Storm EP / Red EP <span style="color:gray">(F-Project 1992)</span>
+          </a>
+          (<span style="color: #f59e0b;"><b>V</b></span>)
+          <span class="toggle" style="color:#ff3333;" onclick="this.textContent = this.textContent === '＋' ? '−' : '＋'; this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';">＋</span>
+          <div class="tracklist">
+            1. (A1) Reach Up (05:38)<br>
+            2. (B1) Just A Party (04:16)<br>
+            3. (B2) Jungle Tekno (04:14)
+          </div>
+        </div><br>
 
-        <a class="hover:text-green-700" href="https://www.discogs.com/master/10908-Brainstorm-Crew-The-Plastic-EP" target="_blank">Brainstorm Crew - Plastic EP <span style="color:gray">(Formation Records 1992)</span></a>
-            (
-            <span style="color: #f59e0b;"><b>V</b></b></span>
-            )<br>
+        <div class="release">
+          <a class="hover:text-green-700" href="https://www.discogs.com/master/10908-Brainstorm-Crew-The-Plastic-EP" target="_blank">
+            Brainstorm Crew - Plastic EP <span style="color:gray">(Formation Records 1992)</span>
+          </a>
+          (<span style="color: #f59e0b;"><b>V</b></span>)
+          <span class="toggle" style="color:#ff3333;" onclick="this.textContent = this.textContent === '＋' ? '−' : '＋'; this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';">＋</span>
+          <div class="tracklist">
+            1. (A1) Define The Beat (03:54)<br>
+            2. (A2) Plastic Man (03:56)<br>
+            3. (B1) Pick Up The Pace (04:18)<br>
+            4. (B2) Taking You There (04:27)
+          </div>
+        </div><br>
 
-        <a class="hover:text-green-700" href="https://www.discogs.com/release/231444-Brainstorm-Crew-Southey-Woods-EP" target="_blank">Brainstorm Crew - Southey Woods EP <span style="color:gray">(Whitehouse Records 1992)</span></a>
-            (
-            <span style="color: #f59e0b;"><b>V</b></b></span>
-            )<br>
+        <div class="release">
+          <a class="hover:text-green-700" href="https://www.discogs.com/release/231444-Brainstorm-Crew-Southey-Woods-EP" target="_blank">
+            Brainstorm Crew - Southey Woods EP <span style="color:gray">(Whitehouse Records 1992)</span>
+          </a>
+          (<span style="color: #f59e0b;"><b>V</b></span>)
+          <span class="toggle" style="color:#ff3333;" onclick="this.textContent = this.textContent === '＋' ? '−' : '＋'; this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';">＋</span>
+          <div class="tracklist">
+            1. (A1) Soothin (AKA Music In The House) (04:55) <br>
+            2. (A2) Feel The Music (AKA Make Some Noise) (06:04)<br>
+            3. (B1) Play It Loud (04:36) <br>
+            4. (B2) Somebody Scream (04:27) <br>
+            5. (B3) We Know Everything (AKA Make Sure) (04:34)
+          </div>
+        </div><br>
+
 
     </div>
 
