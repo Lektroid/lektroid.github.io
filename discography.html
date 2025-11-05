@@ -40,6 +40,7 @@
         margin-left: 18px;
       }
     </style>
+
 </head>
 
 <body class="bg-black mx-auto text-gray-200">
@@ -78,7 +79,11 @@
         <span style="color: #3b82f6;"><b>D</b></span> = Digital Download<br> <!-- Blue -->
         <span style="color: #ff0000;"><b>+</b></span> = Opens Tracklist Menu<br><br> <!-- Red -->
     
+        <button id="toggleAllBtn" style="background:black; color:#ff0000; border:1px solid #ff0000; padding:4px 8px; border-radius:6px;">Open All</button>
+
+
     </div>
+
 
         <h2 class="mx-4 md:mx-4  font-bold text-1xl md:text-2xl text-green-700">Releases:</h2>
 
@@ -767,6 +772,28 @@
     </div>
 
 </footer>
+
+    <!-- Open / Collapse All button -->
+
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const btn = document.getElementById('toggleAllBtn');
+  if (!btn) return;
+  let allOpen = false;
+
+  btn.addEventListener('click', () => {
+    allOpen = !allOpen;
+    document.querySelectorAll('.tracklist').forEach(el => {
+      el.style.display = allOpen ? 'block' : 'none';
+    });
+    document.querySelectorAll('.toggle').forEach(el => {
+      el.textContent = allOpen ? '−' : '＋';
+    });
+    btn.textContent = allOpen ? 'Collapse All' : 'Open All';
+  });
+});
+</script>
 
 </body>
 </html>
