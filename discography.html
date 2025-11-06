@@ -24,14 +24,19 @@
     /* Dropdown */
               .release {
         display: inline-block;
-      }
+
       .toggle {
         color: #ff0000;
         cursor: pointer;
-        margin-left: 4px;
+        display: inline-block;
+        width: 1em;        /* fixed width prevents shifting */
+        text-align: center; /* center the + / – */
+        margin: 0;
+        padding: 0;
         font-weight: bold;
         user-select: none;
       }
+
       .tracklist {
         display: none;
         color: gray;
@@ -74,13 +79,18 @@
 
     <div class="mx-2 md:mx-4"><b>(Purchase/Discogs links <span style="color:gray">by release date</span>)</b><br>
 
+        <span style="color: #ff0000;"><b>+</b></span> = Opens Tracklist Menu<br> <!-- Red -->
         <span style="color: #f59e0b;"><b>V</b></span> = Vinyl<br> <!-- Yellow -->
         <span style="color: #10b981;"><b>C</b></span> = CD<br> <!-- Green -->
         <span style="color: #3b82f6;"><b>D</b></span> = Digital Download<br> <!-- Blue -->
-        <span style="color: #ff0000;"><b>+</b></span> = Opens Tracklist Menu<br> <!-- Red -->
+        
     
-        <button id="toggleAllBtn" style="background:black; color:#ff0000; border:1px solid #ff0000; padding:4px 8px; border-radius:6px;">Expand All</button><br><br>
-
+        <button id="toggleAllBtn"
+          style="background:black; color:#ff0000; border:1px solid #ff0000;
+                 padding:2px 6px; border-radius:4px;
+                 margin-top:8px; margin-bottom:6px;">
+          Expand All
+        </button>
 
     </div>
 
@@ -91,11 +101,17 @@
 
         
         <div class="release">
-          <a class="hover:text-green-700" href="https://omnimusic.bandcamp.com/album/sacred-shores-ep" target="_blank">
-            Brainstormer - Sacred Shores EP <span style="color:gray">(Omni Music 2025)</span>
+           <span class="toggle" onclick="
+            const tracklist = this.parentElement.querySelector('.tracklist');
+            const isOpen = tracklist.style.display === 'block';
+            tracklist.style.display = isOpen ? 'none' : 'block';
+            this.textContent = isOpen ? '+' : '–';
+          ">+</span>
+
+          <a class="hover:text-green-700" href="https://omnimusic.bandcamp.com/album/sacred-shores-ep" target="_blank">Brainstormer - Sacred Shores EP <span style="color:gray">(Omni Music 2025)</span>
           </a>
           (<span style="color: #3b82f6;"><b>D</b></span>)
-          <span class="toggle" onclick="this.textContent = this.textContent === '＋' ? '−' : '＋'; this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';">＋</span>
+          
           <div class="tracklist">
             1. Sacred Shores (05:37)<br>
             2. Signal Path (05:15)<br>
@@ -108,22 +124,36 @@
         <a class="hover:text-green-700" href="https://brainstormer.bandcamp.com/track/southey-woods-crew" target="_blank">Brainstormer - Southey Woods Crew <span style="color:gray">(LEK Productions 2024)</span></a><br>
 -->
         <div class="release">
+          <span class="toggle" onclick="
+            const tracklist = this.parentElement.querySelector('.tracklist');
+            const isOpen = tracklist.style.display === 'block';
+            tracklist.style.display = isOpen ? 'none' : 'block';
+            this.textContent = isOpen ? '+' : '–';
+          ">+</span>
+
           <a class="hover:text-green-700" href="https://skyborg.bandcamp.com/album/uk-electro-vol-2" target="_blank">
-            Lektroid - This is UK Electro <span style="color:gray">(UK Electro 2, Borg Recordings 2024)</span>
+          Lektroid - This is UK Electro <span style="color:gray">(UK Electro 2, Borg Recordings 2024)</span>
           </a>
           (<span style="color: #10b981;"><b>C</b></span>)
-          <span class="toggle" style="color:#ff3333;" onclick="this.textContent = this.textContent === '＋' ? '−' : '＋'; this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';">＋</span>
+          
           <div class="tracklist">
             1. This is UK Electro (05:14)
           </div>
         </div><br>
 
         <div class="release">
+          <span class="toggle" onclick="
+            const tracklist = this.parentElement.querySelector('.tracklist');
+            const isOpen = tracklist.style.display === 'block';
+            tracklist.style.display = isOpen ? 'none' : 'block';
+            this.textContent = isOpen ? '+' : '–';
+          ">+</span>
+
           <a class="hover:text-green-700" href="https://ozonerecordings1.bandcamp.com/album/lektroid-the-lek-productions-collection" target="_blank">
             Lektroid - The LEK Productions collection <span style="color:gray">(Ozone Recordings 2023)</span>
           </a>
           (<span style="color: #3b82f6;"><b>D</b></span>)
-          <span class="toggle" style="color:#ff3333;" onclick="this.textContent = this.textContent === '＋' ? '−' : '＋'; this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';">＋</span>
+          
           <div class="tracklist">
             1. UFO (05:24) <br>
             2. Another World (04:56) <br>
@@ -145,11 +175,17 @@
         </div><br>
 
         <div class="release">
+          <span class="toggle" onclick="
+            const tracklist = this.parentElement.querySelector('.tracklist');
+            const isOpen = tracklist.style.display === 'block';
+            tracklist.style.display = isOpen ? 'none' : 'block';
+            this.textContent = isOpen ? '+' : '–';
+          ">+</span>
           <a class="hover:text-green-700" href="https://ozonerecordings1.bandcamp.com/album/lektroid-journey-into-the-80s" target="_blank">
             Lektroid - Journey into the '80s' <span style="color:gray">(Ozone Recordings 2023)</span>
           </a>
           (<span style="color: #3b82f6;"><b>D</b></span>)
-          <span class="toggle" style="color:#ff3333;" onclick="this.textContent = this.textContent === '＋' ? '−' : '＋'; this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';">＋</span>
+          
           <div class="tracklist">
             1. Journey Into The '80s (12" Mix) (04:31) <br>
             2. 2-4-6-8 (05:26) <br>
@@ -159,12 +195,18 @@
         </div><br>
 
         <div class="release">
+          <span class="toggle" onclick="
+            const tracklist = this.parentElement.querySelector('.tracklist');
+            const isOpen = tracklist.style.display === 'block';
+            tracklist.style.display = isOpen ? 'none' : 'block';
+            this.textContent = isOpen ? '+' : '–';
+          ">+</span>
           <a class="hover:text-green-700" href="https://brainstormer.bandcamp.com/album/9t2-ep" target="_blank">
             Brainstormer – Brainstormer EP <span style="color:gray">(9T2 Retroactive / LEK Productions 2021)</span>
           </a>
           (<span style="color: #f59e0b;"><b>V</b></span>
            <span style="color: #3b82f6;"><b>D</b></span>)
-          <span class="toggle" style="color:#ff3333;" onclick="this.textContent = this.textContent === '＋' ? '−' : '＋'; this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';">＋</span>
+          
           <div class="tracklist">
             1. (A1) Can You Reach (06:19) <br>
             2. (A2) Harder (05:55) <br>
@@ -176,44 +218,68 @@
         </div><br>
 
         <div class="release">
+          <span class="toggle" onclick="
+            const tracklist = this.parentElement.querySelector('.tracklist');
+            const isOpen = tracklist.style.display === 'block';
+            tracklist.style.display = isOpen ? 'none' : 'block';
+            this.textContent = isOpen ? '+' : '–';
+          ">+</span>
           <a class="hover:text-green-700" href="https://infinitemotion.bandcamp.com/track/pamela" target="_blank">
             Infinite Motion – Pamela <span style="color:gray">(LEK Productions 2020)</span>
           </a>
           (<span style="color: #3b82f6;"><b>D</b></span>)
-          <span class="toggle" style="color:#ff3333;" onclick="this.textContent = this.textContent === '＋' ? '−' : '＋'; this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';">＋</span>
+          
           <div class="tracklist">
             1. Pamela (08:51)
           </div>
         </div><br>
 
         <div class="release">
+          <span class="toggle" onclick="
+            const tracklist = this.parentElement.querySelector('.tracklist');
+            const isOpen = tracklist.style.display === 'block';
+            tracklist.style.display = isOpen ? 'none' : 'block';
+            this.textContent = isOpen ? '+' : '–';
+          ">+</span>
           <a class="hover:text-green-700" href="https://infinitemotion.bandcamp.com/track/interface" target="_blank">
             Infinite Motion – Interface <span style="color:gray">(LEK Productions 2020)</span>
           </a>
           (<span style="color: #3b82f6;"><b>D</b></span>)
-          <span class="toggle" style="color:#ff3333;" onclick="this.textContent = this.textContent === '＋' ? '−' : '＋'; this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';">＋</span>
+          
           <div class="tracklist">
             1. Interface (08:30)
           </div>
         </div><br>
 
         <div class="release">
+          <span class="toggle" onclick="
+            const tracklist = this.parentElement.querySelector('.tracklist');
+            const isOpen = tracklist.style.display === 'block';
+            tracklist.style.display = isOpen ? 'none' : 'block';
+            this.textContent = isOpen ? '+' : '–';
+          ">+</span>
           <a class="hover:text-green-700" href="https://infinitemotion.bandcamp.com/track/furious-dog" target="_blank">
             Infinite Motion – Furious Dog <span style="color:gray">(LEK Productions 2020)</span>
           </a>
           (<span style="color: #3b82f6;"><b>D</b></span>)
-          <span class="toggle" style="color:#ff3333;" onclick="this.textContent = this.textContent === '＋' ? '−' : '＋'; this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';">＋</span>
+          
           <div class="tracklist">
             1. Furious Dog (06:29)
           </div>
         </div><br>
 
         <div class="release">
+          <span class="toggle" onclick="
+            const tracklist = this.parentElement.querySelector('.tracklist');
+            const isOpen = tracklist.style.display === 'block';
+            tracklist.style.display = isOpen ? 'none' : 'block';
+            this.textContent = isOpen ? '+' : '–';
+          ">+</span>
           <a class="hover:text-green-700" href="https://infinitemotion.bandcamp.com/track/the-light" target="_blank">
             Infinite Motion – The Light <span style="color:gray">(LEK Productions 2020)</span>
           </a>
           (<span style="color: #3b82f6;"><b>D</b></span>)
-          <span class="toggle" style="color:#ff3333;" onclick="this.textContent = this.textContent === '＋' ? '−' : '＋'; this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';">＋</span>
+          
           <div class="tracklist">
             1. The Light (07:04)
           </div>
@@ -221,35 +287,53 @@
 
 
         <div class="release">
+          <span class="toggle" onclick="
+            const tracklist = this.parentElement.querySelector('.tracklist');
+            const isOpen = tracklist.style.display === 'block';
+            tracklist.style.display = isOpen ? 'none' : 'block';
+            this.textContent = isOpen ? '+' : '–';
+          ">+</span>
           <a class="hover:text-green-700" href="https://www.discogs.com/master/1344016-Various-Global-Surveyor-Phase-4" target="_blank">
             Energy Principle - Tempus Fugit <span style="color:gray">(Global Surveyor Phase 4, Dominance Electricity 2018)</span>
           </a>
           (<span style="color: #f59e0b;"><b>V</b></span>
            <span style="color: #10b981;"><b>C</b></span>
            <span style="color: #3b82f6;"><b>D</b></span>)
-          <span class="toggle" style="color:#ff3333;" onclick="this.textContent = this.textContent === '＋' ? '−' : '＋'; this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';">＋</span>
+          
           <div class="tracklist">
             1. (G1) Tempus Fugit (05:12)
           </div>
         </div><br>
 
         <div class="release">
+          <span class="toggle" onclick="
+            const tracklist = this.parentElement.querySelector('.tracklist');
+            const isOpen = tracklist.style.display === 'block';
+            tracklist.style.display = isOpen ? 'none' : 'block';
+            this.textContent = isOpen ? '+' : '–';
+          ">+</span>
           <a class="hover:text-green-700" href="https://www.discogs.com/master/1405462-Various-Radio-Equinoxe-Version-5" target="_blank">
             Lektroid - Macrocosm <span style="color:gray">(Radio Equinoxe V5.0, Radio Equinoxe 2018)</span>
           </a>
           (<span style="color: #10b981;"><b>C</b></span>)
-          <span class="toggle" style="color:#ff3333;" onclick="this.textContent = this.textContent === '＋' ? '−' : '＋'; this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';">＋</span>
+          
           <div class="tracklist">
-            12. Macrocosm (00:00)
+            12. Macrocosm (05:47)
           </div>
         </div><br>
 
         <div class="release">
+          <span class="toggle" onclick="
+            const tracklist = this.parentElement.querySelector('.tracklist');
+            const isOpen = tracklist.style.display === 'block';
+            tracklist.style.display = isOpen ? 'none' : 'block';
+            this.textContent = isOpen ? '+' : '–';
+          ">+</span>
           <a class="hover:text-green-700" href="https://lektroid.bandcamp.com/album/beyond-theory" target="_blank">
             Lektroid - Beyond Theory (Album) <span style="color:gray">(LEK Productions 2017)</span>
           </a>
           (<span style="color: #3b82f6;"><b>D</b></span>)
-          <span class="toggle" style="color:#ff3333;" onclick="this.textContent = this.textContent === '＋' ? '−' : '＋'; this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';">＋</span>
+          
           <div class="tracklist">
             1. UFO (05:24) <br>
             2. Cosmos (05:48) <br>
@@ -266,30 +350,47 @@
         </div><br>
 
         <div class="release">
+          <span class="toggle" onclick="
+            const tracklist = this.parentElement.querySelector('.tracklist');
+            const isOpen = tracklist.style.display === 'block';
+            tracklist.style.display = isOpen ? 'none' : 'block';
+            this.textContent = isOpen ? '+' : '–';
+          ">+</span>
           <a class="hover:text-green-700" href="https://www.discogs.com/master/1033861-Various-Elektrodos-The-Compilation-Vol-2" target="_blank">
             Lektroid - Darktones <span style="color:gray">(Elektrodos Compilation 2, Elektrodos Recordings 2016)</span>
           </a>
           (<span style="color: #3b82f6;"><b>D</b></span>)
-          <span class="toggle" style="color:#ff3333;" onclick="this.textContent = this.textContent === '＋' ? '−' : '＋'; this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';">＋</span>
+          
           <div class="tracklist">
             19. Darktones (06:49)
           </div>
         </div><br>
 
-
         <div class="release">
+          <span class="toggle" onclick="
+            const tracklist = this.parentElement.querySelector('.tracklist');
+            const isOpen = tracklist.style.display === 'block';
+            tracklist.style.display = isOpen ? 'none' : 'block';
+            this.textContent = isOpen ? '+' : '–';
+          ">+</span>
         <a class="hover:text-green-700" href="https://www.discogs.com/master/1008078-Various-Touched-Bass" target="_blank">Lektroid - Futurist <span style="color:gray">(Touched Bass, Touched - Music for MacMillan Cancer Support, 2016)</span></a>
             (<span style="color: #3b82f6;"><b>D</b></span>)
-            <span class="toggle" style="color:#ff3333;" onclick="this.textContent = this.textContent === '＋' ? '−' : '＋'; this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';">＋</span>
+            
           <div class="tracklist">
             79. Futurist (06:09)
           </div>
         </div><br>
 
         <div class="release">
+          <span class="toggle" onclick="
+            const tracklist = this.parentElement.querySelector('.tracklist');
+            const isOpen = tracklist.style.display === 'block';
+            tracklist.style.display = isOpen ? 'none' : 'block';
+            this.textContent = isOpen ? '+' : '–';
+          ">+</span>
         <a class="hover:text-green-700" href="https://brainstormer.bandcamp.com/album/power-within" target="_blank">Brainstormer - Power Within (Album)<span style="color:gray">(LEK Productions 2016)</span></a>
             (<span style="color: #3b82f6;"><b>D</b></span>)
-        <span class="toggle" style="color:#ff3333;" onclick="this.textContent = this.textContent === '＋' ? '−' : '＋'; this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';">＋</span>
+        
           <div class="tracklist">
             1. Nymph (Original Mix) (07:42) <br>
             2. Outer Limits (05:47) <br>
@@ -310,38 +411,61 @@
           </div>
         </div><br>
 
-
         <div class="release">
+          <span class="toggle" onclick="
+            const tracklist = this.parentElement.querySelector('.tracklist');
+            const isOpen = tracklist.style.display === 'block';
+            tracklist.style.display = isOpen ? 'none' : 'block';
+            this.textContent = isOpen ? '+' : '–';
+          ">+</span>
         <a class="hover:text-green-700" href="https://www.discogs.com/master/1033860-Various-Elektrodos-The-Compilation-Vol-1" target="_blank">Lektroid - Communication <span style="color:gray">(Elektrodos The Compilation 2015)</span></a>
             (<span style="color: #3b82f6;"><b>D</b></span>)
-        <span class="toggle" style="color:#ff3333;" onclick="this.textContent = this.textContent === '＋' ? '−' : '＋'; this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';">＋</span>
+        
           <div class="tracklist">
             10. Communication (06:00)
           </div>
         </div><br>
 
         <div class="release">
+          <span class="toggle" onclick="
+            const tracklist = this.parentElement.querySelector('.tracklist');
+            const isOpen = tracklist.style.display === 'block';
+            tracklist.style.display = isOpen ? 'none' : 'block';
+            this.textContent = isOpen ? '+' : '–';
+          ">+</span>
         Lektroid - Serenity <span style="color:gray">(Radio Equinoxe Version 4.0 2014)</span>
             (<span style="color: #10b981;"><b>C</b></span>)
-        <span class="toggle" style="color:#ff3333;" onclick="this.textContent = this.textContent === '＋' ? '−' : '＋'; this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';">＋</span>
+        
           <div class="tracklist">
             18. Serenity (06:45)
           </div>
         </div><br>
 
         <div class="release">
+          <span class="toggle" onclick="
+            const tracklist = this.parentElement.querySelector('.tracklist');
+            const isOpen = tracklist.style.display === 'block';
+            tracklist.style.display = isOpen ? 'none' : 'block';
+            this.textContent = isOpen ? '+' : '–';
+          ">+</span>
         <a class="hover:text-green-700" href="https://lektroid.bandcamp.com/track/serenity" target="_blank">Lektroid - Serenity <span style="color:gray">(LEK Productions 2014)</span></a>
             (<span style="color: #3b82f6;"><b>D</b></span>)
-        <span class="toggle" style="color:#ff3333;" onclick="this.textContent = this.textContent === '＋' ? '−' : '＋'; this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';">＋</span>
+        
           <div class="tracklist">
             1. Serenity (06:45)
           </div>
         </div><br>
 
         <div class="release">
+          <span class="toggle" onclick="
+            const tracklist = this.parentElement.querySelector('.tracklist');
+            const isOpen = tracklist.style.display === 'block';
+            tracklist.style.display = isOpen ? 'none' : 'block';
+            this.textContent = isOpen ? '+' : '–';
+          ">+</span>
         <a class="hover:text-green-700" href="https://lektroid.bandcamp.com/album/quantum-theory" target="_blank">Lektroid - Quantum Theory (Album)<span style="color:gray">(LEK Productions 2014)</span></a>
             (<span style="color: #3b82f6;"><b>D</b></span>)
-        <span class="toggle" style="color:#ff3333;" onclick="this.textContent = this.textContent === '＋' ? '−' : '＋'; this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';">＋</span>
+        
           <div class="tracklist">
             1. Knowledge (intro) (06:18) <br>
             2. Macrocosm (05:47) <br>
@@ -363,9 +487,15 @@
 
 
         <div class="release">
+          <span class="toggle" onclick="
+            const tracklist = this.parentElement.querySelector('.tracklist');
+            const isOpen = tracklist.style.display === 'block';
+            tracklist.style.display = isOpen ? 'none' : 'block';
+            this.textContent = isOpen ? '+' : '–';
+          ">+</span>
         <a class="hover:text-green-700" href="https://lektroid.bandcamp.com/track/fascination" target="_blank">Lektroid feat. Arielle - Fascination <span style="color:gray">(LEK productions 2014)</span></a>
             (<span style="color: #3b82f6;"><b>D</b></span>)
-        <span class="toggle" style="color:#ff3333;" onclick="this.textContent = this.textContent === '＋' ? '−' : '＋'; this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';">＋</span>
+        
           <div class="tracklist">
             DELETED
           </div>
@@ -373,46 +503,75 @@
 
 
         <div class="release">
+          <span class="toggle" onclick="
+            const tracklist = this.parentElement.querySelector('.tracklist');
+            const isOpen = tracklist.style.display === 'block';
+            tracklist.style.display = isOpen ? 'none' : 'block';
+            this.textContent = isOpen ? '+' : '–';
+          ">+</span>
         <a class="hover:text-green-700" href="https://www.discogs.com/master/665838-Various-Dalekovod-V4-Guardians-Of-Electro" target="_blank">Lektroid - True Rebels <span style="color:gray">(Dalekovod IV, Crobot Music 2012)</span></a>
             (<span style="color: #3b82f6;"><b>D</b></span>)
-            <span class="toggle" style="color:#ff3333;" onclick="this.textContent = this.textContent === '＋' ? '−' : '＋'; this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';">＋</span>
+            
           <div class="tracklist">
             23. True Rebels (7:52)
           </div>
         </div><br>
 
-
         <div class="release">
+          <span class="toggle" onclick="
+            const tracklist = this.parentElement.querySelector('.tracklist');
+            const isOpen = tracklist.style.display === 'block';
+            tracklist.style.display = isOpen ? 'none' : 'block';
+            this.textContent = isOpen ? '+' : '–';
+          ">+</span>
         <a class="hover:text-green-700" href="https://brainstormer.bandcamp.com/track/sanguine" target="_blank">Brainstormer - Sanguine <span style="color:gray">(LEK Productions 2012)</span></a>
             (<span style="color: #3b82f6;"><b>D</b></span>)
-            <span class="toggle" style="color:#ff3333;" onclick="this.textContent = this.textContent === '＋' ? '−' : '＋'; this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';">＋</span>
+            
           <div class="tracklist">
             1. Sanguine (05:42)
           </div>
         </div><br>
 
         <div class="release">
+          <span class="toggle" onclick="
+            const tracklist = this.parentElement.querySelector('.tracklist');
+            const isOpen = tracklist.style.display === 'block';
+            tracklist.style.display = isOpen ? 'none' : 'block';
+            this.textContent = isOpen ? '+' : '–';
+          ">+</span>
         <a class="hover:text-green-700" href="https://brainstormer.bandcamp.com/track/reaching-out" target="_blank">Brainstormer - Reaching Out <span style="color:gray">(LEK Productions 2012)</span></a>
             (<span style="color: #3b82f6;"><b>D</b></span>)
-            <span class="toggle" style="color:#ff3333;" onclick="this.textContent = this.textContent === '＋' ? '−' : '＋'; this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';">＋</span>
+            
           <div class="tracklist">
             1. Reaching Out (05:29)
           </div>
         </div><br>
 
         <div class="release">
+          <span class="toggle" onclick="
+            const tracklist = this.parentElement.querySelector('.tracklist');
+            const isOpen = tracklist.style.display === 'block';
+            tracklist.style.display = isOpen ? 'none' : 'block';
+            this.textContent = isOpen ? '+' : '–';
+          ">+</span>
         <a class="hover:text-green-700" href="https://www.discogs.com/master/452142-Various-Advanced-Funk-2" target="_blank">Lektroid - Energy Tech <span style="color:gray">(Advanced Funk 2, Binalog Productions 2012)</span></a>
             (<span style="color: #3b82f6;"><b>D</b></span>)
-            <span class="toggle" style="color:#ff3333;" onclick="this.textContent = this.textContent === '＋' ? '−' : '＋'; this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';">＋</span>
+            
           <div class="tracklist">
             1. Energy Tech (05:09)
           </div>
         </div><br>
 
         <div class="release">
+          <span class="toggle" onclick="
+            const tracklist = this.parentElement.querySelector('.tracklist');
+            const isOpen = tracklist.style.display === 'block';
+            tracklist.style.display = isOpen ? 'none' : 'block';
+            this.textContent = isOpen ? '+' : '–';
+          ">+</span>
         <a class="hover:text-green-700" href="https://lektroid.bandcamp.com/album/electro-funk-selection" target="_blank">Lektroid - Electro Funk Selection (Album)<span style="color:gray">(LEK Productions 2012)</span></a>
             (<span style="color: #3b82f6;"><b>D</b></span>)
-            <span class="toggle" style="color:#ff3333;" onclick="this.textContent = this.textContent === '＋' ? '−' : '＋'; this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';">＋</span>
+            
           <div class="tracklist">
             1. Eta Carinae (04:33) <br>
             2. Hydra (06:08) <br>
@@ -428,47 +587,77 @@
         </div><br>
 
         <div class="release">
+          <span class="toggle" onclick="
+            const tracklist = this.parentElement.querySelector('.tracklist');
+            const isOpen = tracklist.style.display === 'block';
+            tracklist.style.display = isOpen ? 'none' : 'block';
+            this.textContent = isOpen ? '+' : '–';
+          ">+</span>
         <a class="hover:text-green-700" href="https://lektroid.bandcamp.com/track/astral" target="_blank">Lektroid - Astral <span style="color:gray">(LEK Productions 2012)</span>
             (<span style="color: #3b82f6;"><b>D</b></span>)
-            <span class="toggle" style="color:#ff3333;" onclick="this.textContent = this.textContent === '＋' ? '−' : '＋'; this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';">＋</span>
+            
           <div class="tracklist">
             1. Astral (06:19)
           </div>
         </div><br>
 
         <div class="release">
+          <span class="toggle" onclick="
+            const tracklist = this.parentElement.querySelector('.tracklist');
+            const isOpen = tracklist.style.display === 'block';
+            tracklist.style.display = isOpen ? 'none' : 'block';
+            this.textContent = isOpen ? '+' : '–';
+          ">+</span>
         <a class="hover:text-green-700" href="https://lektroid.bandcamp.com/track/hearts-of-space" target="_blank">Lektroid - Hearts of Space <span style="color:gray">(LEK Productions 2012)</span></a>
             (<span style="color: #3b82f6;"><b>D</b></span>)
-            <span class="toggle" style="color:#ff3333;" onclick="this.textContent = this.textContent === '＋' ? '−' : '＋'; this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';">＋</span>
+            
           <div class="tracklist">
             1. Hearts Of Space (39:09)
           </div>
         </div><br>
 
         <div class="release">
+          <span class="toggle" onclick="
+            const tracklist = this.parentElement.querySelector('.tracklist');
+            const isOpen = tracklist.style.display === 'block';
+            tracklist.style.display = isOpen ? 'none' : 'block';
+            this.textContent = isOpen ? '+' : '–';
+          ">+</span>
         <a class="hover:text-green-700" href="https://lektroid.bandcamp.com/track/journey" target="_blank">Lektroid - Journey <span style="color:gray">(LEK Productions 2012)</span></a>
             (<span style="color: #3b82f6;"><b>D</b></span>)
-        <span class="toggle" style="color:#ff3333;" onclick="this.textContent = this.textContent === '＋' ? '−' : '＋'; this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';">＋</span>
+        
           <div class="tracklist">
             1. Journey (04:09)
           </div>
         </div><br>
 
         <div class="release">
+          <span class="toggle" onclick="
+            const tracklist = this.parentElement.querySelector('.tracklist');
+            const isOpen = tracklist.style.display === 'block';
+            tracklist.style.display = isOpen ? 'none' : 'block';
+            this.textContent = isOpen ? '+' : '–';
+          ">+</span>
         <a class="hover:text-green-700" href="https://www.discogs.com/master/279131-Various-Advanced-Funk-Vol-1" target="_blank">Lektroid - Parametric Shift <span style="color:gray">(Advanced Funk 1, Binalog Productions 2011)</span></a>
             (<span style="color: #f59e0b;"><b>V</b></b></span>
             <span style="color: #3b82f6;"><b>D</b></span>)
-        <span class="toggle" style="color:#ff3333;" onclick="this.textContent = this.textContent === '＋' ? '−' : '＋'; this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';">＋</span>
+        
           <div class="tracklist">
             11. (D2) Parametric Shift (4:55)
           </div>
         </div><br>
 
         <div class="release">
+          <span class="toggle" onclick="
+            const tracklist = this.parentElement.querySelector('.tracklist');
+            const isOpen = tracklist.style.display === 'block';
+            tracklist.style.display = isOpen ? 'none' : 'block';
+            this.textContent = isOpen ? '+' : '–';
+          ">+</span>
         <a class="hover:text-green-700" href="https://www.discogs.com/master/296274-Various-Nu-Electro-Volume-3" target="_blank">Lektroid feat. Xidus Pain - Welcome to the Future <span style="color:gray">(Nu Electro 3, Street Sounds 2010)</span></a>
             (<span style="color: #f59e0b;"><b>V</b></b></span>
             <span style="color: #10b981;"><b>C</b></span>)
-        <span class="toggle" style="color:#ff3333;" onclick="this.textContent = this.textContent === '＋' ? '−' : '＋'; this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';">＋</span>
+        
           <div class="tracklist">
             2.03 (C1) Welcome To The Future Feat. Xidus Pain (05:49)
           </div>
@@ -476,113 +665,185 @@
 
 
         <div class="release">
+          <span class="toggle" onclick="
+            const tracklist = this.parentElement.querySelector('.tracklist');
+            const isOpen = tracklist.style.display === 'block';
+            tracklist.style.display = isOpen ? 'none' : 'block';
+            this.textContent = isOpen ? '+' : '–';
+          ">+</span>
         <a class="hover:text-green-700" href="https://www.discogs.com/master/209434-Various-Global-Surveyor-Phase-3" target="_blank">Lektroid - Modular <span style="color:gray">(Global Surveyor Phase 3, Dominance Electricity 2009)</span></a>
             (<span style="color: #f59e0b;"><b>V</b></b></span>
             <span style="color: #10b981;"><b>C</b></span>
             <span style="color: #3b82f6;"><b>D</b></span>)
-        <span class="toggle" style="color:#ff3333;" onclick="this.textContent = this.textContent === '＋' ? '−' : '＋'; this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';">＋</span>
+        
           <div class="tracklist">
             6. (B2) Modular (04:46)
           </div>
         </div><br>
 
         <div class="release">
+          <span class="toggle" onclick="
+            const tracklist = this.parentElement.querySelector('.tracklist');
+            const isOpen = tracklist.style.display === 'block';
+            tracklist.style.display = isOpen ? 'none' : 'block';
+            this.textContent = isOpen ? '+' : '–';
+          ">+</span>
         <a class="hover:text-green-700" href="https://www.discogs.com/master/202849-Various-Nu-Electro-Volume-2" target="_blank">Lektroid - Solar Storm <span style="color:gray">(Nu Elelctro 2, Street Sounds 2009)</span></a>
             (<span style="color: #f59e0b;"><b>V</b></b></span>
             <span style="color: #10b981;"><b>C</b></span>)
-        <span class="toggle" style="color:#ff3333;" onclick="this.textContent = this.textContent === '＋' ? '−' : '＋'; this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';">＋</span>
+        
           <div class="tracklist">
             1.07 (B2) Solar Storm (05:05)
            </div>
         </div><br>
 
         <div class="release">
+          <span class="toggle" onclick="
+            const tracklist = this.parentElement.querySelector('.tracklist');
+            const isOpen = tracklist.style.display === 'block';
+            tracklist.style.display = isOpen ? 'none' : 'block';
+            this.textContent = isOpen ? '+' : '–';
+          ">+</span>
         <a class="hover:text-green-700" href="https://www.discogs.com/release/1399499-DJ-Sike-Vinyl-Junkie-Brainstormer-Future-Shock-Zion-Into-The-Future" target="_blank">Brainstormer - Into the Future <span style="color:gray">(Hardcore Projektz 2008)</span></a>
             (<span style="color: #f59e0b;"><b>V</b></b></span>)
-        <span class="toggle" style="color:#ff3333;" onclick="this.textContent = this.textContent === '＋' ? '−' : '＋'; this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';">＋</span>
+        
           <div class="tracklist">
-            1. (B2) into the Future (00:00)
+            1. (B2) into the Future (06:46)
           </div>
         </div><br>
 
         <div class="release">
+          <span class="toggle" onclick="
+            const tracklist = this.parentElement.querySelector('.tracklist');
+            const isOpen = tracklist.style.display === 'block';
+            tracklist.style.display = isOpen ? 'none' : 'block';
+            this.textContent = isOpen ? '+' : '–';
+          ">+</span>
         <a class="hover:text-green-700" href="https://www.discogs.com/release/1374084-Various-Rewinding-The-Future" target="_blank">Brainstormer - Time Travel <span style="color:gray">(Rewinding the Future, Ruffneck Recordings 2008)</span></a>
             (<span style="color: #f59e0b;"><b>V</b></b></span>)
-        <span class="toggle" style="color:#ff3333;" onclick="this.textContent = this.textContent === '＋' ? '−' : '＋'; this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';">＋</span>
+        
           <div class="tracklist">
-            1. (B1) Time Travel (00:00)
+            1. (B1) Time Travel (06:30)
           </div>
         </div><br>
 
         <div class="release">
+          <span class="toggle" onclick="
+            const tracklist = this.parentElement.querySelector('.tracklist');
+            const isOpen = tracklist.style.display === 'block';
+            tracklist.style.display = isOpen ? 'none' : 'block';
+            this.textContent = isOpen ? '+' : '–';
+          ">+</span>
         <a class="hover:text-green-700" href="https://www.discogs.com/release/1200277-Various-Hardcore-Lives-Presents-Hardcore-Energy" target="_blank">Brainstormer feat. Gurk - Dark Ages <span style="color:gray">(Hardcore Energy, Hardcore Lives 2008)</span></a>
             (<span style="color: #10b981;"><b>C</b></span>)
-        <span class="toggle" style="color:#ff3333;" onclick="this.textContent = this.textContent === '＋' ? '−' : '＋'; this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';">＋</span>
+        
           <div class="tracklist">
             5. Dark Ages (06:18)
           </div>
         </div><br>
 
         <div class="release">
+          <span class="toggle" onclick="
+            const tracklist = this.parentElement.querySelector('.tracklist');
+            const isOpen = tracklist.style.display === 'block';
+            tracklist.style.display = isOpen ? 'none' : 'block';
+            this.textContent = isOpen ? '+' : '–';
+          ">+</span>
         <a class="hover:text-green-700" href="https://www.discogs.com/release/1381988-Various-Back-To-The-Oldskool-Presents-The-Hardcore-Breaks-Sampler-Volume-2" target="_blank">Brainstormer - Harder <span style="color:gray">(Hardcore Breaks sampler 2, B2VOS 2008)</span></a>
             (<span style="color: #3b82f6;"><b>D</b></span>)
-        <span class="toggle" style="color:#ff3333;" onclick="this.textContent = this.textContent === '＋' ? '−' : '＋'; this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';">＋</span>
+        
           <div class="tracklist">
-            5. Harder (00:00)
+            5. Harder (05:55)
           </div>
         </div><br>
 
         <div class="release">
+          <span class="toggle" onclick="
+            const tracklist = this.parentElement.querySelector('.tracklist');
+            const isOpen = tracklist.style.display === 'block';
+            tracklist.style.display = isOpen ? 'none' : 'block';
+            this.textContent = isOpen ? '+' : '–';
+          ">+</span>
         <a class="hover:text-green-700" href="https://www.discogs.com/release/1174775-Various-Back-To-The-Oldskool-Presents-The-Hardcore-Breaks-Sampler-Volume-1" target="_blank">Logical Breaks - Organ Grinder <span style="color:gray">(Hardcore Breaks sampler 1, B2VOS 2008)</span></a>
             (<span style="color: #3b82f6;"><b>D</b></span>)
-        <span class="toggle" style="color:#ff3333;" onclick="this.textContent = this.textContent === '＋' ? '−' : '＋'; this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';">＋</span>
+        
           <div class="tracklist">
             3. Organ Grinder (04:39)
           </div>
         </div><br>
 
         <div class="release">
+          <span class="toggle" onclick="
+            const tracklist = this.parentElement.querySelector('.tracklist');
+            const isOpen = tracklist.style.display === 'block';
+            tracklist.style.display = isOpen ? 'none' : 'block';
+            this.textContent = isOpen ? '+' : '–';
+          ">+</span>
         <a class="hover:text-green-700" href="https://www.discogs.com/release/973867-Various-All-4-1-Distribution-Hardcore-Projektz-And-Choice-Records-Present" target="_blank">Brainstormer - Take us on (Instrumental), <span style="color:gray">(All 4-1 2007)</span></a>
              (<span style="color: #10b981;"><b>C</b></span>)
-        <span class="toggle" style="color:#ff3333;" onclick="this.textContent = this.textContent === '＋' ? '−' : '＋'; this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';">＋</span>
+        
           <div class="tracklist">
-            3. Take Us On (00:00)
+            3. Take Us On (05:40)
           </div>
         </div><br>
 
         <div class="release">
+          <span class="toggle" onclick="
+            const tracklist = this.parentElement.querySelector('.tracklist');
+            const isOpen = tracklist.style.display === 'block';
+            tracklist.style.display = isOpen ? 'none' : 'block';
+            this.textContent = isOpen ? '+' : '–';
+          ">+</span>
         <a class="hover:text-green-700" href="https://www.discogs.com/master/198099-Various-SST002-The-Ambassador-Strikes-Back" target="_blank">Brainstormer - Out of Control <span style="color:gray">(SST 2007)</span></a>
             (<span style="color: #f59e0b;"><b>V</b></b></span>)
-        <span class="toggle" style="color:#ff3333;" onclick="this.textContent = this.textContent === '＋' ? '−' : '＋'; this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';">＋</span>
+        
           <div class="tracklist">
             5. Dark Ages (06:18)
           </div>
         </div><br>
 
         <div class="release">
+          <span class="toggle" onclick="
+            const tracklist = this.parentElement.querySelector('.tracklist');
+            const isOpen = tracklist.style.display === 'block';
+            tracklist.style.display = isOpen ? 'none' : 'block';
+            this.textContent = isOpen ? '+' : '–';
+          ">+</span>
         <a class="hover:text-green-700" href="https://www.discogs.com/master/198098-Various-SST001-The-Ferrero-Rocher-EP" target="_blank">Brainstormer - My Love <span style="color:gray">(SST 2007)</span></a>
             (<span style="color: #f59e0b;"><b>V</b></b></span>)
-        <span class="toggle" style="color:#ff3333;" onclick="this.textContent = this.textContent === '＋' ? '−' : '＋'; this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';">＋</span>
+        
           <div class="tracklist">
-            1. (B1) My Love (00:00)
+            1. (B1) My Love (05:00)
           </div>
         </div><br>
 
         <div class="release">
+          <span class="toggle" onclick="
+            const tracklist = this.parentElement.querySelector('.tracklist');
+            const isOpen = tracklist.style.display === 'block';
+            tracklist.style.display = isOpen ? 'none' : 'block';
+            this.textContent = isOpen ? '+' : '–';
+          ">+</span>
         <a class="hover:text-green-700" href="https://www.discogs.com/master/59951-Various-Mert-004" target="_blank">Brainstormer - Piano Fever <span style="color:gray">(Mertwax 2006)</span></a>
             (<span style="color: #f59e0b;"><b>V</b></b></span>)
-        <span class="toggle" style="color:#ff3333;" onclick="this.textContent = this.textContent === '＋' ? '−' : '＋'; this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';">＋</span>
+        
           <div class="tracklist">
-            1. (A1) Piano Fever (00:00)
+            1. (A1) Piano Fever (05:52)
           </div>
         </div><br>
 
         <div class="release">
+          <span class="toggle" onclick="
+            const tracklist = this.parentElement.querySelector('.tracklist');
+            const isOpen = tracklist.style.display === 'block';
+            tracklist.style.display = isOpen ? 'none' : 'block';
+            this.textContent = isOpen ? '+' : '–';
+          ">+</span>
           <a class="hover:text-green-700" href="https://www.discogs.com/release/135107-Wise-Ones-Power-Of-Darkness-EP" target="_blank">
             Wise Ones - Power of Darkness <span style="color:gray">(F-Project 1993)</span>
           </a>
           (<span style="color: #f59e0b;"><b>V</b></span>)
-          <span class="toggle" style="color:#ff3333;" onclick="this.textContent = this.textContent === '＋' ? '−' : '＋'; this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';">＋</span>
+          
           <div class="tracklist">
             1. (A1) Power Of Darkness (04:38)<br>
             2. (B2) Feelings (04:25)
@@ -590,11 +851,17 @@
         </div><br>
 
         <div class="release">
+          <span class="toggle" onclick="
+            const tracklist = this.parentElement.querySelector('.tracklist');
+            const isOpen = tracklist.style.display === 'block';
+            tracklist.style.display = isOpen ? 'none' : 'block';
+            this.textContent = isOpen ? '+' : '–';
+          ">+</span>
           <a class="hover:text-green-700" href="https://www.discogs.com/master/10938-Brainstorm-Crew-The-Storm-EP" target="_blank">
             Brainstorm Crew - Storm EP / Red EP <span style="color:gray">(F-Project 1992)</span>
           </a>
           (<span style="color: #f59e0b;"><b>V</b></span>)
-          <span class="toggle" style="color:#ff3333;" onclick="this.textContent = this.textContent === '＋' ? '−' : '＋'; this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';">＋</span>
+          
           <div class="tracklist">
             1. (A1) Reach Up (05:38)<br>
             2. (B1) Just A Party (04:16)<br>
@@ -603,11 +870,17 @@
         </div><br>
 
         <div class="release">
+          <span class="toggle" onclick="
+            const tracklist = this.parentElement.querySelector('.tracklist');
+            const isOpen = tracklist.style.display === 'block';
+            tracklist.style.display = isOpen ? 'none' : 'block';
+            this.textContent = isOpen ? '+' : '–';
+          ">+</span>
           <a class="hover:text-green-700" href="https://www.discogs.com/master/10908-Brainstorm-Crew-The-Plastic-EP" target="_blank">
             Brainstorm Crew - Plastic EP <span style="color:gray">(Formation Records 1992)</span>
           </a>
           (<span style="color: #f59e0b;"><b>V</b></span>)
-          <span class="toggle" style="color:#ff3333;" onclick="this.textContent = this.textContent === '＋' ? '−' : '＋'; this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';">＋</span>
+          
           <div class="tracklist">
             1. (A1) Define The Beat (03:54)<br>
             2. (A2) Plastic Man (03:56)<br>
@@ -617,11 +890,17 @@
         </div><br>
 
         <div class="release">
+          <span class="toggle" onclick="
+            const tracklist = this.parentElement.querySelector('.tracklist');
+            const isOpen = tracklist.style.display === 'block';
+            tracklist.style.display = isOpen ? 'none' : 'block';
+            this.textContent = isOpen ? '+' : '–';
+          ">+</span>
           <a class="hover:text-green-700" href="https://www.discogs.com/release/231444-Brainstorm-Crew-Southey-Woods-EP" target="_blank">
             Brainstorm Crew - Southey Woods EP <span style="color:gray">(Whitehouse Records 1992)</span>
           </a>
           (<span style="color: #f59e0b;"><b>V</b></span>)
-          <span class="toggle" style="color:#ff3333;" onclick="this.textContent = this.textContent === '＋' ? '−' : '＋'; this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';">＋</span>
+          
           <div class="tracklist">
             1. (A1) Soothin (AKA Music In The House) (04:55) <br>
             2. (A2) Feel The Music (AKA Make Some Noise) (06:04)<br>
@@ -638,28 +917,46 @@
     <div style=padding:20px>
         
         <div class="release">
+          <span class="toggle" onclick="
+            const tracklist = this.parentElement.querySelector('.tracklist');
+            const isOpen = tracklist.style.display === 'block';
+            tracklist.style.display = isOpen ? 'none' : 'block';
+            this.textContent = isOpen ? '+' : '–';
+          ">+</span>
         <a class="hover:text-green-700" href="https://www.discogs.com/release/3896567-Paul-Hardcastle-19-25th-Anniversary-Remixes-Vol-1" target="_blank">Paul Hardcastle 19 <span style="color:gray">(Lektroid Official Remix 2010)</span></a>
             (<span style="color: #3b82f6;"><b>D</b></span>)
-        <span class="toggle" style="color:#ff3333;" onclick="this.textContent = this.textContent === '＋' ? '−' : '＋'; this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';">＋</span>
+        
           <div class="tracklist">
             5. 19 - Lektroid Remix (05:41)
           </div>
         </div><br>      
         
         <div class="release">
+          <span class="toggle" onclick="
+            const tracklist = this.parentElement.querySelector('.tracklist');
+            const isOpen = tracklist.style.display === 'block';
+            tracklist.style.display = isOpen ? 'none' : 'block';
+            this.textContent = isOpen ? '+' : '–';
+          ">+</span>
         <a class="hover:text-green-700" href="https://www.discogs.com/release/112132-M3-Bailamos" target="_blank">M3 - Baliamos <span style="color:gray">(Sola Remix 1999)</span></a>
             (<span style="color: #f59e0b;"><b>V</b></b></span>
             <span style="color: #10b981;"><b>C</b></span>)
-        <span class="toggle" style="color:#ff3333;" onclick="this.textContent = this.textContent === '＋' ? '−' : '＋'; this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';">＋</span>
+        
           <div class="tracklist">
             3. (A2) Bailamos - Sola Remix (06:19)
           </div>
         </div><br>  
 
         <div class="release">
+          <span class="toggle" onclick="
+            const tracklist = this.parentElement.querySelector('.tracklist');
+            const isOpen = tracklist.style.display === 'block';
+            tracklist.style.display = isOpen ? 'none' : 'block';
+            this.textContent = isOpen ? '+' : '–';
+          ">+</span>
         <a class="hover:text-green-700" href="https://www.discogs.com/master/817393-Lynsey-Moore-Here-Comes-The-Rain" target="_blank">Linsey Moore - Here Comes the Rain <span style="color:gray">(Sola Remix 1999)</span></a>
             (<span style="color: #f59e0b;"><b>V</b></b></span>)
-        <span class="toggle" style="color:#ff3333;" onclick="this.textContent = this.textContent === '＋' ? '−' : '＋'; this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';">＋</span>
+        
           <div class="tracklist">
             1. (A1) Here Comes The Rain - Sola Remix (08:42)
           </div>
