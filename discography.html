@@ -99,6 +99,28 @@
 
     <div style=padding:20px>
 
+        <div class="release">
+           <span class="toggle" onclick="
+            const tracklist = this.parentElement.querySelector('.tracklist');
+            const isOpen = tracklist.style.display === 'block';
+            tracklist.style.display = isOpen ? 'none' : 'block';
+            this.textContent = isOpen ? '+' : '–';
+          ">+</span>
+
+          <a class="hover:text-green-700" href="/discography" target="_blank">Brainstormer - Omniscience EP <span style="color:gray">(Forthcoming Omni Music 2026)</span>
+          </a>
+          (<span style="color: #3b82f6;"><b>D</b></span>)
+          
+          <div class="tracklist">
+            1. Omniscience (06:37)<br>
+            2. Voyager (05:37)<br>
+            3. Grafix (06:43)<br>
+            4. Fragments (06:37)<br>
+            5. Echoes (07:01)
+          </div>
+        </div>
+        <br>
+
         
         <div class="release">
            <span class="toggle" onclick="
