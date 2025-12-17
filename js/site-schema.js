@@ -1,20 +1,19 @@
 (function () {
-  // Get last modified date of the document
+  // Last modified date in ISO format
   const modifiedISO = new Date(document.lastModified).toISOString();
 
-  // Get page title from og:title or fallback to document title
-  const pageTitle =
-    document.querySelector("meta[property='og:title']")?.content ||
-    document.title;
+  // Page title: prefer og:title, fallback to document.title
+  const pageTitle = document.querySelector("meta[property='og:title']")?.content || document.title;
 
-  // Always use canonical URL if present
+  // Canonical URL if present, fallback to current URL
   const canonicalLink = document.querySelector("link[rel='canonical']");
   const pageURL = canonicalLink ? canonicalLink.href : window.location.href;
 
   // Optional meta fields
-  const datePublished = document.querySelector("meta[name='date']")?.content;
-  const pageDescription = document.querySelector("meta[name='description']")?.content;
+  const datePublished = document.querySelector("meta[name='date']")?.content || modifiedISO;
+  const pageDescription = document.querySelector("meta[name='description']")?.content || "";
 
+  // JSON-LD schema
   const ldJson = {
     "@context": "https://schema.org",
     "@graph": [
@@ -36,38 +35,24 @@
         "@id": "https://lekproductions.co.uk/#lek-productions",
         "name": "LEK Productions",
         "url": "https://lekproductions.co.uk/",
-        "founder": {
-          "@id": "https://lekproductions.co.uk/#richard-elliott"
-        }
+        "founder": { "@id": "https://lekproductions.co.uk/#richard-elliott" }
       },
       {
         "@type": "CreativeWork",
         "@id": pageURL,
         "name": pageTitle,
-        "author": {
-          "@id": "https://lekproductions.co.uk/#richard-elliott"
-        },
-        "publisher": {
-          "@id": "https://lekproductions.co.uk/#lek-productions"
-        },
+        "author": { "@id": "https://lekproductions.co.uk/#richard-elliott" },
+        "publisher": { "@id": "https://lekproductions.co.uk/#lek-productions" },
         "dateModified": modifiedISO,
+        "datePublished": datePublished,
         "inLanguage": "en-GB",
-        "url": pageURL
+        "url": pageURL,
+        "description": pageDescription
       }
     ]
   };
 
-  // Add datePublished if present
-  if (datePublished) {
-    ldJson["@graph"][3].datePublished = datePublished;
-  }
-
-  // Add description if present
-  if (pageDescription) {
-    ldJson["@graph"][3].description = pageDescription;
-  }
-
-  // Inject JSON-LD into the head
+  // Inject JSON-LD into head
   const script = document.createElement("script");
   script.type = "application/ld+json";
   script.textContent = JSON.stringify(ldJson);
