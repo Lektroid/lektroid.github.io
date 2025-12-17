@@ -37,8 +37,8 @@
     </style>
 
     <!-- Structured data for academic referencing -->
-    <script type="application/ld+json">
-    {
+    <script>
+    const ldJson = {
       "@context": "https://schema.org",
       "@type": "CreativeWork",
       "author": {
@@ -54,9 +54,13 @@
       },
       "dateModified": document.lastModified,
       "url": "https://lekproductions.co.uk/brainstormer"
-    }
-    </script>
+    };
 
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.text = JSON.stringify(ldJson);
+    document.head.appendChild(script);
+    </script>
 
 </head>
 
