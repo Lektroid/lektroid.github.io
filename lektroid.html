@@ -34,6 +34,34 @@
         iframe { border: 1px gray solid; }
     </style>
 
+        <!-- Structured data for academic referencing -->
+    <script>
+      (function() {
+        const ldJson = {
+          "@context": "https://schema.org",
+          "@type": "CreativeWork",
+          "author": {
+            "@type": "Person",
+            "name": "Richard Elliott",
+            "alternateName": ["Brainstormer", "Lektroid"]
+          },
+          "name": "Brainstormer: Biography and Discography",
+          "publisher": {
+            "@type": "Organization",
+            "name": "LEK Productions",
+            "url": "https://lekproductions.co.uk"
+          },
+          "dateModified": new Date(document.lastModified).toISOString(),
+          "url": "https://lekproductions.co.uk/brainstormer"
+        };
+
+        const script = document.createElement('script');
+        script.type = 'application/ld+json';
+        script.textContent = JSON.stringify(ldJson, null, 2);
+        document.head.appendChild(script);
+      })();
+    </script>
+
 </head>
 
 <body class="bg-black mx-auto text-gray-200">
