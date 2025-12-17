@@ -1,5 +1,4 @@
 (function () {
-
   const modifiedISO = new Date(document.lastModified).toISOString();
 
   const pageTitle =
@@ -14,17 +13,23 @@
     "@context": "https://schema.org",
     "@graph": [
       {
+        "@type": "WebSite",
+        "@id": "https://lekproductions.co.uk/#website",
+        "name": "LEK Productions",
+        "url": "https://lekproductions.co.uk/"
+      },
+      {
         "@type": "Person",
         "@id": "https://lekproductions.co.uk/#richard-elliott",
         "name": "Richard Elliott",
         "alternateName": ["Brainstormer", "Lektroid"],
-        "url": "https://lekproductions.co.uk"
+        "url": "https://lekproductions.co.uk/"
       },
       {
         "@type": "Organization",
         "@id": "https://lekproductions.co.uk/#lek-productions",
         "name": "LEK Productions",
-        "url": "https://lekproductions.co.uk",
+        "url": "https://lekproductions.co.uk/",
         "founder": {
           "@id": "https://lekproductions.co.uk/#richard-elliott"
         }
@@ -48,7 +53,6 @@
 
   const script = document.createElement("script");
   script.type = "application/ld+json";
-  script.textContent = JSON.stringify(ldJson, null, 2);
+  script.textContent = JSON.stringify(ldJson);
   document.head.appendChild(script);
-
 })();
