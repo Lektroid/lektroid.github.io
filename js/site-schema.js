@@ -1,17 +1,26 @@
 (function () {
-  // Last modified date in ISO format
+  // Get last modified date
   const modifiedISO = new Date(document.lastModified).toISOString();
 
-  // Page title: prefer og:title, fallback to document.title
-  const pageTitle = document.querySelector("meta[property='og:title']")?.content || document.title;
+  // Get page title from og:title or fallback to document title
+  const pageTitle =
+    document.querySelector("meta[property='og:title']")?.content ||
+    document.title;
 
-  // Canonical URL if present, fallback to current URL
+  // Get canonical URL
   const canonicalLink = document.querySelector("link[rel='canonical']");
-  const pageURL = canonicalLink ? canonicalLink.href : window.location.href;
+  let pageURL = canonicalLink ? canonicalLink.href : window.location.href;
+
+  // Normalize URL: remove trailing slash for consistency except root
+  if (pageURL.endsWith('/') && pageURL !== 'https://lekproductions.co.uk/') {
+    pageURL = pageURL.slice(0, -1);
+  }
 
   // Optional meta fields
-  const datePublished = document.querySelector("meta[name='date']")?.content || modifiedISO;
-  const pageDescription = document.querySelector("meta[name='description']")?.content || "";
+  const datePublished =
+    document.querySelector("meta[name='date']")?.content || modifiedISO;
+  const pageDescription =
+    document.querySelector("meta[name='description']")?.content || "";
 
   // JSON-LD schema
   const ldJson = {
@@ -35,24 +44,30 @@
         "@id": "https://lekproductions.co.uk/#lek-productions",
         "name": "LEK Productions",
         "url": "https://lekproductions.co.uk/",
-        "founder": { "@id": "https://lekproductions.co.uk/#richard-elliott" }
+        "founder": {
+          "@id": "https://lekproductions.co.uk/#richard-elliott"
+        }
       },
       {
         "@type": "CreativeWork",
         "@id": pageURL,
         "name": pageTitle,
-        "author": { "@id": "https://lekproductions.co.uk/#richard-elliott" },
-        "publisher": { "@id": "https://lekproductions.co.uk/#lek-productions" },
+        "author": {
+          "@id": "https://lekproductions.co.uk/#richard-elliott"
+        },
+        "publisher": {
+          "@id": "https://lekproductions.co.uk/#lek-productions"
+        },
         "dateModified": modifiedISO,
         "datePublished": datePublished,
+        "description": pageDescription,
         "inLanguage": "en-GB",
-        "url": pageURL,
-        "description": pageDescription
+        "url": pageURL
       }
     ]
   };
 
-  // Inject JSON-LD into head
+  // Inject JSON-LD into the head
   const script = document.createElement("script");
   script.type = "application/ld+json";
   script.textContent = JSON.stringify(ldJson);
