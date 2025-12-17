@@ -199,6 +199,18 @@
 
 </footer>
 
+        <div id="citation-block"></div>
+            <script>
+              (function() {
+                const modified = new Date(document.lastModified);
+                const year = modified.getFullYear();
+                const month = modified.toLocaleString('default', { month: 'long' });
+                const day = modified.getDate();
+                const citation = `Elliott, R. (${year}, ${month} ${day}). Brainstormer: Biography and Discography. LEK Productions. https://lekproductions.co.uk/brainstormer`;
+                document.getElementById('citation-block').innerText = "Recommended citation: " + citation;
+              })();
+            </script>
+
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
