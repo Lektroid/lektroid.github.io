@@ -7,15 +7,12 @@
     document.querySelector("meta[property='og:title']")?.content ||
     document.title;
 
-  // Get canonical URL or fallback to current URL
-  const pageURL =
-    document.querySelector("link[rel='canonical']")?.href ||
-    window.location.href;
+  // Always use canonical URL if present
+  const canonicalLink = document.querySelector("link[rel='canonical']");
+  const pageURL = canonicalLink ? canonicalLink.href : window.location.href;
 
-  // Get optional datePublished from meta[name='date'] (for static pages)
+  // Optional meta fields
   const datePublished = document.querySelector("meta[name='date']")?.content;
-
-  // Get optional description from meta[name='description']
   const pageDescription = document.querySelector("meta[name='description']")?.content;
 
   const ldJson = {
@@ -30,7 +27,7 @@
       {
         "@type": "Person",
         "@id": "https://lekproductions.co.uk/#richard-elliott",
-        "name": "Richard Elliott",
+        "name": "Richard Elliott, BSc",
         "alternateName": ["Brainstormer", "Lektroid"],
         "url": "https://lekproductions.co.uk/"
       },
@@ -60,12 +57,12 @@
     ]
   };
 
-  // Add datePublished if available
+  // Add datePublished if present
   if (datePublished) {
     ldJson["@graph"][3].datePublished = datePublished;
   }
 
-  // Add description if available
+  // Add description if present
   if (pageDescription) {
     ldJson["@graph"][3].description = pageDescription;
   }
