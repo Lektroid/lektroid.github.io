@@ -12,38 +12,13 @@
   </url>
 
   <url>
-    <loc>https://lekproductions.co.uk/ba-interview.html</loc>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
     <loc>https://lekproductions.co.uk/brainstormer.html</loc>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://lekproductions.co.uk/contact.html</loc>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://lekproductions.co.uk/contact1.html</loc>
-    <priority>0.5</priority>
-  </url>
-
-  <url>
     <loc>https://lekproductions.co.uk/discography.html</loc>
     <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://lekproductions.co.uk/dlk-efs.html</loc>
-    <priority>0.5</priority>
-  </url>
-
-  <url>
-    <loc>https://lekproductions.co.uk/dlk-qt.html</loc>
-    <priority>0.5</priority>
   </url>
 
   <url>
@@ -57,11 +32,6 @@
   </url>
 
   <url>
-    <loc>https://lekproductions.co.uk/MTProject.html</loc>
-    <priority>0.5</priority>
-  </url>
-
-  <url>
     <loc>https://lekproductions.co.uk/publications.html</loc>
     <priority>0.5</priority>
   </url>
@@ -69,51 +39,6 @@
   <url>
     <loc>https://lekproductions.co.uk/reviews.html</loc>
     <priority>0.5</priority>
-  </url>
-
-  <url>
-    <loc>https://lekproductions.co.uk/services.html</loc>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://lekproductions.co.uk/studio.html</loc>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://lekproductions.co.uk/tb-bt.html</loc>
-    <priority>0.5</priority>
-  </url>
-
-  <url>
-    <loc>https://lekproductions.co.uk/tb-efs.html</loc>
-    <priority>0.5</priority>
-  </url>
-
-  <url>
-    <loc>https://lekproductions.co.uk/tb-interview.html</loc>
-    <priority>0.5</priority>
-  </url>
-
-  <url>
-    <loc>https://lekproductions.co.uk/tb-intro.html</loc>
-    <priority>0.5</priority>
-  </url>
-
-  <url>
-    <loc>https://lekproductions.co.uk/tb-qt.html</loc>
-    <priority>0.5</priority>
-  </url>
-
-  <url>
-    <loc>https://lekproductions.co.uk/turbostorm.html</loc>
-    <priority>0.5</priority>
-  </url>
-
-  <url>
-    <loc>https://lekproductions.co.uk/videos.html</loc>
-    <priority>0.6</priority>
   </url>
 
 </urlset>
