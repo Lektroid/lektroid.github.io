@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /pre-release
+
+Sitemap: https://lekproductions.co.uk/sitemap.xml
