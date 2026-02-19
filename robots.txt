@@ -1,7 +1,19 @@
 User-agent: *
+
+Disallow: /ba-interview
+Disallow: /contact
+Disallow: /contact1
+Disallow: /dlk-efs
+Disallow: /dlk-qt
+Disallow: /MTProject
 Disallow: /pre-release
-Disallow: /contact.html
-Disallow: /services.html
-Disallow: /studio.html
+Disallow: /services
+Disallow: /studio
+Disallow: /tb-bt
+Disallow: /tb-efs
+Disallow: /tb-interview
+Disallow: /tb-intro
+Disallow: /tb-qt
+Disallow: /videos
 
 Sitemap: https://lekproductions.co.uk/sitemap.xml
