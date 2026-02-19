@@ -23,31 +23,23 @@
     (function() {
       const ldJson = {
         "@context": "https://schema.org",
-        "@type": "ProfilePage",
+        "@type": "MusicGroup",
+        "@id": "https://lekproductions.co.uk/brainstormer#artist",
+        "name": "Brainstormer",
+        "genre": ["Techno", "Electronic"],
         "url": "https://lekproductions.co.uk/brainstormer",
-        "dateModified": new Date(document.lastModified).toISOString(),
-        "inLanguage": "en-GB",
-        "mainEntity": {
-          "@type": "MusicGroup",
-          "name": "Brainstormer",
-          "alternateName": ["Wise Ones"],
-          "genre": ["Drum and Bass", "Breakbeat", "Electronic", "Hardcore Breaks"],
-          "url": "https://lekproductions.co.uk/brainstormer",
-          "sameAs": [
-              "https://brainstormer.bandcamp.com",
-              "https://soundcloud.com/brainstormer"
-            ]
-          "member": {
-            "@type": "Person",
-            "name": "Richard Elliott",
-            "alternateName": ["Brainstormer", "Lektroid"]
-          }
+        "sameAs": [
+          "https://soundcloud.com/brainstormer",
+          "https://brainstormer.bandcamp.com"
+        ],
+        "member": {
+          "@id": "https://lekproductions.co.uk/#richard-elliott"
         }
       };
 
-      const script = document.createElement('script');
-      script.type = 'application/ld+json';
-      script.textContent = JSON.stringify(ldJson, null, 2);
+      const script = document.createElement("script");
+      script.type = "application/ld+json";
+      script.textContent = JSON.stringify(ldJson);
       document.head.appendChild(script);
     })();
     </script>
