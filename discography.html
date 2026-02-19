@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html><html lang="en-GB">
+<html lang="en-GB">
 
 <head>
-    <meta name="description" content="Interactive discography from the entire LEK Productions catalogue" />
+    <meta name="description" content="Interactive discography from the entire LEK Productions catalogue, including releases by Lektroid, Brainstormer, and associated artists." />
     <meta name="keywords" content="Formation Records, Whitehouse Records, LEK Productions, Dominance Electricity, Street Sounds, Radio Equinoxe, Elektrodos, MacMillan Cancer Research, Bandcamp, Binalog, Nu Electro, Ruffneck Recordings, Hero 7, Hardcore Lives, B2VOS, Brainstorm Crew, Brainstormer, Lektroid, SST, F Project, Mertwax" />
     
-    <meta name="author" content="Richard Elliott">
+    <meta name="author" content="Richard Elliott, BSc">
     <meta name="publisher" content="LEK Productions">
     <meta name="copyright" content="Richard Elliott">
     <meta name="robots" content="index, follow">
-    <meta name="creator" content="Richard Elliott">
+    <meta name="creator" content="Richard Elliott, BSc">
     <meta http-equiv="content-language" content="en-GB">
 
     <link rel="canonical" href="https://lekproductions.co.uk/discography">
@@ -19,11 +19,50 @@
 
     <script src="/js/site-schema.js" defer></script>
 
-    <title>Discography</title>
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <script>
+    (function() {
+      const ldJson = {
+        "@context": "https://schema.org",
+        "@type": "Collection",
+        "name": "LEK Productions: Discography",
+        "description": "Interactive discography from the entire LEK Productions catalogue, including releases by Lektroid, Brainstormer, and associated artists.",
+        "creator": {
+          "@type": "Person",
+          "name": "Richard Elliott, BSc",
+          "alternateName": ["Brainstormer", "Lektroid"]
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "LEK Productions",
+          "url": "https://lekproductions.co.uk"
+        },
+        "dateModified": new Date(document.lastModified).toISOString(),
+        "url": "https://lekproductions.co.uk/discography",
+        "hasPart": [
+          {
+            "@type": "MusicAlbum",
+            "name": "Brainstormer – Omniscience EP",
+            "url": "https://omnimusic.bandcamp.com/album/omniscience-ep"
+          },
+          {
+            "@type": "MusicAlbum",
+            "name": "Lektroid – Beyond Theory (Album)",
+            "url": "https://lektroid.bandcamp.com/album/beyond-theory"
+          }
+        ]
+      };
+
+      const script = document.createElement('script');
+      script.type = 'application/ld+json';
+      script.textContent = JSON.stringify(ldJson, null, 2);
+      document.head.appendChild(script);
+    })();
+    </script>
+
 
     <style type="text/css">
     /* Custom image hover effect for brightening without affecting black areas */
@@ -36,10 +75,11 @@
         }
 
     /* Dropdown */
-              .release {
+       .release {
         display: inline-block;
+    }
 
-      .toggle {
+    .release .toggle {
         color: #ff0000;
         cursor: pointer;
         display: inline-block;
@@ -49,46 +89,18 @@
         padding: 0;
         font-weight: bold;
         user-select: none;
-      }
+    }
 
-      .tracklist {
+    .release .tracklist {
         display: none;
         color: gray;
         font-family: sans-serif;
         font-size: 0.9em;
         margin-left: 18px;
-      }
+    }
     </style>
 
-    <!-- Structured data for academic referencing
-    <script>
-      (function() {
-        const ldJson = {
-          "@context": "https://schema.org",
-          "@type": "CreativeWork",
-          "author": {
-            "@type": "Person",
-            "name": "Richard Elliott",
-            "alternateName": ["Brainstormer", "Lektroid"]
-          },
-          "name": "LEK Productions: Discography",
-          "publisher": {
-            "@type": "Organization",
-            "name": "LEK Productions",
-            "url": "https://lekproductions.co.uk"
-          },
-          "dateModified": new Date(document.lastModified).toISOString(),
-          "url": "https://lekproductions.co.uk/discography"
-        };
-
-        const script = document.createElement('script');
-        script.type = 'application/ld+json';
-        script.textContent = JSON.stringify(ldJson, null, 2);
-        document.head.appendChild(script);
-      })();
-    </script>
-
-    -->
+    <title>DISCOGRAPHY | LEK Productions</title>
 
 </head>
 
