@@ -2,6 +2,7 @@
 <html lang="en-GB">
 
 <head>
+    <title>Publications</title>
     <meta name="description" content="Album reviews. Formerly releasing on Street Sounds, Dominance Electricity, Ozone Recordings, Crobot Music. He brings you the finest in melodic electro and ambient soundscapes" />
     <meta name="keywords" content="Electro, street sounds, ozone recordings, crobot, binalog, nu electro, xidus pain, deep electro, ambient, soundscapes, music" />
 
@@ -18,8 +19,6 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
     <script src="/js/site-schema.js" defer></script>
-    
-    <title>Reviews</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -34,9 +33,7 @@
         .img-links a:hover img {
             filter: brightness(1.35) contrast(1.1); /* Adjust brightness and contrast */
         }
-    </style>
-
-    <style>    
+   
         .social {
             color: #999999;
             color: 0.2s;
@@ -47,27 +44,66 @@
         .social:hover {
             color: #FFFFFF;
         }
+
+    /* Headers */
+      h1, h2, h3 {
+        color: #151acb;        /* Deep magenta */
+        font-weight: 400;       /* Normal weight */
+        font-family: 'Helvetica Neue', Arial, sans-serif;
+        margin: 0.2em 0;        /* Vertical spacing only */
+        letter-spacing: 0.5px;
+      }
+
+      h1 {
+        font-size: clamp(2rem, 5vw, 3rem); /* Shrinks on mobile, grows on desktop */
+      }
+
+      h2 {
+        font-size: clamp(1.5rem, 4vw, 2.2rem);
+      }
+
+      h3 {
+        font-size: clamp(1.2rem, 3vw, 1.8rem);
+      }
+
+      p {
+        line-height: 1.6;
+        font-size: 1rem;
+        margin: 0.8em 0;
+      }
     </style>
 
-    <!-- Structured data for academic referencing 
     <script>
       (function() {
         const ldJson = {
           "@context": "https://schema.org",
-          "@type": "CreativeWork",
-          "author": {
+          "@type": "CollectionPage",
+          "@id": "https://lekproductions.co.uk/publications#webpage",
+          "url": "https://lekproductions.co.uk/publications",
+          "name": "Reviews – LEK Productions",
+          "headline": "Artist Interviews and Reviews",
+          "description": "Artist interviews and album reviews featuring Lektroid and Brainstormer, published on Technobass.net, Chain D.L.K, and Bass Agenda.",
+          "inLanguage": "en-GB",
+          "isPartOf": {
+            "@type": "WebSite",
+            "name": "LEK Productions",
+            "url": "https://lekproductions.co.uk"
+          },
+          "about": {
             "@type": "Person",
-            "name": "Richard Elliott",
+            "name": "Richard Elliott, BSc",
             "alternateName": ["Brainstormer", "Lektroid"]
           },
-          "name": "LEK Productions: Publications",
           "publisher": {
             "@type": "Organization",
             "name": "LEK Productions",
             "url": "https://lekproductions.co.uk"
           },
-          "dateModified": new Date(document.lastModified).toISOString(),
-          "url": "https://lekproductions.co.uk/publications"
+          "creator": {
+            "@type": "Person",
+            "name": "Richard Elliott, BSc"
+          },
+          "dateModified": new Date(document.lastModified).toISOString()
         };
 
         const script = document.createElement('script');
@@ -76,7 +112,8 @@
         document.head.appendChild(script);
       })();
     </script>
-    -->
+
+
 
 </head>
 
@@ -103,11 +140,8 @@
              Artist interviews and reviews
         </div> <br><br>
 
-    <div class="mx-4 md:mx-8 my-2">
-        <div class="text-indigo-700">
-            <b>Technobass.net:</b> 
-        </div>
-     
+    <div class="mx-4 md:mx-8 lg:mx-16 my-4">
+        <h2>Technobass.net:</h2>
         <a class="mx-4 my-2 hover:text-indigo-700" href="tb-intro">Lektroid Introduction</a><br>
 
         <a class="mx-4 my-2 hover:text-indigo-700" href="tb-interview">Lektroid interview</a><br>
@@ -119,16 +153,13 @@
         <a class="mx-4 my-2 hover:text-indigo-700" href="tb-bt">Lektroid - Beyond Theory</a><br>
         <br>
 
-        <div class="text-indigo-700">
-            <b>Chain D.L.K:</b> 
-        </div>
+        <h2>Chain D.L.K:</h2>
         <a class="mx-4 my-2 hover:text-indigo-700" href="dlk-efs">Lektroid - Electro Funk Selection</a><br>
 
         <a class="mx-4 my-2 hover:text-indigo-700" href="dlk-qt">Lektroid - Quantum Theory</a><br><br>
 
-        <div class="text-indigo-700">
-            <b>Bass Agenda:</b> 
-        </div>
+        
+        <h2>Bass Agenda:</h2> 
         <a class="mx-4 my-2 hover:text-indigo-700" href="ba-interview">Lektroid Interview</a><br><br>
     </div>
 
