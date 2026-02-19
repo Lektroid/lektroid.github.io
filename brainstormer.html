@@ -23,26 +23,34 @@
     (function() {
       const ldJson = {
         "@context": "https://schema.org",
-        "@type": "MusicGroup",
-        "@id": "https://lekproductions.co.uk/brainstormer#artist",
-        "name": "Brainstormer",
-        "genre": ["Techno", "Electronic"],
+        "@type": "ProfilePage",
         "url": "https://lekproductions.co.uk/brainstormer",
-        "sameAs": [
-          "https://soundcloud.com/brainstormer",
-          "https://brainstormer.bandcamp.com"
-        ],
-        "member": {
-          "@id": "https://lekproductions.co.uk/#richard-elliott"
+        "dateModified": new Date(document.lastModified).toISOString(),
+        "inLanguage": "en-GB",
+        "mainEntity": {
+          "@type": "MusicGroup",
+          "name": "Brainstormer",
+          "alternateName": ["Brainstormer", "Wise Ones"],
+          "genre": ["Drum and Bass", "Breakbeat", "Electronic", "Hardcore Breaks"],
+          "url": "https://lekproductions.co.uk/brainstormer",
+          "sameAs": [
+            "https://soundcloud.com/brainstormer",
+            "https://brainstormer.bandcamp.com"
+          ],
+          "member": {
+            "@type": "Person",
+            "name": "Richard Elliott"
+          }
         }
       };
 
-      const script = document.createElement("script");
-      script.type = "application/ld+json";
-      script.textContent = JSON.stringify(ldJson);
+      const script = document.createElement('script');
+      script.type = 'application/ld+json';
+      script.textContent = JSON.stringify(ldJson, null, 2);
       document.head.appendChild(script);
     })();
     </script>
+
 
     <title>BRAINSTORMER - Drum & Bass, Breakbeat, Hardcore-Breaks</title>
 
