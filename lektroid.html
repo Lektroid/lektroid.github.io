@@ -2,6 +2,8 @@
 <html lang="en-GB">
 
 <head>
+    <title>LEKTROID - Classic, Melodic Electro-Funk</title>
+
     <meta name="description" content="LEKTROID – formerly releasing on Street Sounds, Dominance Electricity, and many other labels. Classic electro, melodic electro, electro-funk, and ambient soundscapes." />
 
     <meta name="keywords" content="LEKTROID, Electro, Electro-Funk, Ozone Recordings, Street Sounds, Crobot, Binalog, Nu Electro, Xidus Pain, Deep Electro, Ambient, Soundscapes, Music" />
@@ -26,32 +28,26 @@
       const ldJson = {
         "@context": "https://schema.org",
         "@type": "MusicGroup",
+        "@id": "https://lekproductions.co.uk/lektroid#artist",
         "name": "LEKTROID",
-        "alternateName": ["Lektroid", "Brainstormer"],
+        "alternateName": ["Lektroid"],
         "genre": ["Electro", "Electronic", "Electro-Funk"],
         "url": "https://lekproductions.co.uk/lektroid",
-        "sameAs": ["https://soundcloud.com/lektroid"],
-        "publisher": {
-          "@type": "Organization",
-          "name": "LEK Productions",
-          "url": "https://lekproductions.co.uk"
-        },
-        "dateModified": new Date(document.lastModified).toISOString(),
+        "sameAs": [
+          "https://soundcloud.com/lektroid",
+          "https://lektroid.bandcamp.com"
+        ],
         "member": {
-          "@type": "Person",
-          "name": "Richard Elliott, BSc"
+          "@id": "https://lekproductions.co.uk/#richard-elliott"
         }
       };
 
       const script = document.createElement('script');
       script.type = 'application/ld+json';
-      script.textContent = JSON.stringify(ldJson, null, 2);
+      script.textContent = JSON.stringify(ldJson);
       document.head.appendChild(script);
     })();
     </script>
-
-
-    <title>LEKTROID - Classic, Melodic Electro-Funk</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
