@@ -23,22 +23,24 @@
     (function() {
       const ldJson = {
         "@context": "https://schema.org",
-        "@type": "MusicGroup",
-        "name": "Brainstormer",
-        "alternateName": ["Brainstormer", "Wise Ones"],
-        "genre": ["drum and bass", "breakbeat", "electronic", "hardcore-breaks"],
+        "@type": "ProfilePage",
         "url": "https://lekproductions.co.uk/brainstormer",
-        "sameAs": ["https://soundcloud.com/brainstormer"],
-        "publisher": {
-          "@type": "Organization",
-          "name": "LEK Productions",
-          "url": "https://lekproductions.co.uk"
-        },
         "dateModified": new Date(document.lastModified).toISOString(),
-        "member": {
-          "@type": "Person",
-          "name": "Richard Elliott",
-          "alternateName": ["Brainstormer", "Lektroid"]
+        "inLanguage": "en-GB",
+        "mainEntity": {
+          "@type": "MusicGroup",
+          "name": "Brainstormer",
+          "alternateName": ["Wise Ones"],
+          "genre": ["Drum and Bass", "Breakbeat", "Electronic", "Hardcore Breaks"],
+          "url": "https://lekproductions.co.uk/brainstormer",
+          "sameAs": [
+            "https://soundcloud.com/brainstormer"
+          ],
+          "member": {
+            "@type": "Person",
+            "name": "Richard Elliott",
+            "alternateName": ["Brainstormer", "Lektroid"]
+          }
         }
       };
 
