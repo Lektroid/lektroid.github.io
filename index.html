@@ -35,14 +35,15 @@
 
     <style type="text/css">
 
-        /* Custom image hover effect for brightening without affecting black areas */
+        /* Custom image hover effect for artist links */
         .img-links a img {
             transition: filter 0.2s ease-in-out;
-            filter: grayscale(50%) brightness(0.85); /* Default: partially colored, slightly dimmed */
+            filter: grayscale(25%) brightness(0.95) saturate(0.85); /* light desaturation, slightly brightened, slightly muted */
         }
 
+        /* Hover: full color with gentle enhancement */
         .img-links a:hover img {
-            filter: grayscale(0%) brightness(1.35) contrast(1.1); /* Hover: full color, enhanced */
+            filter: grayscale(0%) brightness(1.2) contrast(1.05) saturate(1.1); /* full color, mild boost to make it pop without looking fake */
         }
 
         .social {
