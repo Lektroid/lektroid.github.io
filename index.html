@@ -1,65 +1,50 @@
 <!DOCTYPE html>
 <html lang="en-GB">
 <head>
-
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>LEK Productions</title>
-
-  <meta name="description" content="Richard Elliott, BSc, veteran music producer and synthesizer designer. Discover his music, releases, mastering services, and unique synthesizer creations at LEK Productions.">
-
-  <meta name="keywords" content="LEK Productions, Richard Elliott, Lektroid, Brainstormer, electronic music, electro, electro-funk, breakbeat, drum & bass, ambient, mastering, audio mastering, synthesizers, music production">
-
-  <meta name="author" content="Richard Elliott, BSc">
-  <meta name="publisher" content="LEK Productions">
-  <meta name="creator" content="Richard Elliott, BSc">
-  <meta name="copyright" content="Richard Elliott, BSc">
-
-  <meta name="robots" content="index, follow">
-  <meta http-equiv="content-language" content="en-GB">
-
-  <!-- Canonical URL -->
-  <link rel="canonical" href="https://lekproductions.co.uk/">
-
-  <!-- Favicon -->
-  <link rel="icon" href="/favicon.ico" sizes="any">
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="LEK Productions – Richard Elliott, BSc">
-  <meta property="og:description" content="Richard Elliott, BSc, veteran music producer and synthesizer designer. Discover music, releases, and mastering services at LEK Productions.">
-  <meta property="og:url" content="https://lekproductions.co.uk/">
-  <meta property="og:type" content="website">
-
-  <!-- Structured data (JSON-LD injected via JS) -->
-  <script src="/js/site-schema.js" defer></script>
-
-
+    <title>LEK Productions</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Richard Elliott, BSc, veteran music producer and synthesizer designer. Discover his music, releases, mastering services, and unique synthesizer creations at LEK Productions.">
+
+    <meta name="keywords" content="LEK Productions, Richard Elliott, Lektroid, Brainstormer, electronic music, electro, electro-funk, breakbeat, drum & bass, ambient, mastering, audio mastering, synthesizers, music production">
+
+    <meta name="author" content="Richard Elliott, BSc">
+    <meta name="publisher" content="LEK Productions">
+    <meta name="creator" content="Richard Elliott, BSc">
+    <meta name="copyright" content="Richard Elliott, BSc">
+
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="content-language" content="en-GB">
+
+<!-- Canonical URL -->
+    <link rel="canonical" href="https://lekproductions.co.uk/">
+
+<!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+
+<!-- Open Graph -->
+    <meta property="og:title" content="LEK Productions – Richard Elliott, BSc">
+    <meta property="og:description" content="Richard Elliott, BSc, veteran music producer and synthesizer designer. Discover music, releases, and mastering services at LEK Productions.">
+    <meta property="og:url" content="https://lekproductions.co.uk/">
+    <meta property="og:type" content="website">
+
+<!-- Structured data (JSON-LD injected via JS) -->
+    <script src="/js/site-schema.js" defer></script>
 
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
-
     <style type="text/css">
-
-
-      /* .img-links a:hover > img {
-          -webkit-filter:  /* invert(1); 
-            filter: invert(1);
-        }
-     */
 
         /* Custom image hover effect for brightening without affecting black areas */
         .img-links a img {
             transition: filter 0.2s ease-in-out;
-            filter: grayscale(100%); /* Makes icons greyscale */
+            filter: grayscale(50%) brightness(0.85); /* Default: partially colored, slightly dimmed */
         }
 
         .img-links a:hover img {
-    filter: grayscale(0%) brightness(1.35) contrast(1.1); /* Restores color & enhances */
+            filter: grayscale(0%) brightness(1.35) contrast(1.1); /* Hover: full color, enhanced */
         }
 
-    
         .social {
             color: #999999;
             color: 0.2s;
@@ -73,8 +58,6 @@
         
         p {text-align: center;
         }
-    
-
 
         .social-icon {
             width: 40px;  /* Adjust size */
@@ -89,38 +72,60 @@
             filter: grayscale(0%); /* Restores color on hover */
         }
 
-
-
     </style>
 
-    <!-- Structured data for academic referencing
     <script>
-      (function() {
-        const ldJson = {
-          "@context": "https://schema.org",
-          "@type": "CreativeWork",
-          "author": {
-            "@type": "Person",
-            "name": "Richard Elliott",
-            "alternateName": ["Brainstormer", "Lektroid"]
-          },
+    (function() {
+      const ldJson = {
+        "@context": "https://schema.org",
+        "@type": "CreativeWork",
+        "name": "LEK Productions",
+        "url": "https://lekproductions.co.uk",
+        "author": {
+          "@type": "Person",
+          "name": "Richard Elliott, BSc",
+          "alternateName": ["Lektroid", "Brainstormer"]
+        },
+        "publisher": {
+          "@type": "Organization",
           "name": "LEK Productions",
-          "publisher": {
-            "@type": "Organization",
-            "name": "LEK Productions",
-            "url": "https://lekproductions.co.uk"
-          },
-          "dateModified": new Date(document.lastModified).toISOString(),
           "url": "https://lekproductions.co.uk"
-        };
+        },
+        "dateModified": new Date(document.lastModified).toISOString(),
+        "description": "Richard Elliott, BSc, veteran music producer and studio hardware designer. LEK Productions provides music production, mastering, and immersive sound design for film and games.",
+        "keywords": "LEK Productions, Richard Elliott, Lektroid, Brainstormer, music production, mastering, sound design, synthesizers",
+        "inLanguage": "en-GB",
+        "hasPart": [
+          {
+            "@type": "Service",
+            "name": "Mastering",
+            "provider": {
+              "@type": "Organization",
+              "name": "LEK Productions",
+              "url": "https://lekproductions.co.uk/mastering"
+            },
+            "description": "Professional mastering services for electronic music, ensuring your tracks are ready for distribution."
+          },
+          {
+            "@type": "Service",
+            "name": "Music Composition & Sound Design",
+            "provider": {
+              "@type": "Organization",
+              "name": "LEK Productions",
+              "url": "https://lekproductions.co.uk/services"
+            },
+            "description": "Creating immersive soundscapes and patch bank design for film, games, and synthesizer hardware/software."
+          }
+        ]
+      };
 
-        const script = document.createElement('script');
-        script.type = 'application/ld+json';
-        script.textContent = JSON.stringify(ldJson, null, 2);
-        document.head.appendChild(script);
-      })();
+      const script = document.createElement('script');
+      script.type = 'application/ld+json';
+      script.textContent = JSON.stringify(ldJson, null, 2);
+      document.head.appendChild(script);
+    })();
     </script>
--->
+
 </head>
 
 <body class="bg-black mx-auto text-gray-200">
@@ -167,14 +172,6 @@
         <div class="mx-auto max-w-2xl mt-2 px-4">
             LEK Productions is best known for music production and mastering within the underground dance music scene. LEK Productions also specialises in creating immersive soundscape compositions for film and game development, offering a full range of sound design services.<br>
         </div> 
-
-
-
-
-            
-
-
-
 
 <!-- <h2 class="mx-4 md:mx-8 font-bold text-2xl md:text-3xl text-red-600">News and Releases</h2> -->
     
@@ -389,7 +386,6 @@
   </div>
 
 </footer>
-
 
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
