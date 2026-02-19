@@ -2,8 +2,8 @@
 <html lang="en-GB">
 
 <head>
-    <meta name="description" content="Brainstormer, solo artist and veteran producer for groups like Brainstorm Crew, Wise Ones, and labels like Formation Records and Omni Music, delivers drum & bass, breakbeat, and hardcore-breaks" />
-    <meta name="keywords" content="drum & bass, drum n bass, dnb, breakbeat, hardcore breaks, oldschool rave, electro-breaks, brainstorm crew, brainstormer, wise ones, HCB, formation records, omni music, whitehouse records, f project, vinyl, 12 inch, track, remix, sampler, music, mp3, UK rave, UK breakbeat, underground dance" />
+    <meta name="description" content="Brainstormer, solo artist and veteran producer for groups like Brainstorm Crew, Wise Ones, and labels like Formation Records and Omni Music. Delivers drum & bass, breakbeat, and hardcore-breaks." />
+    <meta name="keywords" content="Brainstormer, drum & bass, drum n bass, dnb, breakbeat, hardcore breaks, oldschool rave, electro-breaks, brainstorm crew, wise ones, HCB, formation records, omni music, whitehouse records, f project, vinyl, 12 inch, track, remix, sampler, music, mp3, UK rave, UK breakbeat, underground dance" />
 
     <meta name="author" content="Richard Elliott, BSc">
     <meta name="publisher" content="LEK Productions">
@@ -19,25 +19,37 @@
 
     <script src="/js/site-schema.js" defer></script>
 
-    <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "MusicGroup",
-          "name": "Brainstormer",
-          "genre": ["Drum and Bass", "Breakbeat", "Electronic"],
-          "url": "https://lekproductions.co.uk/brainstormer.html",
-          "sameAs": [
-            "https://soundcloud.com/brainstormer"
-          ],
-          "member": {
-            "@type": "Person",
-            "name": "Richard Elliott"
-          }
+    <script>
+    (function() {
+      const ldJson = {
+        "@context": "https://schema.org",
+        "@type": "MusicGroup",
+        "name": "Brainstormer",
+        "alternateName": ["Brainstormer", "Wise Ones"],
+        "genre": ["drum and bass", "breakbeat", "electronic", "hardcore-breaks"],
+        "url": "https://lekproductions.co.uk/brainstormer",
+        "sameAs": ["https://soundcloud.com/brainstormer"],
+        "publisher": {
+          "@type": "Organization",
+          "name": "LEK Productions",
+          "url": "https://lekproductions.co.uk"
+        },
+        "dateModified": new Date(document.lastModified).toISOString(),
+        "member": {
+          "@type": "Person",
+          "name": "Richard Elliott",
+          "alternateName": ["Brainstormer", "Lektroid"]
         }
+      };
+
+      const script = document.createElement('script');
+      script.type = 'application/ld+json';
+      script.textContent = JSON.stringify(ldJson, null, 2);
+      document.head.appendChild(script);
+    })();
     </script>
 
-
-    <title>Brainstormer</title>
+    <title>BRAINSTORMER - Drum & Bass, Breakbeat, Hardcore-Breaks</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -52,9 +64,7 @@
         .img-links a:hover img {
             filter: brightness(1.35) contrast(1.1); /* Adjust brightness and contrast */
         }
-    </style>
 
-    <style>
         .cta-button {
           display: inline-block;
           border: 1px solid #990000;
@@ -71,35 +81,6 @@
           color: white;
         }
     </style>
-
-    <!-- Structured data for academic referencing
-    <script>
-      (function() {
-        const ldJson = {
-          "@context": "https://schema.org",
-          "@type": "CreativeWork",
-          "author": {
-            "@type": "Person",
-            "name": "Richard Elliott",
-            "alternateName": ["Brainstormer", "Lektroid"]
-          },
-          "name": "Brainstormer: Artist",
-          "publisher": {
-            "@type": "Organization",
-            "name": "LEK Productions",
-            "url": "https://lekproductions.co.uk"
-          },
-          "dateModified": new Date(document.lastModified).toISOString(),
-          "url": "https://lekproductions.co.uk/brainstormer"
-        };
-
-        const script = document.createElement('script');
-        script.type = 'application/ld+json';
-        script.textContent = JSON.stringify(ldJson, null, 2);
-        document.head.appendChild(script);
-      })();
-    </script>
-    -->
 
 </head>
 
