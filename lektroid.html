@@ -27,27 +27,33 @@
     (function() {
       const ldJson = {
         "@context": "https://schema.org",
-        "@type": "MusicGroup",
-        "@id": "https://lekproductions.co.uk/lektroid#artist",
-        "name": "LEKTROID",
-        "alternateName": ["Lektroid"],
-        "genre": ["Electro", "Electronic", "Electro-Funk"],
+        "@type": "ProfilePage",
         "url": "https://lekproductions.co.uk/lektroid",
-        "sameAs": [
-          "https://soundcloud.com/lektroid",
-          "https://lektroid.bandcamp.com"
-        ],
-        "member": {
-          "@id": "https://lekproductions.co.uk/#richard-elliott"
+        "dateModified": new Date(document.lastModified).toISOString(),
+        "inLanguage": "en-GB",
+        "mainEntity": {
+          "@type": "MusicGroup",
+          "name": "LEKTROID",
+          "alternateName": ["Lektroid"],
+          "genre": ["Electro", "Electronic", "Electro-Funk"],
+          "url": "https://lekproductions.co.uk/lektroid",
+          "sameAs": [
+            "https://soundcloud.com/lektroid"
+          ],
+          "member": {
+            "@type": "Person",
+            "name": "Richard Elliott"
+          }
         }
       };
 
       const script = document.createElement('script');
       script.type = 'application/ld+json';
-      script.textContent = JSON.stringify(ldJson);
+      script.textContent = JSON.stringify(ldJson, null, 2);
       document.head.appendChild(script);
     })();
     </script>
+
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
