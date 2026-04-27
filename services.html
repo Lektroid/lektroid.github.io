@@ -35,6 +35,70 @@
         .img-links a:hover img {
             filter: brightness(1.35) contrast(1.1); /* Adjust brightness and contrast */
         }
+
+
+      .service-link {
+        display: block;
+        margin: 0 16px;
+        text-decoration: none;
+      }
+
+      .service-title {
+        font-weight: bold;
+        font-size: 24px;
+        color: var(--base-colour);
+        transition: color 0.2s ease;
+      }
+
+      @media (min-width: 768px) {
+        .service-link {
+          margin: 0 8px;
+        }
+        .service-title {
+          font-size: 30px;
+        }
+      }
+
+      /* Hover colours per service */
+      .mastering:hover .service-title {
+        color: #dc2626; /* red */
+      }
+
+      .scoring:hover .service-title {
+        color: #60a5fa; /* blue */
+      }
+
+      .sound-design:hover .service-title {
+        color: #34d399; /* optional green/cyan */
+      }
+
+      .patches:hover .service-title {
+        color: #f59e0b; /* amber/orange */
+      }
+
+      .content a {
+        color: #dc2626; /* red */
+        transition: color 0.2s ease;
+      }
+
+      .content a:hover {
+        color: #fca5a5; /* light red */
+      }
+
+
+        .content {
+    color: white;
+  }
+
+  .content a {
+    color: #dc2626; /* red */
+
+    transition: color 0.2s ease;
+  }
+
+  .content a:hover {
+    color: #fca5a5;
+  }
     </style>
 
     <!-- Structured data for academic referencing 
@@ -96,18 +160,20 @@
     LEK Productions provides professional audio services for music, film, games, and interactive media, including mastering, composition, sound design, and synthesis-based audio creation. With decades of experience in electronic music and studio production, we focus on delivering high-quality, implementation-ready results.
     </div>
 
-    <a class="block text-red-600 hover:text-red-300 mx-4 md:mx-2" href="/mastering">
-      <h2 class="font-bold text-2xl md:text-3xl text-yellow-700">Mastering</h2>
+    <a class="service-link mastering" href="/mastering">
+      <h2 class="service-title" style="--base-colour:#b45309;">Mastering</h2>
     </a>
 
-    <div class="mx-3 md:mx-6">
+    <div class="content mx-3 md:mx-6">
     Mastering is the main service we offer, as it is possibly the most vital process of all; it serves to enhance the music you’ve put all your creative efforts into to sound great on all platforms and systems. We take every aspect of mastering very seriously and treat every track respectfully, working closely with our clients, taking into consideration creative choices with the highest regard for exemplary results. Our degree-level mastering is always tailored to your requirements, working on each project individually to the highest standards ready for distribution for both digital and vinyl. 
+
     <br><br>
-    Please follow <a class="text-red-600 hover:text-red-300" href="/mastering"> this link</a> for detailed info & submission requirements.
+
+    Please follow <a href="/mastering">this link</a> for detailed info & submission requirements.
     </div><br>
 
-    <a class="block mx-4 md:mx-2 group" href="/scoring">
-    <h2 class="font-bold text-2xl md:text-3xl text-yellow-700 group-hover:text-blue-400 transition-colors duration-200">Music and Audio for Visual Media</h2>
+    <a class="service-link scoring" href="/scoring">
+      <h2 class="service-title" style="--base-colour:#b45309;">Music and Audio for Visual Media</h2>
     </a>
 
     <div class="mx-3 md:mx-6">
