@@ -18,7 +18,35 @@
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
-    <script src="/js/site-schema.js" defer></script>
+<script>
+window.openModal = function(videoId) {
+  const modal = document.getElementById("modal");
+  const iframe = document.getElementById("modalVideo");
+
+  if (!modal || !iframe) return;
+
+  // Video routing
+  if (videoId === 'vimeo1') {
+    iframe.src = "https://player.vimeo.com/video/1187158110?autoplay=1";
+  }
+
+  if (videoId === 'youtube1') {
+    iframe.src = "https://www.youtube.com/embed/VIDEO_ID_HERE?autoplay=1&rel=0";
+  }
+
+  modal.style.display = "flex";
+};
+
+window.closeModal = function() {
+  const modal = document.getElementById("modal");
+  const iframe = document.getElementById("modalVideo");
+
+  if (!modal || !iframe) return;
+
+  modal.style.display = "none";
+  iframe.src = "";
+};
+</script>
 
     <title>Music for Visual Media</title>
 
@@ -35,6 +63,45 @@
         .img-links a:hover img {
             filter: brightness(1.35) contrast(1.1); /* Adjust brightness and contrast */
         }
+
+
+
+        .video-modal {
+          display: none;
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0,0,0,0.9);
+          z-index: 9999;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .video-modal-content {
+          width: 90%;
+          max-width: 1000px;
+          aspect-ratio: 16 / 9;
+          position: relative;
+        }
+
+        .video-modal-content iframe {
+          width: 100%;
+          height: 100%;
+        }
+
+        .close-btn {
+          position: absolute;
+          top: -40px;
+          right: 0;
+          font-size: 30px;
+          color: white;
+          background: none;
+          border: none;
+          cursor: pointer;
+        }
+        
     </style>
 
     <!-- Structured data for academic referencing 
@@ -97,12 +164,83 @@
     <div class="mx-3 md:mx-6">
     A short example of music and audio for visual media, demonstrating scene transitions, pacing, and sound design across a continuous sequence. The focus is on how audio supports changes in mood, environment, and narrative.
 
-    <br><br>
 
-    Designed for use in games, film, and interactive projects.
     </div><br>
 
-     <!--   <h2 class="mx-4 md:mx-2 font-bold text-2xl md:text-3xl text-blue-400">Audio Examples</h2><br> -->
+     <h2 class="mx-4 md:mx-2 font-bold text-2xl md:text-3xl text-blue-400">
+  Selected Additional Work
+</h2><br>
+
+<div class="mx-3 md:mx-6">
+
+  <div style="display:flex; flex-wrap:wrap; gap:40px; align-items:flex-start;">
+
+    <!-- Vimeo -->
+    <div style="flex:1; min-width:320px; max-width:320px;">
+
+      <div class="video-thumb"
+           style="cursor:pointer; position:relative;"
+           onclick="openModal('vimeo1')">
+
+        <div style="padding:56.25% 0 0 0; position:relative;">
+          <iframe
+            src="https://player.vimeo.com/video/1187158110?badge=0&autopause=0&muted=1&controls=0"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            style="position:absolute;top:0;left:0;width:100%;height:100%;">
+          </iframe>
+
+          <div style="position:absolute;top:0;left:0;width:100%;height:100%;"></div>
+        </div>
+
+      </div>
+
+      <div style="font-size:14px; color:#ccc; margin-top:10px;">
+        Full atmospheric and sound design demonstration focused on evolving textures, spatial movement, and narrative audio design.
+      </div>
+
+    </div>
+
+    <!-- YouTube -->
+    <div style="flex:1; min-width:320px; max-width:320px;">
+
+      <div class="video-thumb"
+           style="cursor:pointer; position:relative;"
+           onclick="openModal('youtube1')">
+
+        <div style="padding:56.25% 0 0 0; position:relative;">
+
+          <div style="
+            position:absolute;
+            top:0; left:0;
+            width:100%; height:100%;
+            background-image:url('https://img.youtube.com/vi/u41MgSDOJck/hqdefault.jpg');
+            background-size:cover;
+            background-position:center;
+          "></div>
+
+          <div style="position:absolute;top:0;left:0;width:100%;height:100%;"></div>
+
+        </div>
+      </div>
+
+      <div style="font-size:14px; color:#ccc; margin-top:10px;">
+        Fully produced music video created entirely by LEK Productions, covering composition, sound design, audio production, editing, and final mix.
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+    <div id="modal" class="video-modal" onclick="closeModal()">
+      <div class="video-modal-content" onclick="event.stopPropagation()">
+        <button class="close-btn" onclick="closeModal()">×</button>
+        <iframe id="modalVideo" frameborder="0" allow="autoplay; fullscreen; picture-in-picture"></iframe>
+      </div>
+    </div>
+</div><br>
 
     <h2 class="mx-4 md:mx-2 font-bold text-2xl md:text-3xl text-blue-400">What I Deliver</h2><br>
 
