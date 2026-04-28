@@ -34,8 +34,11 @@
         iframe.src = "https://www.youtube.com/embed/u41MgSDOJck?autoplay=1&mute=1&rel=0&playsinline=1";
       }
 
+      if (videoId === 'youtube2') {
+      iframe.src = "https://www.youtube.com/embed/vZBLi5vxqZU?autoplay=1&rel=0";
+      }
       modal.style.display = "flex";
-    };
+      };
 
     window.closeModal = function() {
       const modal = document.getElementById("modal");
