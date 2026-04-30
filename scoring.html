@@ -3,7 +3,7 @@
 
 <head>
 
-    <meta name="description" content="Services, such as Mastering, Sound design, composition, etc. at LEK Productions studios" />
+    <meta name="description" content="Professional music composition and sound design for film, games, and visual media, delivering high-quality, original audio tailored to enhance mood, pacing, and narrative. " />
     <meta name="keywords" content="sound design, synthesis, modular synthesis, patch creation, game " />
 
     <meta name="author" content="Richard Elliott, BSc">
@@ -18,6 +18,32 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
     <script>
+
+        (function() {
+          const ldJson = {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "url": "https://lekproductions.co.uk/scoring",
+            "inLanguage": "en-GB",
+            "dateModified": new Date(document.lastModified).toISOString(),
+            "mainEntity": {
+              "@type": "Service",
+              "name": "Music Composition and Sound Design",
+              "description": "Professional music composition and sound design for film, games, and visual media.",
+              "provider": {
+                "@type": "Person",
+                "name": "Richard Elliott, BSc"
+              },
+              "url": "https://lekproductions.co.uk/scoring"
+            }
+          };
+
+          const script = document.createElement('script');
+          script.type = 'application/ld+json';
+          script.textContent = JSON.stringify(ldJson, null, 2);
+          document.head.appendChild(script);
+        })();
+
     window.openModal = function(videoId) {
       const modal = document.getElementById("modal");
       const iframe = document.getElementById("modalVideo");
@@ -149,6 +175,9 @@
 
 
 <main>
+        <h1 class="sr-only">
+        Music Composition and Sound Design for Film, Games and Visual Media
+        </h1>
 
         <div class="flex flex-col flex-wrap items-center">
             <div class="flex-initial mx-4 mb-2 max-w-xs lg:mx-8 lg:max-w-md">
