@@ -18,7 +18,7 @@
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
-    <link rel="canonical" href="https://lekproductions.co.uk/lektroid.html">
+    <link rel="canonical" href="https://lekproductions.co.uk/lektroid">
 
     <script src="/js/site-schema.js" defer></script>
 
@@ -74,20 +74,24 @@
 
           /* Hidden element for screen readers / SEO */
       .sr-only {
-          position: absolute;
-          width: 1px;
-          height: 1px;
-          padding: 0;
-          margin: -1px;
-          overflow: hidden;
-          clip: rect(0,0,0,0);
-          border: 0;
-      }
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0,0,0,0);
+        border: 0;
+        }
+
+        html {
+        scroll-behavior: smooth;
+        }
     </style>
 
 </head>
 
-<body class="bg-black mx-auto text-gray-200">
+<body class="bg-black mx-auto text-gray-200" id="top">
 
     <header class="m-4 flex flex-row flex-wrap justify-center text-sm md:text-lg">
 
@@ -105,9 +109,10 @@
 
     </header>
 
-    <h1 class="sr-only">Lektroid</h1>
+    
+<main>
 
-    <main>
+    <h1 class="sr-only">Lektroid</h1>
 
         <div class="flex justify-center">
 
@@ -124,7 +129,7 @@
         <h2 id="albums" class="mx-4 md:mx-8 my-2 font-bold text-3xl md:text-4xl text-red-600">Electro-Funk Albums / EPs</h2>
         <div class="flex flex-row flex-wrap justify-center img-links">
             <div class="flex-initial mx-4 mb-8 max-w-xs lg:mx-8 lg:max-w-md">
-                <a href="https://ozonerecordings1.bandcamp.com/album/lektroid-the-lek-productions-collection"><img class="w-auto" src="Lektroid_images/lekcollection.jpg"></a>
+                <a href="https://ozonerecordings1.bandcamp.com/album/lektroid-the-lek-productions-collection"><img class="w-auto" src="Lektroid_images/lekcollection.jpg" alt="The LEK Productions Collection album artwork"></a>
                 <div class="my-4" data-nosnippet>
                     The LEK Productions Collection<br>
                     Brand new anthology which includes previously unreleased tracks as well as digitally remastered versions of some of Lektroid's finest works.
@@ -137,7 +142,7 @@
 
             
             <div class="flex-initial mx-4 mb-8 max-w-xs lg:mx-8 lg:max-w-md">
-                <a href="https://ozonerecordings1.bandcamp.com/album/lektroid-journey-into-the-80s"><img class="w-auto" src="MTProject/Journey1.jpg"></a>
+                <a href="https://ozonerecordings1.bandcamp.com/album/lektroid-journey-into-the-80s"><img class="w-auto" src="MTProject/Journey1.jpg" alt="Journey Into The '80s"></a>
                 <div class="my-4" data-nosnippet>
                     JOURNEY INTO THE '80s<br>
                     Lektroid drops ‘Journey into the ’80s’, a pure electro jam that piles on the atmosphere right from the intro. It’s all about those big, bouncing beats, vocoder vocals, huge strings and a dash of 303. A big tune for the summer with some serious crossover appeal.
@@ -150,7 +155,7 @@
 
 
             <div class="flex-initial mx-4 mb-8 max-w-xs lg:mx-8 lg:max-w-md">
-                <a href="https://lektroid.bandcamp.com/album/beyond-theory"><img class="w-auto" src="Lektroid_images/BT.jpg"></a>
+                <a href="https://lektroid.bandcamp.com/album/beyond-theory"><img class="w-auto" src="Lektroid_images/BT.jpg" alt="Beyond Theory"></a>
                 <div class="my-4">
                     BEYOND THEORY<br>
                     Followup album to Quantum Theory. Some of his most inspired work is found on this distinctive album.
@@ -161,7 +166,7 @@
             </div>
 
             <div class="flex-initial mx-4 mb-8 max-w-xs lg:mx-8 lg:max-w-md">
-                <a href="https://lektroid.bandcamp.com/album/quantum-theory"><img class="w-auto" src="Lektroid_images/QT-R.jpg"></a>
+                <a href="https://lektroid.bandcamp.com/album/quantum-theory"><img class="w-auto" src="Lektroid_images/QT-R.jpg" alt="Quantum Theory"></a>
                 <div class="my-4">
                     QUANTUM THEORY (REMASTERED)<br>
                     Lektroid's second full album remastered; his finest works are found here. Some of his most recognised tracks also feature on this album.
@@ -172,7 +177,7 @@
             </div>
 
             <div class="flex-initial mx-4 mb-8 max-w-xs lg:mx-8 lg:max-w-md">
-                <a href="https://lektroid.bandcamp.com/album/electro-funk-selection"><img class="w-auto" src="Lektroid_images/EFS-R.jpg"></a>
+                <a href="https://lektroid.bandcamp.com/album/electro-funk-selection"><img class="w-auto" src="Lektroid_images/EFS-R.jpg" alt="Electro Funk Selection"></a>
                 <div class="my-4">
                    ELECTRO FUNK SELECTION (REMASTERED)<br>
                    Lektroid's First and foremost album; an onset to all his future classics. An artistic paragon. Remastered for a fresh lease of life.
@@ -189,7 +194,7 @@
 
        <div class="flex-initial mx-4 mb-8 max-w-xs lg:mx-8 lg:max-w-md">
          
-            <a href="https://lektroid.bandcamp.com/track/journey"><img class="w-auto" src="Lektroid_images/journey.jpg"></a>
+            <a href="https://lektroid.bandcamp.com/track/journey"><img class="w-auto" src="Lektroid_images/journey.jpg" alt="Journey"></a>
             <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=4103350580/size=large/bgcol=000000/linkcol=0687f5/tracklist=false/artwork=none/transparent=true/" seamless><a href="https://lektroid.bandcamp.com/track/journey">Journey by LektroiD</a></iframe>
             <div class="my-4">
               JOURNEY<br>
@@ -200,7 +205,7 @@
 
     <div class="flex-initial mx-4 mb-8 max-w-xs lg:mx-8 lg:max-w-md">
        
-        <a href="https://lektroid.bandcamp.com/track/serenity"><img class="w-auto" src="Lektroid_images/serenity.jpg"></a>
+        <a href="https://lektroid.bandcamp.com/track/serenity"><img class="w-auto" src="Lektroid_images/serenity.jpg" alt="Serenity"></a>
             <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=3741896095/size=large/bgcol=000000/linkcol=0687f5/tracklist=false/artwork=none/transparent=true/" seamless><a href="https://lektroid.bandcamp.com/track/serenity">Serenity by LektroiD</a></iframe>
         <div class="my-4">
             SERENITY<br>
@@ -211,7 +216,7 @@
 
     <div class="flex-initial mx-4 mb-8 max-w-xs lg:mx-8 lg:max-w-md">
    
-        <a href="https://lektroid.bandcamp.com/track/hearts-of-space"><img class="w-auto" src="Lektroid_images/hearts.jpg"></a>
+        <a href="https://lektroid.bandcamp.com/track/hearts-of-space"><img class="w-auto" src="Lektroid_images/hearts.jpg" alt="Hearts of Space"></a>
             <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=3076737951/size=large/bgcol=000000/linkcol=0687f5/tracklist=false/artwork=none/transparent=true/" seamless><a href="https://lektroid.bandcamp.com/track/hearts-of-space">Hearts of Space by LektroiD</a></iframe>
         <div class="my-4">
             HEARTS OF SPACE<br>
@@ -220,16 +225,16 @@
 
     </div>
 
-<div class="flex-initial mx-4 mb-8 max-w-xs lg:mx-8 lg:max-w-md">
+    <div class="flex-initial mx-4 mb-8 max-w-xs lg:mx-8 lg:max-w-md">
    
-        <a href="https://lektroid.bandcamp.com/track/astral"><img class="w-auto" src="Lektroid_images/astral.jpg"></a>
+        <a href="https://lektroid.bandcamp.com/track/astral"><img class="w-auto" src="Lektroid_images/astral.jpg" alt="Astral"></a>
             <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=2772387337/size=large/bgcol=000000/linkcol=0687f5/tracklist=false/artwork=none/transparent=true/" seamless><a href="https://lektroid.bandcamp.com/track/astral">Astral by LektroiD</a></iframe>
         <div class="my-4">
             ASTRAL<br>
             Originally written in 1989, this is one of Lektroid's early examples of an ambient odyssey. This ageless piece holds up to today's standards unimpaired.
         </div>
   
-</div>
+    </div>
 
 </div>
 
@@ -239,7 +244,7 @@
 
     <div class="flex-initial mx-4 mb-4 md:w-1/4 lg:w-1/5 xl:w-1/6">
         
-            <a href="https://www.mixcloud.com/infinitemotion/lektroidmixed/"><img src="Lektroid_images/live.jpg"></a>
+            <a href="https://www.mixcloud.com/infinitemotion/lektroidmixed/"><img src="Lektroid_images/live.jpg" alt="Lektroid Mixed"></a>
             <iframe width="100%" height="60" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&hide_artwork=1&feed=%2Finfinitemotion%2Flektroidmixed%2F" frameborder="0" ></iframe>
         <br>
     </div>  
@@ -276,23 +281,31 @@
 
 </main>
 
-<footer class="flex flex-row justify-center text-sm md:text-lg">
+<footer style="margin-top: 48px; padding: 24px 0; display: flex; justify-content: center; text-align: center;">
 
-        <div class="flex flex-col flex-wrap items-center img-links">
-        <div class="flex-initial mx-4 mb-2 max-w-xs lg:mx-8 lg:max-w-md">
-        <a href="/"><img class="w-48" src="logo.jpg"></a>
+    <div style="max-width: 400px; width: 100%; display: flex; flex-direction: column; align-items: center;">
+
+        <div style="margin-bottom: 12px;">
+            <a href="/">
+                <img src="logo.jpg" alt="LEK Productions logo" style="width: 192px; display: block;">
+            </a>
         </div>
 
-        <a class="m-2 hover:text-red-600" href="lektroid.html">Top of page...<br></a>
+        <div style="margin-bottom: 12px;">
+            <a href="#top" style="color: #d1d5db; text-decoration: none;">
+                Top of page...
+            </a>
+        </div>
 
-    <div style="text-align:center; font-size:12px; line-height:1.3;">
-      <div style="color:#9ca3af;">PRS/MCPS Registered</div>
-      <div style="color:#6b7280;">
-        Published by <span itemprop="publisher">LEK Productions</span><br>
-        © Richard Elliott, BSc
-      </div>
-    </div>
-
+        <div style="font-size: 12px; line-height: 1.3;">
+            <div style="color: #9ca3af;">
+                PRS/MCPS Registered
+            </div>
+            <div style="color: #6b7280;">
+                Published by <span>LEK Productions</span><br>
+                © Richard Elliott, BSc
+            </div>
+        </div>
 
     </div>
 
