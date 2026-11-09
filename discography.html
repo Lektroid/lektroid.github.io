@@ -156,6 +156,26 @@
     <div style=padding:20px>
 
           <div class="release">
+            <span class="toggle" onclick="
+              const tracklist = this.parentElement.querySelector('.tracklist');
+              const isOpen = tracklist.style.display === 'block';
+              tracklist.style.display = isOpen ? 'none' : 'block';
+              this.textContent = isOpen ? '+' : '–';
+            ">+</span>
+
+            <a class="hover:text-green-700" href="https://kniteforcerevolution.com/store?label=419" target="_blank">Wise Ones - Power of Darkness (Reissue) COMING SOON!<span style="color:gray">(F-Project)</span>
+            </a>
+            (<span style="color: #f59e0b;"><b>V</b></b></span>)
+            
+            <div class="tracklist">
+              1. Power of Darkness (04:38)<br>
+              2. Feelings (04:25)<br>
+           
+            </div>
+          </div>
+          <br>
+
+          <div class="release">
              <span class="toggle" onclick="
               const tracklist = this.parentElement.querySelector('.tracklist');
               const isOpen = tracklist.style.display === 'block';
